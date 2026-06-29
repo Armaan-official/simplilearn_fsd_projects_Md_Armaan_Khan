@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <title>Document</title>
 </head>
-<body class="overflow-y-hidden relative">
+
+<body class="relative">
 
     <!----------------------------------------- Sidebar ---------------------------------------------->
-    <button id="menu" class="px-6 pt-6 absolute text-lg -mt-2 "><i class="fa-solid fa-bars"></i></button> 
-    <nav  id="sidebar" class="absolute h-screen w-1/4 bg-amber-300 transform -translate-x-full transition-transform duration-500">
+    <button id="menu" class="px-6 pt-6 absolute text-lg -mt-2 hover:scale-110 hover:text-blue-400"><i
+            class="fa-solid fa-bars"></i></button>
+    <nav id="sidebar"
+        class="fixed h-screen w-1/5 bg-amber-300 transform -translate-x-full transition-transform duration-500">
         <h1 id="app-heading" class="p-6 text-3xl font-bold">Food App</h1>
-        <button id="back-arrow" class="px-6 pt-6"><i class="fa-solid fa-arrow-left"></i></button> 
-        <div class="flex flex-col justify-between p-6 h-4/7 text-lg"> 
-           <a href="" class="flex items-center gap-3"><i class="fa-regular fa-house"></i>Home</a>
-           <a href="" class="flex items-center gap-3"><i class="fa-solid fa-bowl-food"></i>Your orders</a>
-           <a href="" class="flex items-center gap-3"><i class="fa-regular fa-heart"></i>Favorites</a>
-           <a href="" class="flex items-center gap-3"><i class="fa-regular fa-bookmark"></i>Wishlist</a>
-           <a href="" class="flex items-center gap-3"><i class="fa-solid fa-indian-rupee-sign"></i>Balance</a>
-           <a href="" class="flex items-center gap-3"><i class="fa-solid fa-wallet"></i>Choose Payment</a>
-           <a href="" class="flex items-center gap-3"><i class="fa-solid fa-gear"></i>Settings</a> 
+        <div class="flex flex-col justify-between p-6 h-4/7 text-lg">
+            <a href="" class="flex items-center gap-3"><i class="fa-regular fa-house"></i>Home</a>
+            <a href="" class="flex items-center gap-3"><i class="fa-solid fa-bowl-food"></i>Your orders</a>
+            <a href="" class="flex items-center gap-3"><i class="fa-regular fa-heart"></i>Favorites</a>
+            <a href="" class="flex items-center gap-3"><i class="fa-regular fa-bookmark"></i>Wishlist</a>
+            <a href="" class="flex items-center gap-3"><i class="fa-solid fa-indian-rupee-sign"></i>Balance</a>
+            <a href="" class="flex items-center gap-3"><i class="fa-solid fa-wallet"></i>Choose Payment</a>
+            <a href="" class="flex items-center gap-3"><i class="fa-solid fa-gear"></i>Settings</a>
         </div>
 
         <div class="p-6 mt-15">
@@ -29,44 +32,264 @@
         </div>
     </nav>
 
-    <!-- Upper bar -->
-     <div id="upperbar" class="bg-amber-300 w-full p-3 flex items-center justify-between">
-        <div id="search-bar" class="flex items-center w-1/3 h-9 ml-70 bg-white rounded-3xl">
+    <!------------------------------------------- Upper bar --------------------------------------->
+    <div id="upperbar" class="absolute bg-amber-300 w-screen p-3 flex items-center justify-between -z-10">
+        <div id="search-bar" class="flex items-center p-1 w-1/3 h-9 ml-80 bg-white rounded-3xl">
             <input type="text" placeholder="Search" class="w-full h-full rounded-3xl p-3 outline-0 border-0">
-            <div id="search-icon" class="flex items-center justify-center text-amber-900 h-full w-12 p-1"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div id="search-icon" class="flex items-center justify-center text-black h-full w-12 p-1"><i
+                    class="fa-solid fa-magnifying-glass"></i></div>
         </div>
         <div>
-            <div id="address-bar" class="flex items-center w-100 h-9 bg-white rounded-3xl">
-            <input type="text" placeholder="Add you address" class="w-full h-full rounded-3xl p-3 outline-0 border-0">
-            <div id="add-address" class="flex items-center justify-center text-amber-900 h-full w-12 p-1"><i class="fa-solid fa-plus"></i></i></div>
+            <div id="address-bar" class="flex items-center p-1 w-100 h-9 bg-white rounded-3xl">
+                <input type="text" placeholder="Add you address"
+                    class="w-full h-full rounded-3xl p-3 outline-0 border-0">
+                <div id="add-address" class="flex items-center justify-center text-black h-full w-12 p-1"><i
+                        class="fa-solid fa-plus"></i></i></div>
+            </div>
         </div>
-        </div>
-        <div id="right-icons" class="flex gap-6 mr-3 text-2xl">
+        <div id="right-icons" class="flex gap-6 mr-3 text-2xl border-1-black">
             <a href="" class=""><i class="fa-solid fa-cart-shopping"></i></a>
             <a href=""><i class="fa-solid fa-circle-user"></i></a>
         </div>
+    </div>
 
-        <div id="left-bar" class="absolute bg-green-800 top-0 right-0 h-screen w-60 mt-15 grid-cols-1">
+    <!--------------------------------- Main body ------------------------------------->
+    <div id="main-body" class="fixed top-15 h-screen w-screen grid grid-cols-11 -z-10">
 
-            <div id="food-menu" class="mt-3 flex justify-center gap-3">
-            <i class="fa-solid fa-bell-concierge text-2xl"></i>
-            <h1 class="text-white font-bold">Menu</h1>
-            </div>
+        <!--------------------------------- Main body left column ------------------------------------->
 
-            <div id="food-sections" class="flex justify-center">
-                <div id="first" class="w-20 h-20">
-                    <div>
-                        <i class="fa-solid fa-pizza-slice"></i>
-                        <p>Pizza</p>
+         <div class="absolute h-10 w-full -z-10 mt-1">
+             <h1 id="top-heading" class="pl-157 py-2 -mt-1 mr-100 top-1 w-screen text-3xl font-bold bg-red-300">Top Orders</h1>
+         </div>
+
+        <div id="col-left" class="col-span-10 ml-3 overflow-y-auto h-[calc(100vh-101px)] scrollbar-thin">
+
+
+            <div id="top-orders"
+                class="relative h-60 w-[99%] rounded-xl flex items-center justify-center overflow-hidden mt-15">
+
+                
+
+              
+
+                <!---------------------------------- Left fadding effect ---------------------------->
+            
+                <div class="absolute left-0 top-0 h-full w-5 z-10 bg-amber-200 opacity-98"></div>
+        
+                
+                
+                <!---------------------------------- Right fadding effect ---------------------------->
+
+                <div class="absolute right-0 top-0 h-full w-5 z-10 bg-amber-200 opacity-98"></div>
+
+                <div id="sliding-bar" class="absolute w-[97%] h-[85%] flex gap-x-6">
+                    
+                    <div id="top-card-1"
+                        class="rounded-3xl overflow-hidden min-w-[300px] bg-amber-200 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-100 hover:ring hover:scale-105 transition-transform duration-300">
+                        <div class="h-40"> <img
+                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
+                                alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
+                        <p class="flex items-center justify-center mt-2">This is a pic 1</p>
+                    </div>
+                    <div id="top-card-2"
+                        class="rounded-3xl overflow-hidden min-w-[300px] bg-amber-200 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-100 hover:ring hover:scale-105 transition-transform duration-300">
+                        <div class="h-40"> <img
+                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
+                                alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
+                        <p class="flex items-center justify-center mt-2">This is a pic 2</p>
+                    </div>
+                    <div id="top-card-3"
+                        class="rounded-3xl overflow-hidden min-w-[300px] bg-amber-200 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-100 hover:ring hover:scale-105 transition-transform duration-300">
+                        <div class="h-40"> <img
+                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
+                                alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
+                        <p class="flex items-center justify-center mt-2">This is a pic 3</p>
+                    </div>
+                    <div id="top-card-4"
+                        class="rounded-3xl overflow-hidden min-w-[300px] bg-amber-200 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-100 hover:ring hover:scale-105 transition-transform duration-300">
+                        <div class="h-40"> <img
+                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
+                                alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
+                        <p class="flex items-center justify-center mt-2">This is a pic 4</p>
+                    </div>
+                    <div id="top-card-5"
+                        class="rounded-3xl overflow-hidden min-w-[300px] bg-amber-200 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-100 hover:ring hover:scale-105 transition-transform duration-300">
+                        <div class="h-40"> <img
+                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
+                                alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
+                        <p class="flex items-center justify-center mt-2">This is a pic 5</p>
+                    </div>
+                    <div id="top-card-6"
+                        class="rounded-3xl overflow-hidden min-w-[300px] bg-amber-200 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-100 hover:ring hover:scale-105 transition-transform duration-300">
+                        <div class="h-40"> <img
+                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
+                                alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
+                        <p class="flex items-center justify-center mt-2">This is a pic 6</p>
+                    </div>
+                    <div id="top-card-7"
+                        class="rounded-3xl overflow-hidden min-w-[300px] bg-amber-200 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-100 hover:ring hover:scale-105 transition-transform duration-300">
+                        <div class="h-40"> <img
+                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
+                                alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
+                        <p class="flex items-center justify-center mt-2">This is a pic 7</p>
+                    </div>
+                    <div id="top-card-8"
+                        class="rounded-3xl overflow-hidden min-w-[300px] bg-amber-200 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-100 hover:ring hover:scale-105 transition-transform duration-300">
+                        <div class="h-40"> <img
+                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
+                                alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
+                        <p class="flex items-center justify-center mt-2">This is a pic 8</p>
+                    </div>
+                    <div id="top-card-1"
+                        class="rounded-3xl overflow-hidden min-w-[300px] bg-amber-200 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-100 hover:ring hover:scale-105 transition-transform duration-300">
+                        <div class="h-40"> <img
+                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
+                                alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
+                        <p class="flex items-center justify-center mt-2">This is a pic 1</p>
+                    </div>
+                    <div id="top-card-2"
+                        class="rounded-3xl overflow-hidden min-w-[300px] bg-amber-200 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-100 hover:ring hover:scale-105 transition-transform duration-300">
+                        <div class="h-40"> <img
+                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
+                                alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
+                        <p class="flex items-center justify-center mt-2">This is a pic 2</p>
+                    </div>
+                    <div id="top-card-3"
+                        class="rounded-3xl overflow-hidden min-w-[300px] bg-amber-200 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-100 hover:ring hover:scale-105 transition-transform duration-300">
+                        <div class="h-40"> <img
+                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
+                                alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
+                        <p class="flex items-center justify-center mt-2">This is a pic 3</p>
+                    </div>
+                    <div id="top-card-4"
+                        class="rounded-3xl overflow-hidden min-w-[300px] bg-amber-200 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-100 hover:ring hover:scale-105 transition-transform duration-300">
+                        <div class="h-40"> <img
+                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
+                                alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
+                        <p class="flex items-center justify-center mt-2">This is a pic 4</p>
+                    </div>
+                    <div id="top-card-5"
+                        class="rounded-3xl overflow-hidden min-w-[300px] bg-amber-200 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-100 hover:ring hover:scale-105 transition-transform duration-300">
+                        <div class="h-40"> <img
+                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
+                                alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
+                        <p class="flex items-center justify-center mt-2">This is a pic 5</p>
+                    </div>
+                    <div id="top-card-6"
+                        class="rounded-3xl overflow-hidden min-w-[300px] bg-amber-200 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-100 hover:ring hover:scale-105 transition-transform duration-300">
+                        <div class="h-40"> <img
+                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
+                                alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
+                        <p class="flex items-center justify-center mt-2">This is a pic 6</p>
+                    </div>
+                    <div id="top-card-7"
+                        class="rounded-3xl overflow-hidden min-w-[300px] bg-amber-200 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-100 hover:ring hover:scale-105 transition-transform duration-300">
+                        <div class="h-40"> <img
+                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
+                                alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
+                        <p class="flex items-center justify-center mt-2">This is a pic 7</p>
+                    </div>
+                    <div id="top-card-8"
+                        class="rounded-3xl overflow-hidden min-w-[300px] bg-amber-200 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-100 hover:ring hover:scale-105 transition-transform duration-300">
+                        <div class="h-40"> <img
+                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
+                                alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
+                        <p class="flex items-center justify-center mt-2">This is a pic 8</p>
                     </div>
                 </div>
             </div>
+
+            <div id="border" class="relative top-0 border-3 z-30 w-[99%] mt-2 rounded-4xl"></div>
+
+            <!------------------------- Food cards ----------------------------------------------------->
+            <div id="food-cards" class="grid grid-cols-4 gap-x-4 w-[100%]">
+
             
+                    <div id="card-1"
+                        class="grid grid-rows-7 rounded-3xl overflow-hidden mt-3 w-80 h-65 bg-amber-200 hover:bg-amber-100  hover:ring hover:shadow-[0px_0px_20px_rgba(0,0,0,1)]  hover:scale-105 transition-transform duration-300">
+                        <img class="row-span-6 w-full h-full object-cover"
+                            src=""
+                            alt="">
+                        <p class="row-span-1 text-center">This is a pic</p>
+                    </div>
+
+            </div>
+
+
+        </div>
+
+        <!--------------------------------- Main body right column ------------------------------------->
+        <div id="col-right" class="grid col-span-1 bg-blue-500">
+
+            <div class="flex flex-col gap-3 items-center">
+                <div id="food-menu" class="mt-3 flex justify-center gap-3">
+                    <i class="fa-solid fa-bell-concierge text-2xl"></i>
+                    <h1 class="text-black font-bold">Menu</h1>
+                </div>
+            </div>
+
+            <!--------------------------- Food menu category --------------------------------------->
+            <div class="flex flex-col gap-2 items-center -mt-24">
+
+                <div id="category-1"
+                    class="group w-30 h-15 bg-amber-200 flex justify-center items-center gap-1 rounded-xl hover:bg-amber-300 hover:text-white">
+                    <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i class="fa-solid fa-bowl-rice"></i></div>
+                    <p class="text-[0.9vw] font-bold mr-4">Meal</p>
+                </div>
+                <div id="category-2"
+                    class="group w-30 h-15 bg-amber-200 flex justify-center items-center gap-1 rounded-xl hover:bg-amber-300 hover:text-white">
+                    <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i class="fa-solid fa-pizza-slice"></i></div>
+                    <p class="text-[0.9vw] font-bold mr-4">Pizza</p>
+                </div>
+                <div id="category-3"
+                    class="group w-30 h-15 bg-amber-200 flex justify-center items-center gap-1 rounded-xl hover:bg-amber-300 hover:text-white">
+                    <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i class="fa-solid fa-burger"></i></i></div>
+                    <p class="text-[0.9vw] font-bold mr-1.5">Burger</p>
+                </div>
+                <div id="category-4"
+                    class="group w-30 h-15 bg-amber-200 flex justify-center items-center gap-1 rounded-xl hover:bg-amber-300 hover:text-white">
+                    <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i class="fa-solid fa-carrot"></i></div>
+                    <p class="text-[0.9vw] font-bold mr-6.5">Veg</p>
+                </div>
+                <div id="category-5"
+                    class="group w-30 h-15 bg-amber-200 flex justify-center items-center gap-1 rounded-xl hover:bg-amber-300 hover:text-white">
+                    <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i class="fa-solid fa-drumstick-bite"></i></div>
+                    <p class="text-[0.9vw] font-bold">Chicken</p>
+                </div>
+
+                <div id="category-6"
+                    class="group w-30 h-15 bg-amber-200 flex justify-center items-center gap-1 rounded-xl hover:bg-amber-300 hover:text-white">
+                    <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i class="fa-solid fa-fish-fins"></i></i></div>
+                    <p class="text-[0.88vw] font-bold">Seafood</p>
+                </div>
+
+                <div id="category-7"
+                    class="group w-30 h-15 bg-amber-200 flex justify-center items-center gap-1 rounded-xl hover:bg-amber-300 hover:text-white">
+                    <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i class="fa-solid fa-ice-cream"></i></div>
+                    <p class="text-[0.9vw] font-bold">Dessert</p>
+                </div>
+
+                <div id="category-8"
+                    class="group w-30 h-15 bg-amber-200 flex justify-center items-center gap-1 rounded-xl hover:bg-amber-300 hover:text-white">
+                    <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i class="fa-solid fa-wine-glass-empty"></i></div>
+                    <p class="text-[0.88vw] font-bold mr-1.5">Drinks</p>
+                </div>
+
+
+            </div>
+
+
         </div>
 
 
-     </div> 
+    </div>
+
+    <div id="footer" class="bg-pink-400 fixed bottom-0 h-10 w-full">
+
+    </div>
+
 
     <script src="app.js"></script>
 </body>
+
 </html>
