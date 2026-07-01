@@ -6,6 +6,7 @@
     "itemPrice": 450,
     "restaurantName": "Peacock Rooftop Restaurant",
     "restaurantID": 28,
+    "category": "non-veg",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/afghan%20kebabs.jpg"
   },
   {
@@ -15,6 +16,7 @@
     "itemPrice": 250,
     "restaurantName": "Mumtaz Restaurant",
     "restaurantID": 6,
+    "category": "",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/bagara%20baigan.webp"
   },
   {
@@ -24,6 +26,7 @@
     "itemPrice": 200,
     "restaurantName": "Peacock Rooftop Restaurant",
     "restaurantID": 28,
+    "category": "dessert",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/baklava.jpg"
   },
   {
@@ -33,6 +36,7 @@
     "itemPrice": 500,
     "restaurantName": "6 Ballygunge Place",
     "restaurantID": 25,
+    "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/bengali%20thali.jpg"
   },
   {
@@ -42,6 +46,7 @@
     "itemPrice": 400,
     "restaurantName": "Britannia & Co.",
     "restaurantID": 16,
+    "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/berry%20pulav.jpeg"
   },
   {
@@ -51,6 +56,7 @@
     "itemPrice": 400,
     "restaurantName": "Rajwadu",
     "restaurantID": 30,
+    "category": "seafood",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/bombli%20fry.jpg"
   },
   {
@@ -60,6 +66,7 @@
     "itemPrice": 450,
     "restaurantName": "Bukhara",
     "restaurantID": 11,
+    "category": "non-veg",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/bukhara%20murg.jpg"
   },
   {
@@ -69,15 +76,7 @@
     "itemPrice": 500,
     "restaurantName": "Indian Accent",
     "restaurantID": 12,
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/butter%20chicken.jpg"
-  },
-  {
-    "itemID": 23,
-    "itemName": "Butter Chicken",
-    "itemDescription": "Tender chicken cooked in a rich tomato-based gravy with butter and cream.",
-    "itemPrice": 420,
-    "restaurantName": "Grand Hotel",
-    "restaurantID": 10,
+    "category": "non-veg",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/butter%20chicken.jpg"
   },
   {
@@ -87,6 +86,7 @@
     "itemPrice": 450,
     "restaurantName": "Dakshin",
     "restaurantID": 20,
+    "category": "non-veg",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/chettinad%20chicken.jpg"
   },
   {
@@ -96,6 +96,7 @@
     "itemPrice": 280,
     "restaurantName": "Bawarchi",
     "restaurantID": 4,
+    "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/chickenn%20biryani.webp"
   },
   {
@@ -105,6 +106,7 @@
     "itemPrice": 250,
     "restaurantName": "Agashiye",
     "restaurantID": 29,
+    "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/chole%20batura.jpg"
   },
   {
@@ -114,6 +116,7 @@
     "itemPrice": 60,
     "restaurantName": "Koshy’s",
     "restaurantID": 18,
+    "category": "drinks",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/coffee.jpg"
   },
   {
@@ -123,6 +126,7 @@
     "itemPrice": 350,
     "restaurantName": "1135 AD",
     "restaurantID": 26,
+    "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/dal%20bati%20churma.jpg"
   },
   {
@@ -132,6 +136,7 @@
     "itemPrice": 250,
     "restaurantName": "Bukhara",
     "restaurantID": 11,
+    "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/dal%20bhukara.jpg"
   },
   {
@@ -141,6 +146,7 @@
     "itemPrice": 300,
     "restaurantName": "Indian Accent",
     "restaurantID": 12,
+    "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/Dal-Makhani.webp"
   },
   {
@@ -150,6 +156,7 @@
     "itemPrice": 180,
     "restaurantName": "Mavalli Tiffin Room (MTR)",
     "restaurantID": 17,
+    "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/Dosa.jpg"
   },
   {
@@ -159,7 +166,8 @@
     "itemPrice": 180,
     "restaurantName": "Shah Ghouse",
     "restaurantID": 3,
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/"
+    "category": "dessert",
+    "imageUrl": "https://x9s2d6a3.delivery.rocketcdn.me/wp-content/uploads/2018/04/double-ka-meetha-25_1200x1200.jpg"
   },
   {
     "itemID": 54,
@@ -168,6 +176,7 @@
     "itemPrice": 100,
     "restaurantName": "Dakshin",
     "restaurantID": 20,
+    "category": "drinks",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/filter-coffee.jpg"
   },
   {
@@ -177,6 +186,7 @@
     "itemPrice": 120,
     "restaurantName": "Alhamdulillah Hotel",
     "restaurantID": 9,
+    "category": "dessert",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/firni.jpg"
   },
   {
@@ -186,6 +196,7 @@
     "itemPrice": 350,
     "restaurantName": "The Fisherman’s Wharf",
     "restaurantID": 7,
+    "category": "seafood",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/Amritsari-fish.webp"
   },
   {
@@ -195,6 +206,7 @@
     "itemPrice": 350,
     "restaurantName": "Koshy’s",
     "restaurantID": 18,
+    "category": "seafood",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/fish%20curry.jpg"
   },
   {
@@ -204,6 +216,7 @@
     "itemPrice": 400,
     "restaurantName": "Rawat Mishtan Bhandar",
     "restaurantID": 27,
+    "category": "seafood",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/Fish-Molee.jpg"
   },
   {
@@ -213,6 +226,7 @@
     "itemPrice": 180,
     "restaurantName": "1135 AD",
     "restaurantID": 26,
+    "category": "dessert",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/ghevar.jpg"
   },
   {
@@ -222,6 +236,7 @@
     "itemPrice": 400,
     "restaurantName": "Benjarong",
     "restaurantID": 22,
+    "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/green%20curry.jpg"
   },
   {
@@ -231,6 +246,7 @@
     "itemPrice": 700,
     "restaurantName": "The Table",
     "restaurantID": 14,
+    "category": "seafood",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/grilled%20salmon.jpg"
   },
   {
@@ -240,15 +256,7 @@
     "itemPrice": 150,
     "restaurantName": "Indian Accent",
     "restaurantID": 12,
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/Gulab-Jamun.jpg"
-  },
-  {
-    "itemID": 81,
-    "itemName": "Gulab Jamun",
-    "itemDescription": "Soft dough balls soaked in sweet syrup.",
-    "itemPrice": 120,
-    "restaurantName": "Agashiye",
-    "restaurantID": 29,
+    "category": "dessert",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/Gulab-Jamun.jpg"
   },
   {
@@ -258,15 +266,7 @@
     "itemPrice": 220,
     "restaurantName": "Pista House",
     "restaurantID": 5,
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/haleem.jpg"
-  },
-  {
-    "itemID": 8,
-    "itemName": "Haleem",
-    "itemDescription": "A slow-cooked stew made with meat, lentils, and spices, a Hyderabadi specialty.",
-    "itemPrice": 250,
-    "restaurantName": "Shah Ghouse",
-    "restaurantID": 3,
+    "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/haleem.jpg"
   },
   {
@@ -276,42 +276,7 @@
     "itemPrice": 420,
     "restaurantName": "Mumtaz Restaurant",
     "restaurantID": 6,
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/hyderabad%20biryani.jpg"
-  },
-  {
-    "itemID": 7,
-    "itemName": "Hyderabadi Biryani",
-    "itemDescription": "Fragrant basmati rice cooked with mutton and aromatic spices.",
-    "itemPrice": 350,
-    "restaurantName": "Shah Ghouse",
-    "restaurantID": 3,
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/hyderabad%20biryani.jpg"
-  },
-  {
-    "itemID": 1,
-    "itemName": "Hyderabadi Biryani",
-    "itemDescription": "Fragrant basmati rice cooked with marinated meat and spices, served with raita.",
-    "itemPrice": 350,
-    "restaurantName": "Paradise Biryani",
-    "restaurantID": 1,
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/hyderabad%20biryani.jpg"
-  },
-  {
-    "itemID": 4,
-    "itemName": "Hyderabadi Biryani",
-    "itemDescription": "Traditional Hyderabadi biryani made with tender mutton and fragrant rice.",
-    "itemPrice": 400,
-    "restaurantName": "Jewel of Nizam",
-    "restaurantID": 2,
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/hyderabad%20biryani.jpg"
-  },
-  {
-    "itemID": 19,
-    "itemName": "Hyderabadi Biryani",
-    "itemDescription": "Aromatic rice and tender mutton cooked with traditional spices.",
-    "itemPrice": 360,
-    "restaurantName": "Alhamdulillah Hotel",
-    "restaurantID": 9,
+    "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/hyderabad%20biryani.jpg"
   },
   {
@@ -321,6 +286,7 @@
     "itemPrice": 150,
     "restaurantName": "Dakshin",
     "restaurantID": 20,
+    "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/idli%20sambar.jpg"
   },
   {
@@ -330,16 +296,8 @@
     "itemPrice": 350,
     "restaurantName": "Karim’s",
     "restaurantID": 13,
+    "category": "dessert",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/karim's%20biryani.jpg"
-  },
-  {
-    "itemID": 32,
-    "itemName": "Kebabs",
-    "itemDescription": "Grilled chicken and mutton skewers marinated with spices.",
-    "itemPrice": 280,
-    "restaurantName": "Karim’s",
-    "restaurantID": 13,
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/kebabs.jpg"
   },
   {
     "itemID": 64,
@@ -348,6 +306,7 @@
     "itemPrice": 350,
     "restaurantName": "Peter Cat",
     "restaurantID": 24,
+    "category": "non-veg",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/kebabs.jpg"
   },
   {
@@ -357,6 +316,7 @@
     "itemPrice": 600,
     "restaurantName": "Rawat Mishtan Bhandar",
     "restaurantID": 27,
+    "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/kerala%20sadya.jpeg"
   },
   {
@@ -366,6 +326,7 @@
     "itemPrice": 300,
     "restaurantName": "Jewel of Nizam",
     "restaurantID": 2,
+    "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/mutton-korma.jpg"
   },
   {
@@ -375,6 +336,7 @@
     "itemPrice": 290,
     "restaurantName": "Sarvi Restaurant",
     "restaurantID": 8,
+    "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/koftacurry.jpg"
   },
   {
@@ -384,6 +346,7 @@
     "itemPrice": 450,
     "restaurantName": "6 Ballygunge Place",
     "restaurantID": 25,
+    "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/kosha%20mangsho.jpg"
   },
   {
@@ -393,6 +356,7 @@
     "itemPrice": 500,
     "restaurantName": "1135 AD",
     "restaurantID": 26,
+    "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/laal-maas.jpeg"
   },
   {
@@ -402,6 +366,7 @@
     "itemPrice": 120,
     "restaurantName": "Grand Hotel",
     "restaurantID": 10,
+    "category": "drinks",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/lasi.webp"
   },
   {
@@ -411,6 +376,7 @@
     "itemPrice": 400,
     "restaurantName": "Oh! Calcutta",
     "restaurantID": 23,
+    "category": "seafood",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/macher%20jhol.jpg"
   },
   {
@@ -420,6 +386,7 @@
     "itemPrice": 200,
     "restaurantName": "Masala Library",
     "restaurantID": 15,
+    "category": "dessert",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/Prawn-Masala.jpg"
   },
   {
@@ -429,6 +396,7 @@
     "itemPrice": 150,
     "restaurantName": "Murugan Idli Shop",
     "restaurantID": 21,
+    "category": "drinks",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/Mango-Lassi.jpg"
   },
   {
@@ -438,6 +406,7 @@
     "itemPrice": 180,
     "restaurantName": "Benjarong",
     "restaurantID": 22,
+    "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/mago%20sticky%20rice.jpg"
   },
   {
@@ -447,6 +416,7 @@
     "itemPrice": 550,
     "restaurantName": "Masala Library",
     "restaurantID": 15,
+    "category": "seafood",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/Prawn-Masala.jpg"
   },
   {
@@ -456,6 +426,7 @@
     "itemPrice": 200,
     "restaurantName": "Paradise Biryani",
     "restaurantID": 1,
+    "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/mirch%20ka%20salan.jpg"
   },
   {
@@ -465,6 +436,7 @@
     "itemPrice": 150,
     "restaurantName": "Peter Cat",
     "restaurantID": 24,
+    "category": "dessert",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/mishti%20doi.jpg"
   },
   {
@@ -474,6 +446,7 @@
     "itemPrice": 650,
     "restaurantName": "Masala Library",
     "restaurantID": 15,
+    "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/molecular%20biryani.png"
   },
   {
@@ -483,6 +456,7 @@
     "itemPrice": 350,
     "restaurantName": "Gopi Dining Hall",
     "restaurantID": 31,
+    "category": "non-veg",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/murgh%20malai%20tikka.jpg"
   },
   {
@@ -492,24 +466,7 @@
     "itemPrice": 350,
     "restaurantName": "Bawarchi",
     "restaurantID": 4,
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/mutton%20biryani.jpg"
-  },
-  {
-    "itemID": 92,
-    "itemName": "Mutton Biryani",
-    "itemDescription": "Signature biryani with perfectly cooked mutton.",
-    "itemPrice": 350,
-    "restaurantName": "Pista House",
-    "restaurantID": 5,
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/mutton%20biryani.jpg"
-  },
-  {
-    "itemID": 16,
-    "itemName": "Mutton Biryani",
-    "itemDescription": "Aromatic rice with mutton cooked with spices.",
-    "itemPrice": 380,
-    "restaurantName": "Sarvi Restaurant",
-    "restaurantID": 8,
+    "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/mutton%20biryani.jpg"
   },
   {
@@ -519,6 +476,7 @@
     "itemPrice": 280,
     "restaurantName": "Koshy’s",
     "restaurantID": 18,
+    "category": "non-veg",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/mutton-keema.jpg"
   },
   {
@@ -528,15 +486,7 @@
     "itemPrice": 430,
     "restaurantName": "Alhamdulillah Hotel",
     "restaurantID": 9,
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/mutton-korma.jpg"
-  },
-  {
-    "itemID": 2,
-    "itemName": "Mutton Korma",
-    "itemDescription": "Tender mutton cooked in a rich, spiced gravy with yogurt and nuts.",
-    "itemPrice": 450,
-    "restaurantName": "Paradise Biryani",
-    "restaurantID": 1,
+    "category": "non-veg",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/mutton-korma.jpg"
   },
   {
@@ -546,6 +496,7 @@
     "itemPrice": 450,
     "restaurantName": "Peter Cat",
     "restaurantID": 24,
+    "category": "non-veg",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/mutton%20rezela.webp"
   },
   {
@@ -555,6 +506,7 @@
     "itemPrice": 120,
     "restaurantName": "Mavalli Tiffin Room (MTR)",
     "restaurantID": 17,
+    "category": "dessert",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/MysorePak.jpg"
   },
   {
@@ -564,6 +516,7 @@
     "itemPrice": 250,
     "restaurantName": "Bawarchi",
     "restaurantID": 4,
+    "category": "paneer",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/paneer%20butter%20masala.jpg"
   },
   {
@@ -573,6 +526,7 @@
     "itemPrice": 350,
     "restaurantName": "Toit Brewery",
     "restaurantID": 19,
+    "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/Pasta-Primavera.jpg"
   },
   {
@@ -582,6 +536,7 @@
     "itemPrice": 150,
     "restaurantName": "Rawat Mishtan Bhandar",
     "restaurantID": 27,
+    "category": "dessert",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/payaam.jpg"
   },
   {
@@ -591,6 +546,7 @@
     "itemPrice": 150,
     "restaurantName": "Gopi Dining Hall",
     "restaurantID": 31,
+    "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/Peshwari-naan.webp"
   },
   {
@@ -600,16 +556,8 @@
     "itemPrice": 180,
     "restaurantName": "Rajwadu",
     "restaurantID": 30,
+    "category": "dessert",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/Pineapple-Coconut-cake.jpg"
-  },
-  {
-    "itemID": 51,
-    "itemName": "Pizza Margherita",
-    "itemDescription": "Classic pizza topped with mozzarella, tomatoes, and fresh basil.",
-    "itemPrice": 400,
-    "restaurantName": "Toit Brewery",
-    "restaurantID": 19,
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/pizza%20margaritta.webp"
   },
   {
     "itemID": 55,
@@ -618,6 +566,7 @@
     "itemPrice": 120,
     "restaurantName": "Murugan Idli Shop",
     "restaurantID": 21,
+    "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/plain%20idli.webp"
   },
   {
@@ -627,6 +576,7 @@
     "itemPrice": 550,
     "restaurantName": "The Fisherman’s Wharf",
     "restaurantID": 7,
+    "category": "seafood",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/Chingri-Malai-Curry.jpg"
   },
   {
@@ -636,6 +586,7 @@
     "itemPrice": 150,
     "restaurantName": "Sarvi Restaurant",
     "restaurantID": 8,
+    "category": "dessert",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/qubani%20ka%20meetha.jpg"
   },
   {
@@ -645,6 +596,7 @@
     "itemPrice": 150,
     "restaurantName": "Britannia & Co.",
     "restaurantID": 16,
+    "category": "dessert",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/raspberry-sorbet.webp"
   },
   {
@@ -654,6 +606,7 @@
     "itemPrice": 150,
     "restaurantName": "Mavalli Tiffin Room (MTR)",
     "restaurantID": 17,
+    "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/RavaIdli.jpg"
   },
   {
@@ -663,6 +616,7 @@
     "itemPrice": 120,
     "restaurantName": "Oh! Calcutta",
     "restaurantID": 23,
+    "category": "dessert",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/roshogolla.webp"
   },
   {
@@ -672,6 +626,7 @@
     "itemPrice": 500,
     "restaurantName": "Britannia & Co.",
     "restaurantID": 16,
+    "category": "non-veg",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/sali%20boti.jpg"
   },
   {
@@ -681,6 +636,7 @@
     "itemPrice": 60,
     "restaurantName": "Agashiye",
     "restaurantID": 29,
+    "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/samosa.webp"
   },
   {
@@ -690,6 +646,7 @@
     "itemPrice": 120,
     "restaurantName": "6 Ballygunge Place",
     "restaurantID": 25,
+    "category": "dessert",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/sandesh.jpg"
   },
   {
@@ -699,6 +656,7 @@
     "itemPrice": 600,
     "restaurantName": "The Fisherman’s Wharf",
     "restaurantID": 7,
+    "category": "seafood",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/seafood-platter.jpg"
   },
   {
@@ -708,24 +666,7 @@
     "itemPrice": 180,
     "restaurantName": "Mumtaz Restaurant",
     "restaurantID": 6,
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/shahi-tukda.jpg"
-  },
-  {
-    "itemID": 87,
-    "itemName": "Shahi Tukda",
-    "itemDescription": "Deep-fried bread soaked in milk and sugar syrup, garnished with nuts.",
-    "itemPrice": 180,
-    "restaurantName": "Gopi Dining Hall",
-    "restaurantID": 31,
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/shahi-tukda.jpg"
-  },
-  {
-    "itemID": 93,
-    "itemName": "Shahi Tukda",
-    "itemDescription": "Bread pudding topped with rabri and nuts.",
-    "itemPrice": 150,
-    "restaurantName": "Pista House",
-    "restaurantID": 5,
+    "category": "dessert",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/shahi-tukda.jpg"
   },
   {
@@ -735,6 +676,7 @@
     "itemPrice": 350,
     "restaurantName": "Peacock Rooftop Restaurant",
     "restaurantID": 28,
+    "category": "non-veg",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/Chicken-Shawarma.jpg"
   },
   {
@@ -744,15 +686,7 @@
     "itemPrice": 150,
     "restaurantName": "Jewel of Nizam",
     "restaurantID": 2,
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/Sheer-Khurma.jpg"
-  },
-  {
-    "itemID": 33,
-    "itemName": "Sheer Korma",
-    "itemDescription": "Sweet dessert made with milk, dry fruits, and vermicelli.",
-    "itemPrice": 180,
-    "restaurantName": "Karim’s",
-    "restaurantID": 13,
+    "category": "dessert",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/Sheer-Khurma.jpg"
   },
   {
@@ -762,6 +696,7 @@
     "itemPrice": 500,
     "restaurantName": "Oh! Calcutta",
     "restaurantID": 23,
+    "category": "seafood",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/shorshe%20ilish.jpg"
   },
   {
@@ -771,6 +706,7 @@
     "itemPrice": 40,
     "restaurantName": "Bukhara",
     "restaurantID": 11,
+    "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/tandoori%20roti.jpg"
   },
   {
@@ -780,6 +716,7 @@
     "itemPrice": 350,
     "restaurantName": "The Table",
     "restaurantID": 14,
+    "category": "dessert",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/tiramisu.jpg"
   },
   {
@@ -789,6 +726,7 @@
     "itemPrice": 250,
     "restaurantName": "Toit Brewery",
     "restaurantID": 19,
+    "category": "drinks",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/toit.png"
   },
   {
@@ -798,6 +736,7 @@
     "itemPrice": 250,
     "restaurantName": "Benjarong",
     "restaurantID": 22,
+    "category": "soup",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/tom%20yum%20soup.jpg"
   },
   {
@@ -807,6 +746,7 @@
     "itemPrice": 500,
     "restaurantName": "The Table",
     "restaurantID": 14,
+    "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/truffled-mac-cheese.webp"
   },
   {
@@ -816,6 +756,7 @@
     "itemPrice": 90,
     "restaurantName": "Murugan Idli Shop",
     "restaurantID": 21,
+    "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/vada.jpg"
   },
   {
@@ -825,6 +766,7 @@
     "itemPrice": 100,
     "restaurantName": "Rajwadu",
     "restaurantID": 30,
+    "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/vada-pav.jpg"
   },
   {
@@ -834,25 +776,28 @@
     "itemPrice": 300,
     "restaurantName": "Grand Hotel",
     "restaurantID": 10,
+    "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/vegetable%20biryani.jpg"
   },
   {
     "itemID": 1,
     "itemName": "Margherita",
-    "unitPrice": 12,
-    "imageUrl": "https://welivwxuzcdhxarmumgu.supabase.co/storage/v1/object/public/Fast%20Pizza/pizza/pizza-1.jpg",
+    "itemDescription": "Classic pizza topped with mozzarella, tomatoes, and fresh basil.",
+    "itemPrice": 400,
+    "imageUrl": "https://myrecipesnest.com/wp-content/uploads/2025/09/23-1-Margherita-Pizza.png",
     "ingredients": [
       "tomato",
       "mozzarella",
       "basil"
     ],
+    "category": "pizza",
     "soldOut": false
   },
   {
     "itemID": 2,
     "itemName": "Capricciosa",
-    "unitPrice": 14,
-    "imageUrl": "https://welivwxuzcdhxarmumgu.supabase.co/storage/v1/object/public/Fast%20Pizza/pizza/pizza-2.jpg",
+    "itemPrice": 14,
+    "imageUrl": "https://www.melarossa.it/wp-content/uploads/2021/02/pizza-capricciosa-ingredienti.jpg?x54507",
     "ingredients": [
       "tomato",
       "mozzarella",
@@ -860,51 +805,55 @@
       "mushrooms",
       "artichoke"
     ],
+    "category": "pizza",
     "soldOut": true
   },
   {
     "itemID": 3,
     "itemName": "Romana",
-    "unitPrice": 15,
-    "imageUrl": "https://welivwxuzcdhxarmumgu.supabase.co/storage/v1/object/public/Fast%20Pizza/pizza/pizza-3.jpg",
+    "itemPrice": 15,
+    "imageUrl": "https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2024/06/28/67e959197f094322885f6c791d63d266_Pizza_romana.jpg",
     "ingredients": [
       "tomato",
       "mozzarella",
       "prosciutto"
     ],
+    "category": "pizza",
     "soldOut": false
   },
   {
     "itemID": 4,
     "itemName": "Prosciutto e Rucola",
-    "unitPrice": 16,
-    "imageUrl": "https://welivwxuzcdhxarmumgu.supabase.co/storage/v1/object/public/Fast%20Pizza/pizza/pizza-4.jpg",
+    "itemPrice": 16,
+    "imageUrl": "https://www.1001-kochrezepte.de/wp-content/uploads/2009/07/pizza-prosciutto-e-rucola.jpg",
     "ingredients": [
       "tomato",
       "mozzarella",
       "prosciutto",
       "arugula"
     ],
+    "category": "pizza",
     "soldOut": false
   },
   {
     "itemID": 5,
     "itemName": "Diavola",
-    "unitPrice": 16,
-    "imageUrl": "https://welivwxuzcdhxarmumgu.supabase.co/storage/v1/object/public/Fast%20Pizza/pizza/pizza-5.jpg",
+    "itemPrice": 16,
+    "imageUrl": "https://apertureoncourt.com/wp-content/uploads/2025/03/Pizza-Diavola-Recipe.jpg",
     "ingredients": [
       "tomato",
       "mozzarella",
       "spicy salami",
       "chili flakes"
     ],
+    "category": "pizza",
     "soldOut": false
   },
   {
     "itemID": 6,
-    "itemName": "Vegetale",
-    "unitPrice": 13,
-    "imageUrl": "https://welivwxuzcdhxarmumgu.supabase.co/storage/v1/object/public/Fast%20Pizza/pizza/pizza-6.jpg",
+    "itemName": "Vegetable",
+    "itemPrice": 13,
+    "imageUrl": "https://doozydoo.co/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-13-07.00.15-A-mouth-watering-image-of-a-homemade-vegetarian-pizza-ideal-for-a-blog-post.-The-pizza-is-lavishly-topped-with-a-variety-of-colorful-vegetables-like-.png",
     "ingredients": [
       "tomato",
       "mozzarella",
@@ -912,26 +861,28 @@
       "onions",
       "mushrooms"
     ],
+    "category": "pizza",
     "soldOut": false
   },
   {
     "itemID": 7,
     "itemName": "Napoli",
-    "unitPrice": 16,
-    "imageUrl": "https://welivwxuzcdhxarmumgu.supabase.co/storage/v1/object/public/Fast%20Pizza/pizza/pizza-7.jpg",
+    "itemPrice": 16,
+    "imageUrl": "https://bontalico.com/wp-content/uploads/2024/11/pizza-napoletana.jpg",
     "ingredients": [
       "tomato",
       "mozzarella",
       "fresh tomato",
       "basil"
     ],
+    "category": "pizza",
     "soldOut": false
   },
   {
     "itemID": 8,
     "itemName": "Siciliana",
-    "unitPrice": 16,
-    "imageUrl": "https://welivwxuzcdhxarmumgu.supabase.co/storage/v1/object/public/Fast%20Pizza/pizza/pizza-8.jpg",
+    "itemPrice": 16,
+    "imageUrl": "https://umamipizza.ro/wp-content/uploads/2022/06/pizza-siciliana-1.jpg",
     "ingredients": [
       "tomato",
       "mozzarella",
@@ -939,51 +890,55 @@
       "olives",
       "capers"
     ],
+    "category": "pizza",
     "soldOut": true
   },
   {
     "itemID": 9,
     "itemName": "Pepperoni",
-    "unitPrice": 14,
-    "imageUrl": "https://welivwxuzcdhxarmumgu.supabase.co/storage/v1/object/public/Fast%20Pizza/pizza/pizza-9.jpg",
+    "itemPrice": 14,
+    "imageUrl": "https://wallpapers.com/images/hd/pizza-pictures-cgfdsox6myh2hk7f.jpg",
     "ingredients": [
       "tomato",
       "mozzarella",
       "pepperoni"
     ],
+    "category": "pizza",
     "soldOut": false
   },
   {
     "itemID": 10,
     "itemName": "Hawaiian",
-    "unitPrice": 15,
-    "imageUrl": "https://welivwxuzcdhxarmumgu.supabase.co/storage/v1/object/public/Fast%20Pizza/pizza/pizza-10.jpg",
+    "itemPrice": 15,
+    "imageUrl": "https://thumbs.dreamstime.com/b/vibrant-hawaiian-pizza-topped-ham-pineapple-melted-cheese-perfect-gatherings-parties-casual-dining-experiences-366058178.jpg",
     "ingredients": [
       "tomato",
       "mozzarella",
       "pineapple",
       "ham"
     ],
+    "category": "pizza",
     "soldOut": false
   },
   {
     "itemID": 11,
     "itemName": "Spinach and Mushroom",
-    "unitPrice": 15,
-    "imageUrl": "https://welivwxuzcdhxarmumgu.supabase.co/storage/v1/object/public/Fast%20Pizza/pizza/pizza-11.jpg",
+    "itemPrice": 15,
+    "imageUrl": "https://i.pinimg.com/736x/d4/98/c8/d498c8d238d6cdb72db98c64b3fe1c57.jpg",
     "ingredients": [
       "tomato",
       "mozzarella",
       "spinach",
       "mushrooms"
     ],
+    "category": "pizza",
     "soldOut": false
   },
   {
     "itemID": 12,
     "itemName": "Mediterranean",
-    "unitPrice": 16,
-    "imageUrl": "https://welivwxuzcdhxarmumgu.supabase.co/storage/v1/object/public/Fast%20Pizza/pizza/pizza-12.jpg",
+    "itemPrice": 16,
+    "imageUrl": "https://sophiasrecipe.com/wp-content/uploads/2025/11/0_2-1762334989388.jpeg",
     "ingredients": [
       "tomato",
       "mozzarella",
@@ -991,13 +946,14 @@
       "olives",
       "artichoke"
     ],
+    "category": "pizza",
     "soldOut": false
   },
   {
     "itemID": 13,
     "itemName": "Greek",
-    "unitPrice": 16,
-    "imageUrl": "https://welivwxuzcdhxarmumgu.supabase.co/storage/v1/object/public/Fast%20Pizza/pizza/pizza-13.jpg",
+    "itemPrice": 16,
+    "imageUrl": "https://cdn.lemonandolives.com/wp-content/uploads/2014/07/homemage-Greek-Pizza.jpg",
     "ingredients": [
       "tomato",
       "mozzarella",
@@ -1006,26 +962,28 @@
       "olives",
       "pepperoncini"
     ],
+    "category": "pizza",
     "soldOut": true
   },
   {
     "itemID": 14,
     "itemName": "Abruzzese",
-    "unitPrice": 16,
-    "imageUrl": "https://welivwxuzcdhxarmumgu.supabase.co/storage/v1/object/public/Fast%20Pizza/pizza/pizza-14.jpg",
+    "itemPrice": 16,
+    "imageUrl": "https://lalqila.fr/wp-content/uploads/2025/10/Pizza-abruzzese-specialite-des-Abruzzes-1024x585.jpg",
     "ingredients": [
       "tomato",
       "mozzarella",
       "prosciutto",
       "arugula"
     ],
+    "category": "pizza",
     "soldOut": false
   },
   {
     "itemID": 15,
     "itemName": "Pesto Chicken",
-    "unitPrice": 16,
-    "imageUrl": "https://welivwxuzcdhxarmumgu.supabase.co/storage/v1/object/public/Fast%20Pizza/pizza/pizza-15.jpg",
+    "itemPrice": 16,
+    "imageUrl": "https://corarecipes.com/wp-content/uploads/2025/07/image_1_1752008074936_313.png",
     "ingredients": [
       "pesto",
       "mozzarella",
@@ -1033,26 +991,28 @@
       "sun-dried tomatoes",
       "spinach"
     ],
+    "category": "pizza",
     "soldOut": false
   },
   {
     "itemID": 16,
     "itemName": "Eggplant Parmesan",
-    "unitPrice": 15,
-    "imageUrl": "https://welivwxuzcdhxarmumgu.supabase.co/storage/v1/object/public/Fast%20Pizza/pizza/pizza-16.jpg",
+    "itemPrice": 15,
+    "imageUrl": "https://images.squarespace-cdn.com/content/v1/54add730e4b0b147cc4a5286/1538161743027-UDM9UA2924RDJJH0MAWU/ke17ZwdGBToddI8pDm48kNiEM88mrzHRsd1mQ3bxVct7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0s0XaMNjCqAzRibjnE_wBlkZ2axuMlPfqFLWy-3Tjp4nKScCHg1XF4aLsQJlo6oYbA/IMG_6612.jpg",
     "ingredients": [
       "marinara",
       "mozzarella",
       "eggplant",
       "parmesan"
     ],
+    "category": "pizza",
     "soldOut": false
   },
   {
     "itemID": 17,
     "itemName": "Roasted Veggie",
-    "unitPrice": 15,
-    "imageUrl": "https://welivwxuzcdhxarmumgu.supabase.co/storage/v1/object/public/Fast%20Pizza/pizza/pizza-17.jpg",
+    "itemPrice": 15,
+    "imageUrl": "https://www.hightasty.com/wp-content/uploads/2025/01/YEKkeTRqRMCcpDSBQFbd1w-e1740156040995.webp",
     "ingredients": [
       "marinara",
       "mozzarella",
@@ -1061,20 +1021,21 @@
       "peppers",
       "onions"
     ],
+    "category": "pizza",
     "soldOut": false
   },
   {
     "itemID": 18,
-    "itemName": "Tofu and Mushroom",
-    "unitPrice": 15,
-    "imageUrl": "https://welivwxuzcdhxarmumgu.supabase.co/storage/v1/object/public/Fast%20Pizza/pizza/pizza-18.jpg",
+    "itemName": "Truffle Mushroom",
+    "itemPrice": 15,
+    "imageUrl": "https://zesticook.com/wp-content/uploads/2025/10/0_0-1760282588678.webp",
     "ingredients": [
       "marinara",
       "mozzarella",
-      "tofu",
-      "mushrooms",
+      "truffle mushrooms",
       "bell peppers"
     ],
+    "category": "pizza",
     "soldOut": false
   }
 ]

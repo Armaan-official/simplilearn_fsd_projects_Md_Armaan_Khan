@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <title>Document</title>
+    <title>Index</title>
 </head>
 
 <body class="relative">
@@ -16,7 +16,7 @@
             class="fa-solid fa-bars"></i></button>
     <nav id="sidebar"
         class="fixed h-screen w-1/5 bg-amber-300 transform -translate-x-full transition-transform duration-500">
-        <h1 id="app-heading" class="p-6 text-3xl font-bold">Food App</h1>
+        <h1 id="app-heading" class="p-6 text-3xl font-bold">QuickBite</h1>
         <div class="flex flex-col justify-between p-6 h-4/7 text-lg">
             <a href="" class="flex items-center gap-3"><i class="fa-regular fa-house"></i>Home</a>
             <a href="" class="flex items-center gap-3"><i class="fa-solid fa-bowl-food"></i>Your orders</a>
@@ -28,7 +28,7 @@
         </div>
 
         <div class="p-6 mt-15">
-            <a href="" class="flex items-center gap-3"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
+            <a id="logout" href="login.html" class="flex items-center gap-3"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
         </div>
     </nav>
 
@@ -59,7 +59,7 @@
         <!--------------------------------- Main body left column ------------------------------------->
 
          <div class="absolute h-10 w-full -z-10 mt-1">
-             <h1 id="top-heading" class="pl-157 py-2 -mt-1 mr-100 top-1 w-screen text-3xl font-bold bg-red-300">Top Orders</h1>
+             <h1 id="top-heading" class="pl-135 py-2 -mt-1 mr-100 top-1 w-screen text-3xl font-bold bg-red-300">Top 8 Orders In This Week</h1>
          </div>
 
         <div id="col-left" class="col-span-10 ml-3 overflow-y-auto h-[calc(100vh-101px)] scrollbar-thin">
@@ -202,17 +202,22 @@
             <div id="border" class="relative top-0 border-3 z-30 w-[99%] mt-2 rounded-4xl"></div>
 
             <!------------------------- Food cards ----------------------------------------------------->
-            <div id="food-cards" class="grid grid-cols-4 gap-x-4 w-[100%]">
+            <div id="food-cards" class="grid grid-cols-4 gap-x-4 w-full">
 
             
                     <div id="card-1"
-                        class="grid grid-rows-7 rounded-3xl overflow-hidden mt-3 w-80 h-65 bg-amber-200 hover:bg-amber-100  hover:ring hover:shadow-[0px_0px_20px_rgba(0,0,0,1)]  hover:scale-105 transition-transform duration-300">
+                        class="relative grid grid-rows-7 rounded-3xl overflow-hidden mt-3 w-80 h-65 bg-amber-200 hover:bg-amber-100  hover:ring hover:shadow-[0px_0px_20px_rgba(0,0,0,1)]  hover:scale-105 transition-transform duration-300 font-bold">
                         <img class="row-span-6 w-full h-full object-cover"
                             src=""
                             alt="">
-                        <p class="row-span-1 text-center">This is a pic</p>
+                        <div class="flex justify-center items-center gap-2">
+                            <p id="p-name" class="row-span-1 text-center">This is a pic</p>
+                            <p id="p-price" class="font-bold text-xl">100</p>
+                        </div>
+                        <button id="add-to-cart" class="absolute bottom-12 right-3 hover:text-red-600"><i class="fa-solid fa-plus text-2xl"></i></button>
+                        <button class="absolute top-10 right-3 hover:text-red-600"><i class="fa-regular fa-heart text-2xl"></i></button>
+                        <button class="absolute top-28 right-3 hover:text-red-600"><i class="fa-regular fa-bookmark text-2xl"></i></button>
                     </div>
-
             </div>
 
 
@@ -248,13 +253,13 @@
                 </div>
                 <div id="category-4"
                     class="group w-30 h-15 bg-amber-200 flex justify-center items-center gap-1 rounded-xl hover:bg-amber-300 hover:text-white">
-                    <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i class="fa-solid fa-carrot"></i></div>
-                    <p class="text-[0.9vw] font-bold mr-6.5">Veg</p>
+                    <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i class="fa-solid fa-cube"></i></i></div>
+                    <p class="text-[0.9vw] font-bold mr-1.5">Paneer</p>
                 </div>
                 <div id="category-5"
                     class="group w-30 h-15 bg-amber-200 flex justify-center items-center gap-1 rounded-xl hover:bg-amber-300 hover:text-white">
                     <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i class="fa-solid fa-drumstick-bite"></i></div>
-                    <p class="text-[0.9vw] font-bold">Chicken</p>
+                    <p class="text-[0.9vw] font-bold">Non-veg</p>
                 </div>
 
                 <div id="category-6"

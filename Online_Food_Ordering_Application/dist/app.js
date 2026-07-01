@@ -1,7 +1,8 @@
+
+//  ============================= sidebar toggling ================================//
 const sidebar = document.querySelector("#sidebar");
 const menu = document.querySelector("#menu");
 
-// sidebar toggling
 menu.addEventListener("click", () => {
   sidebar.classList.remove("-translate-x-full");
   menu.style.display = "none";
@@ -16,7 +17,14 @@ window.addEventListener("click", (e) => {
   }
 });
 
+let logout = document.querySelector('#logout');
 
+logout.addEventListener('click', () =>{
+  logout.action = 'login.html';
+})
+
+
+//  ============================= Auto scrolling for the top oreders ================================//
 const sliderTrack = document.querySelector('#sliding-bar');
 let position = 0;
 const speed = 1.5;
@@ -80,38 +88,7 @@ requestAnimationFrame(slideAnimation);
 // requestAnimationFrame(slideAnimation);
 
 
-async function getProducts() {
-  try{
-    const response = await fetch('data.json');
-    const data = await response.json();
-    console.log(data)
-    renderProducts(data);
-  } catch (error) {
-    console.log(error)
-  }
-}
-
-getProducts();
-
-function renderProducts(products) {
-  const template = document.querySelector('#card-1'); // save template
-  const container = document.querySelector('#food-cards');
-  
-  const templateClone = template.cloneNode(true); // save a copy before clearing
-  container.innerHTML = ''; // now safe to clear
-
-  products.forEach((product) => {
-    const card = templateClone.cloneNode(true);
-    
-    card.removeAttribute('id');
-    card.querySelector('img').src = product.imageUrl;
-    card.querySelector('p').textContent = product.itemName;
-
-    container.appendChild(card);
-  });
-}
-
-
+//  ================ Animation for the Top order heading ===================//
 const colLeft = document.querySelector('#col-left');
 const topHeading = document.querySelector('#top-heading');
 
@@ -125,3 +102,92 @@ colLeft.addEventListener('scroll', () => {
     topHeading.style.opacity = '1';
   }
 });
+
+
+
+//  ============================= Fetching the food products ================================//
+
+
+let allProducts = [];
+let cardTemplate = null; // store template globally
+
+async function getProducts() {
+  try {
+    const response = await fetch('./data.json');
+    allProducts = await response.json();
+
+    // save template before first render
+    cardTemplate = document.querySelector('#card-1').cloneNode(true);
+
+    renderProducts(allProducts);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+
+document.querySelector('#category-2').addEventListener('click', () => {
+  const pizza = allProducts.filter(product => product.category === 'pizza');
+  renderProducts(pizza);
+  console.log(pizza)
+});
+document.querySelector('#category-3').addEventListener('click', () => {
+  const burger = allProducts.filter(product => product.category === 'burger');
+  renderProducts(burger);
+});
+document.querySelector('#category-4').addEventListener('click', () => {
+  const paneer = allProducts.filter(product => product.category === 'paneer');
+  renderProducts(paneer);
+});
+document.querySelector('#category-5').addEventListener('click', () => {
+  const nonVeg = allProducts.filter(product => product.category === 'non-veg');
+  renderProducts(nonVeg);
+});
+document.querySelector('#category-6').addEventListener('click', () => {
+  const seafood = allProducts.filter(product => product.category === 'seafood');
+  renderProducts(seafood);
+});
+document.querySelector('#category-7').addEventListener('click', () => {
+  const dessert = allProducts.filter(product => product.category === 'dessert');
+  renderProducts(dessert);
+});
+document.querySelector('#category-8').addEventListener('click', () => {
+  const drinks = allProducts.filter(product => product.category === 'drinks');
+  renderProducts(drinks);
+});
+
+
+document.querySelector('#category-1').addEventListener('click', () => {
+  renderProducts(allProducts);
+  // console.log(allProducts)
+});
+
+
+
+function renderProducts(products) {
+  const container = document.querySelector('#food-cards');
+  container.innerHTML = '';
+  // let addTocart = document.querySelector('#add-to-cart');
+
+  products.forEach((product) => {
+    const card = cardTemplate.cloneNode(true); // use saved template
+    card.removeAttribute('id');
+    card.querySelector('img').src = product.imageUrl;
+    card.querySelector('img').onerror = function() {
+    this.alt = 'There is an error while loading the image.';
+  };
+  // card.addEventListener('click', () => {
+  //       window.location.href = `cart.html?id=${product.itemID}`;
+  //   });
+    card.querySelector('#p-name').textContent = product.itemName;
+    card.querySelector('#p-price').innerHTML = `<i class="fa-solid fa-indian-rupee-sign"></i>${product.itemPrice}`;
+    container.appendChild(card);
+  });
+}
+
+getProducts();
+
+
+
+
+
