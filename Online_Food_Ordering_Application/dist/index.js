@@ -107,6 +107,10 @@ colLeft.addEventListener('scroll', () => {
 
 //  ============================= Fetching the food products ================================//
 
+// very first lines of your script
+const countShow = document.querySelector('#cart-number');
+const cartData = JSON.parse(localStorage.getItem('cart')) || [];
+countShow.textContent = cartData.length;
 
 let allProducts = [];
 let cardTemplate = null; // store template globally
@@ -167,7 +171,8 @@ document.querySelector('#category-1').addEventListener('click', () => {
 function renderProducts(products) {
   const container = document.querySelector('#food-cards');
   container.innerHTML = '';
-  // let addTocart = document.querySelector('#add-to-cart');
+  
+  
 
   products.forEach((product) => {
     const card = cardTemplate.cloneNode(true); // use saved template
@@ -176,9 +181,32 @@ function renderProducts(products) {
     card.querySelector('img').onerror = function() {
     this.alt = 'There is an error while loading the image.';
   };
-  // card.addEventListener('click', () => {
-  //       window.location.href = `cart.html?id=${product.itemID}`;
-  //   });
+
+  
+  let addTocart = card.querySelector('#add-to-cart');
+  addTocart.addEventListener('click', (e) => {
+    e.stopPropagation();
+    e.preventDefault();
+    
+    // get existing cart or start empty
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    // add this product to cart
+    cart.push(product);
+    console.log(product);
+    
+    // save back to localStorage
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+    // save count to localStorage
+    localStorage.setItem('cartCount', cart.length);
+    countShow.textContent = cart.length;
+    
+    console.log('added to cart:', product.itemName);
+    alert(`${product.itemName} added to cart!`); 
+  
+  });
+
     card.querySelector('#p-name').textContent = product.itemName;
     card.querySelector('#p-price').innerHTML = `<i class="fa-solid fa-indian-rupee-sign"></i>${product.itemPrice}`;
     container.appendChild(card);
@@ -187,6 +215,18 @@ function renderProducts(products) {
 
 getProducts();
 
+
+
+const searchInput = document.querySelector('#browse-product');
+searchInput.addEventListener('input', () => {
+  const query = searchInput.value.toLowerCase();
+  
+  const filtered = allProducts.filter(product => 
+    product.itemName.toLowerCase().includes(query)
+  );
+  
+  renderProducts(filtered);
+});
 
 
 

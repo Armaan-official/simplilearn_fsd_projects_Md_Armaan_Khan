@@ -14,28 +14,28 @@
     <!----------------------------------------- Sidebar ---------------------------------------------->
     <button id="menu" class="px-6 pt-6 absolute text-lg -mt-2 hover:scale-110 hover:text-blue-400"><i
             class="fa-solid fa-bars"></i></button>
-    <nav id="sidebar"
+    <div id="sidebar"
         class="fixed h-screen w-1/5 bg-amber-300 transform -translate-x-full transition-transform duration-500">
         <h1 id="app-heading" class="p-6 text-3xl font-bold">QuickBite</h1>
-        <div class="flex flex-col justify-between p-6 h-4/7 text-lg">
-            <a href="" class="flex items-center gap-3"><i class="fa-regular fa-house"></i>Home</a>
-            <a href="" class="flex items-center gap-3"><i class="fa-solid fa-bowl-food"></i>Your orders</a>
-            <a href="" class="flex items-center gap-3"><i class="fa-regular fa-heart"></i>Favorites</a>
-            <a href="" class="flex items-center gap-3"><i class="fa-regular fa-bookmark"></i>Wishlist</a>
-            <a href="" class="flex items-center gap-3"><i class="fa-solid fa-indian-rupee-sign"></i>Balance</a>
-            <a href="" class="flex items-center gap-3"><i class="fa-solid fa-wallet"></i>Choose Payment</a>
-            <a href="" class="flex items-center gap-3"><i class="fa-solid fa-gear"></i>Settings</a>
+        <div class="flex flex-col justify-between p-6 h-4/7 text-lg  font-bold">
+            <div class="flex items-center gap-3 hover:text-red-600"><i class="fa-regular fa-house"></i>Home</div>
+            <a href="order-history.html" class="flex items-center gap-3"><i class="fa-solid fa-bowl-food"></i>Your orders</a>
+            <div class="flex items-center gap-3"><i class="fa-regular fa-heart"></i>Favorites</div>
+            <div class="flex items-center gap-3"><i class="fa-solid fa-indian-rupee-sign"></i>Balance</div>
+            <div class="flex items-center gap-3"><i class="fa-solid fa-wallet"></i>Choose Payment</div>
+            <div class="flex items-center gap-3"><i class="fa-solid fa-gear"></i>Settings</div>
+            <div class="flex items-center gap-3"><i class="fa-solid fa-circle-info"></i>About</div>
         </div>
 
         <div class="p-6 mt-15">
-            <a id="logout" href="login.html" class="flex items-center gap-3"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
+            <a id="logout" href="login.html" class="flex items-center gap-3 text-lg  font-bold"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
         </div>
-    </nav>
+    </div>
 
     <!------------------------------------------- Upper bar --------------------------------------->
     <div id="upperbar" class="absolute bg-amber-300 w-screen p-3 flex items-center justify-between -z-10">
         <div id="search-bar" class="flex items-center p-1 w-1/3 h-9 ml-80 bg-white rounded-3xl">
-            <input type="text" placeholder="Search" class="w-full h-full rounded-3xl p-3 outline-0 border-0">
+            <input id="browse-product" type="text" placeholder="Search" class="w-full h-full rounded-3xl p-3 outline-0 border-0">
             <div id="search-icon" class="flex items-center justify-center text-black h-full w-12 p-1"><i
                     class="fa-solid fa-magnifying-glass"></i></div>
         </div>
@@ -48,7 +48,8 @@
             </div>
         </div>
         <div id="right-icons" class="flex gap-6 mr-3 text-2xl border-1-black">
-            <a href="" class=""><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="cart.html" class=""><i class="fa-solid fa-cart-shopping"></i></a>
+            <p id="cart-number" class="absolute font-bold right-5 top-0 h-5 pb-1 w-20" style="color: #ff3a20; font-size: medium;"></p>
             <a href=""><i class="fa-solid fa-circle-user"></i></a>
         </div>
     </div>
@@ -214,9 +215,8 @@
                             <p id="p-name" class="row-span-1 text-center">This is a pic</p>
                             <p id="p-price" class="font-bold text-xl">100</p>
                         </div>
-                        <button id="add-to-cart" class="absolute bottom-12 right-3 hover:text-red-600"><i class="fa-solid fa-plus text-2xl"></i></button>
-                        <button class="absolute top-10 right-3 hover:text-red-600"><i class="fa-regular fa-heart text-2xl"></i></button>
-                        <button class="absolute top-28 right-3 hover:text-red-600"><i class="fa-regular fa-bookmark text-2xl"></i></button>
+                        <button style="top: 70%; right: 30%;" id="add-to-cart" class="absolute right-3 hover:text-red-600"><i class="fa-solid fa-plus text-3xl"></i></button>
+                        <button style="top: 70%; left: 30%;" class="absolute hover:text-red-600"><i class="fa-regular fa-heart text-3xl"></i></button>
                     </div>
             </div>
 
@@ -294,7 +294,7 @@
     </div>
 
 
-    <script src="app.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
