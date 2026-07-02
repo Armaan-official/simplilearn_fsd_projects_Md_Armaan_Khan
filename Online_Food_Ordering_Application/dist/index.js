@@ -183,10 +183,19 @@ function renderProducts(products) {
   };
 
   
+
+  
   let addTocart = card.querySelector('#add-to-cart');
+  const addToCartSound = new Audio('./sound_effects/notification1.mp3');
+  addToCartSound.preload = 'none';
+
   addTocart.addEventListener('click', (e) => {
     e.stopPropagation();
     e.preventDefault();
+
+    // add to card sound
+    addToCartSound.currentTime = 0;
+    addToCartSound.play();
     
     // get existing cart or start empty
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -201,10 +210,59 @@ function renderProducts(products) {
     // save count to localStorage
     localStorage.setItem('cartCount', cart.length);
     countShow.textContent = cart.length;
-    
+
+
     console.log('added to cart:', product.itemName);
-    alert(`${product.itemName} added to cart!`); 
+    // alert(`${product.itemName} added to cart!`); 
   
+  });
+
+
+  const favoriteFoods = JSON.parse(localStorage.getItem('favoriteFoods')) || [];
+  const isFavorited = favoriteFoods.find(item => item.itemID === product.itemID);
+  const heartIcon = card.querySelector('#add-to-favorite i');
+  const addToFavoriteSound = new Audio('./sound_effects/pop2.mp3');
+  addToFavoriteSound.preload = 'none';
+  const removeToFavoriteSound = new Audio('./sound_effects/thud1.mp3');
+  removeToFavoriteSound.preload = 'none';
+
+  if(isFavorited) {
+        heartIcon.classList.replace('fa-regular', 'fa-solid');
+        heartIcon.classList.add('text-red-600');
+    } else{
+      heartIcon.classList.replace('fa-solid', 'fa-regular');
+      heartIcon.classList.remove('text-red-600');
+    }
+
+
+  let addToFavorite = card.querySelector('#add-to-favorite');
+  addToFavorite.addEventListener('click', (e) => {
+    e.stopPropagation();
+    e.preventDefault();
+
+  let favoriteFoods = JSON.parse(localStorage.getItem('favoriteFoods')) || [];
+  
+
+    heartIcon.classList.toggle('fa-regular');
+    heartIcon.classList.toggle('fa-solid');
+    heartIcon.classList.toggle('text-red-600');
+
+    
+    const alreadyFavorited = favoriteFoods.find(item => item.itemName === product.itemName);
+    
+    if(alreadyFavorited) {
+        favoriteFoods = favoriteFoods.filter(item => item.itemName !== product.itemName);
+        // alert(`${product.itemName} removed from Favorites!`);
+        removeToFavoriteSound.currentTime = 0;
+        removeToFavoriteSound.play();
+    } else {
+        favoriteFoods.push(product);
+        addToFavoriteSound.currentTime = 0;
+        addToFavoriteSound.play();
+        // alert(`${product.itemName} added to Favorites!`);
+    }
+
+    localStorage.setItem('favoriteFoods', JSON.stringify(favoriteFoods)); 
   });
 
     card.querySelector('#p-name').textContent = product.itemName;
@@ -227,6 +285,74 @@ searchInput.addEventListener('input', () => {
   
   renderProducts(filtered);
 });
+
+
+
+
+const displayAddress = localStorage.getItem('displayAddress') || '';
+if(displayAddress) {
+      document.querySelector('#address-bar input').value = displayAddress;
+    }
+
+document.querySelector('#add-address').addEventListener('click', () =>{
+  navigator.geolocation.getCurrentPosition(async (position) => {
+    const lat = position.coords.latitude;
+    const lon = position.coords.longitude;
+    const addressBar = document.querySelector('#address-bar input');
+
+    try {
+      const address = await fetch(
+        `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lon}&format=json`
+      );
+      const data = await address.json();
+      addressBar.value.display_name;
+    } catch (error) {
+      console.log('error:', error);
+    }
+  }); 
+});
+
+
+// Sound effects
+
+// click button
+const clickSound = new Audio('./sound_effects/click2.mp3');
+clickSound.preload = 'none';
+
+function clickButtonSound(pageLink){
+  clickSound.currentTime = 0;
+  clickSound.play();
+  setTimeout(() => {
+    window.location.href = pageLink;
+  }, 500);
+}
+
+function commonButtonSound(){
+  clickSound.currentTime = 0;
+  clickSound.play();
+}
+
+
+// hover
+const categoryHoverSound = new Audio('./sound_effects/hover3.mp3');
+categoryHoverSound.preload = 'none';
+categoryHoverSound.currentTime = 0;
+
+document.querySelectorAll('.category').forEach(product => {
+  product.addEventListener('mouseenter', () => {
+    categoryHoverSound.currentTime = 0;
+    categoryHoverSound.play();
+  })
+})
+
+
+
+
+// payment
+
+// card cliped
+
+
 
 
 

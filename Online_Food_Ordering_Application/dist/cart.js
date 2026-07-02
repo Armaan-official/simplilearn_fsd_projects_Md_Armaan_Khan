@@ -107,6 +107,7 @@ async function loadCart() {
 
 }
 
+const paymentSound = new Audio('./sound_effects/payment.mp3');
 const payment = document.querySelector('#payment');
     payment.addEventListener('click', (product) => {
         
@@ -130,6 +131,8 @@ const payment = document.querySelector('#payment');
                 
 
                 payment.textContent = 'Pay Now';
+                paymentSound.currentTime = 0;
+                paymentSound.play();
                 alert('Payment successful!');
 
                 localStorage.removeItem('cart');
@@ -158,4 +161,22 @@ if(cart.length === 0) {
     document.querySelector('#card-container').innerHTML = '<p class="p-4 text-gray-500">No product added yet.</p>';
 } else {
     loadCart(); // your function that renders cart cards
+}
+
+
+// click button
+const clickSound = new Audio('./sound_effects/click2.mp3');
+// clickSound.preload = 'none';
+
+function clickButtonSound(pageLink){
+  clickSound.currentTime = 0;
+  clickSound.play();
+  setTimeout(() => {
+    window.location.href = pageLink;
+  }, 500);
+}
+
+function commonButtonSound(){
+  clickSound.currentTime = 0;
+  clickSound.play();
 }

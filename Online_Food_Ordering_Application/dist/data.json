@@ -10,7 +10,7 @@
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/afghan%20kebabs.jpg"
   },
   {
-    "itemID": 11,
+    "itemID": 100,
     "itemName": "Bagara Baingan",
     "itemDescription": "Fried brinjal cooked in a rich, flavorful curry.",
     "itemPrice": 250,
@@ -296,7 +296,7 @@
     "itemPrice": 350,
     "restaurantName": "Karim’s",
     "restaurantID": 13,
-    "category": "dessert",
+    "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/karim's%20biryani.jpg"
   },
   {
@@ -387,7 +387,7 @@
     "restaurantName": "Masala Library",
     "restaurantID": 15,
     "category": "dessert",
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/Prawn-Masala.jpg"
+    "imageUrl": "https://www.sharmispassions.com/wp-content/uploads/2014/05/mango-kulfi7.jpg"
   },
   {
     "itemID": 57,
