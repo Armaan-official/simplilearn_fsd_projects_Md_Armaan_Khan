@@ -56,13 +56,16 @@ getProduct();
 
 // });
 
-
+const container = document.querySelector('#card-container');
+const cartTemplate = document.querySelector('#card-1').cloneNode(true);
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
 async function loadCart() {
-  const container = document.querySelector('#card-container');
-  const cartTemplate = document.querySelector('#card-1').cloneNode(true);
-  
-  container.innerHTML = '<p class="p-4 text-gray-500">No order history yet.</p>' ? '' : '<p class="p-4 text-gray-500">No order history yet.</p>';
+  if(cart.length === 0){
+        container.innerHTML = '<p class="p-4 text-gray-500">No products added yet.</p>';
+    } else{
+        container.innerHTML = '';
+    }
 
   cart.forEach((product, index) => {
     const card = cartTemplate.cloneNode(true);
@@ -86,7 +89,9 @@ async function loadCart() {
         totalProduct();
         addTotal();
 
-        
+        if(cart.length === 0){
+        container.innerHTML = '<p class="p-4 text-gray-500">No products added yet.</p>';
+        }
     });
 
 
@@ -96,9 +101,9 @@ async function loadCart() {
     }
 
     function totalProduct() {
-    const numOfProduct = cart.length;
-    console.log(cart.length)
-    document.querySelector('#total-Product span').textContent = numOfProduct;
+        const numOfProduct = cart.length;
+        console.log(cart.length)
+        document.querySelector('#total-Product span').textContent = numOfProduct;
     }
 
 
@@ -107,8 +112,8 @@ async function loadCart() {
 
 }
 
-const paymentSound = new Audio('./sound_effects/payment.mp3');
-const payment = document.querySelector('#payment');
+    const paymentSound = new Audio('./sound_effects/payment.mp3');
+    const payment = document.querySelector('#payment');
     payment.addEventListener('click', (product) => {
         
         if(cart.length === 0) {
@@ -137,7 +142,7 @@ const payment = document.querySelector('#payment');
 
                 localStorage.removeItem('cart');
                 cart.length = 0;
-                document.querySelector('#card-container').innerHTML = '<p class="p-4 text-gray-500">No product added yet.</p>';            
+                document.querySelector('#card-container').innerHTML = '<p class="p-4 text-gray-500">No products added yet.</p>';            
                 document.querySelector('#total-Product span').textContent = 0;
                 document.querySelector('#total-price span').textContent = 0;
             }, 3000);
@@ -151,14 +156,14 @@ const payment = document.querySelector('#payment');
 document.querySelector('#clear-cart').addEventListener('click', () => {
     localStorage.removeItem('cart');
     cart.length = 0;
-    document.querySelector('#card-container').innerHTML = '<p class="p-4 text-gray-500">No product added yet.</p>'
+    document.querySelector('#card-container').innerHTML = '<p class="p-4 text-gray-500">No products added yet.</p>'
     document.querySelector('#total-Product span').textContent = 0;
     document.querySelector('#total-price span').textContent = 0;
 })
 
 
 if(cart.length === 0) {
-    document.querySelector('#card-container').innerHTML = '<p class="p-4 text-gray-500">No product added yet.</p>';
+    document.querySelector('#card-container').innerHTML = '<p class="p-4 text-gray-500">No products added yet.</p>';
 } else {
     loadCart(); // your function that renders cart cards
 }
@@ -179,4 +184,12 @@ function clickButtonSound(pageLink){
 function commonButtonSound(){
   clickSound.currentTime = 0;
   clickSound.play();
+}
+
+function removeFromCartSound(){
+    const removeSound = new Audio('./sound_effects/delete1.mp3');
+    if(cart.length !== 0) {
+        removeSound.currentTime = 0;
+        removeSound.play();
+    }
 }

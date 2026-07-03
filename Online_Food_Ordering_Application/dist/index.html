@@ -205,19 +205,34 @@
             <!------------------------- Food cards ----------------------------------------------------->
             <div id="food-cards" class="grid grid-cols-4 gap-x-4 w-full">
 
-            
-                    <div id="card-1"
-                        class="relative grid grid-rows-7 rounded-3xl overflow-hidden mt-3 w-80 h-65 bg-amber-200 hover:bg-amber-100  hover:ring hover:shadow-[0px_0px_20px_rgba(0,0,0,1)]  hover:scale-105 transition-transform duration-300 font-bold">
-                        <img class="row-span-6 w-full h-full object-cover"
-                            src=""
-                            alt="">
-                        <div class="flex justify-center items-center gap-2">
-                            <p id="p-name" class="row-span-1 text-center">This is a pic</p>
-                            <p id="p-price" class="font-bold text-xl">100</p>
+                <div id="card-1" class="w-80 h-65 mt-3 perspective:[1000px] cursor-pointer">
+                    <div class="card-inner relative w-full h-full transition-transform duration-500 transform-style:preserve-3d bg-white">
+
+                          <!------------------------------------- Front face ------------------------------------>
+                        <div
+                            class="card-front relative grid grid-rows-7 rounded-3xl overflow-hidden mt-3 w-80 h-65 bg-amber-200 hover:bg-amber-100  hover:ring hover:shadow-[0px_0px_20px_rgba(0,0,0,1)]  hover:scale-105 transition-transform duration-300 font-bold">
+                            <img class="row-span-6 w-full h-full object-cover"
+                                src=""
+                                alt="">
+                            <div class="flex justify-center items-center gap-2">
+                                <p id="p-name" class="row-span-1 text-center">This is a pic</p>
+                                <p id="p-price" class="font-bold text-xl">100</p>
+                            </div>
+                            <button id="add-to-cart" class="absolute top-45 right-20 hover:text-red-600"><i class="fa-solid fa-plus text-3xl"></i></button>
+                            <button id="add-to-favorite" class="absolute top-45 left-25 hover:text-red-600"><i class="fa-regular fa-heart text-3xl"></i></button>
                         </div>
-                        <button id="add-to-cart" class="absolute top-45 right-20 hover:text-red-600"><i class="fa-solid fa-plus text-3xl"></i></button>
-                        <button id="add-to-favorite" class="absolute top-45 left-25 hover:text-red-600"><i class="fa-regular fa-heart text-3xl"></i></button>
+
+                    <!----------------------------------- Back face ----------------------------------->
+                    <div class="card-back absolute w-full h-full rounded-3xl bg-white p-4 shadow-2xl backface-visibility:hidden transform:rotateY(180deg)">
+                        <!-- <p class="p-name font-bold text-lg mt-2"></p>
+                        <p class="p-price font-bold text-amber-500"></p>
+                        <p class="p-description text-gray-500 text-sm mt-1"></p> -->
                     </div>
+
+
+                    </div>
+                </div>
+
             </div>
 
 

@@ -183,8 +183,7 @@ function renderProducts(products) {
   };
 
   
-
-  
+  // adding to cart btn
   let addTocart = card.querySelector('#add-to-cart');
   const addToCartSound = new Audio('./sound_effects/notification1.mp3');
   addToCartSound.preload = 'none';
@@ -217,7 +216,7 @@ function renderProducts(products) {
   
   });
 
-
+  // adding to favorites
   const favoriteFoods = JSON.parse(localStorage.getItem('favoriteFoods')) || [];
   const isFavorited = favoriteFoods.find(item => item.itemID === product.itemID);
   const heartIcon = card.querySelector('#add-to-favorite i');
@@ -265,9 +264,24 @@ function renderProducts(products) {
     localStorage.setItem('favoriteFoods', JSON.stringify(favoriteFoods)); 
   });
 
-    card.querySelector('#p-name').textContent = product.itemName;
-    card.querySelector('#p-price').innerHTML = `<i class="fa-solid fa-indian-rupee-sign"></i>${product.itemPrice}`;
-    container.appendChild(card);
+  card.querySelector('#p-name').textContent = product.itemName;
+  card.querySelector('#p-price').innerHTML = `<i class="fa-solid fa-indian-rupee-sign"></i>${product.itemPrice}`;
+
+
+  // flipping the card
+    card.addEventListener('click', () => {
+      console.log('hi')
+    const inner = card.querySelector('.card-inner');
+    const isFlipped = inner.style.transform === 'rotateY(180deg)';
+    inner.style.transform = isFlipped ? 'rotateY(0deg)' : 'rotateY(180deg)';
+  });
+
+  // stop buttons from triggering flip
+  // addTocart.forEach(btn => {
+  //   btn.addEventListener('click', (e) => e.stopPropagation());
+  // });
+
+  container.appendChild(card);
   });
 }
 
@@ -317,9 +331,10 @@ document.querySelector('#add-address').addEventListener('click', () =>{
 
 // click button
 const clickSound = new Audio('./sound_effects/click2.mp3');
-clickSound.preload = 'none';
+
 
 function clickButtonSound(pageLink){
+  clickSound.preload = 'none';
   clickSound.currentTime = 0;
   clickSound.play();
   setTimeout(() => {
@@ -335,7 +350,7 @@ function commonButtonSound(){
 
 // hover
 const categoryHoverSound = new Audio('./sound_effects/hover3.mp3');
-categoryHoverSound.preload = 'none';
+// categoryHoverSound.preload = 'none';
 categoryHoverSound.currentTime = 0;
 
 document.querySelectorAll('.category').forEach(product => {

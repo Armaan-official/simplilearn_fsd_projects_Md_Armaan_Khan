@@ -11,10 +11,10 @@
 
     <div class="absolute top-10 left-0 ml-15 text-xl">
         <a onclick="clickButtonSound('index.html')" class="flex items-center gap-3 font-bold hover:cursor-pointer"><i class="fa-regular fa-house"></i>Home</a>
-        <button id="clear-history" onclick="commonButtonSound()" class="font-bold rounded-xl shadow-[0px_0px_10px_rgba(0,0,0,1)] bg-[#ff3b20] hover:bg-[#ee6055] hover:text-white mt-7.5 px-3 py-2" style="font-size: medium;">Clear History</button>
+        <button id="clear-history" class="font-bold rounded-xl shadow-[0px_0px_10px_rgba(0,0,0,1)] bg-[#ff3b20] hover:bg-[#ee6055] hover:text-white mt-7.5 px-3 py-2" style="font-size: medium;">Clear History</button>
     </div>
 
-        <p id="total-Product" class="text-4xl font-bold p-4 mb-5.5">Order History</p>
+        <p id="total-Product" class="text-4xl font-bold p-4 mb-5.5">Your order History</p>
     </div>
 
     <div id="cart-page" class="w-180 flex items-center justify-center bg-white rounded-3xl mb-10">
@@ -58,8 +58,12 @@
         });
 
         document.querySelector('#clear-history').addEventListener('click', () => {
-        localStorage.removeItem('orderHistory');
-        document.querySelector('#card-container').innerHTML = '<p class="p-4 text-gray-500">No order history yet.</p>';
+            // clear history sound
+            const clearHistorySound = new Audio('./sound_effects/delete1.mp3');
+            clearHistorySound.currentTime = 0;
+            clearHistorySound.play();
+            localStorage.removeItem('orderHistory');
+            document.querySelector('#card-container').innerHTML = '<p class="p-4 text-gray-500">No order history yet.</p>';
         })
 
 
@@ -75,10 +79,11 @@
         }, 500);
         }
 
-        function commonButtonSound(){
-        clickSound.currentTime = 0;
-        clickSound.play();
-        }
+        // function commonButtonSound(){
+        // clickSound.currentTime = 0;
+        // clickSound.play();
+        // }
+
 
     </script>
 </body>

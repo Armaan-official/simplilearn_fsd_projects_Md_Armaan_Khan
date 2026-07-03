@@ -11,7 +11,7 @@
 
     <div class="absolute top-10 left-0 ml-15 text-xl">
         <a onclick="clickButtonSound('index.html')" class="flex items-center gap-3 font-bold hover:cursor-pointer"><i class="fa-regular fa-house"></i>Home</a>
-        <button id="clear-favorites" onclick="commonButtonSound()" class="font-bold rounded-xl shadow-[0px_0px_10px_rgba(0,0,0,1)] bg-[#ff3b20] hover:bg-[#ee6055] hover:text-white mt-7.5 px-3 py-2" style="font-size: medium;">Clear Favorites</button>
+        <button id="clear-favorites" class="font-bold rounded-xl shadow-[0px_0px_10px_rgba(0,0,0,1)] bg-[#ff3b20] hover:bg-[#ee6055] hover:text-white mt-7.5 px-3 py-2" style="font-size: medium;">Clear Favorites</button>
     </div>
 
         <p id="total-Product" class="text-4xl font-bold p-4 mb-5.5">Favorite Food Items</p>
@@ -28,7 +28,7 @@
                 <p id="p-name" class="row-span-1 text-center">This is a pic</p>
                 <p id="p-price" class="font-bold text-xl">100</p>
             </div>
-                
+             <button id="remove-item" class="absolute bottom-12 right-3 text-red-600 text-3xl" onclick="removeFromFavoriteSound()"><i class="fa-solid fa-heart"></i></button>   
     </div>
 
 
@@ -49,16 +49,40 @@
             card.querySelector('img').src = product.imageUrl;
             card.querySelector('#p-name').textContent = product.itemName;
             card.querySelector('#p-price').innerHTML = `<i class="fa-solid fa-indian-rupee-sign"></i> ${product.itemPrice}`;
+           
+           
+            const removeItem = card.querySelector('#remove-item');
+            removeItem.addEventListener('click', () => {
+            const updatedCart = favoriteFoods.filter(item => item !== product);
+    
+            // update the cart array in place
+            favoriteFoods.length = 0;
+            updatedCart.forEach(item => favoriteFoods.push(item));
+            localStorage.setItem('favoriteFoods', JSON.stringify(favoriteFoods));
+            card.remove();
+
+            if(favoriteFoods.length === 0){
+            container.innerHTML = '<p class="p-4 text-gray-500">No favorite items yet.</p>';
+            }
+            });
+           
+           
             container.appendChild(card);
-
-        
-
-        
         });
 
         document.querySelector('#clear-favorites').addEventListener('click', () => {
-        localStorage.removeItem('favoriteFoods');
-        document.querySelector('#card-container').innerHTML = '<p class="p-4 text-gray-500">No favorite items yet.</p>';
+            
+            // clear favorite sound
+            if(favoriteFoods.length !== 0) {
+                const clearFavoritesSound = new Audio('./sound_effects/delete1.mp3');
+                clearFavoritesSound.currentTime = 0;
+                clearFavoritesSound.play();
+            }
+
+            favoriteFoods.length = 0;
+
+            localStorage.removeItem('favoriteFoods');
+            document.querySelector('#card-container').innerHTML = '<p class="p-4 text-gray-500">No favorite items yet.</p>';
         })
 
 
@@ -74,9 +98,17 @@
         }, 500);
         }
 
-        function commonButtonSound(){
-        clickSound.currentTime = 0;
-        clickSound.play();
+        // function commonButtonSound(){
+        // clickSound.currentTime = 0;
+        // clickSound.play();
+        // }
+
+        function removeFromFavoriteSound(){
+            const removeSound = new Audio('./sound_effects/delete1.mp3');
+            if(favoriteFoods.length !== 0) {
+                removeSound.currentTime = 0;
+                removeSound.play();
+            }
         }
 
     </script>

@@ -11,7 +11,7 @@
 
     <div class="absolute top-10 left-0 ml-15 text-xl">
         <a onclick="clickButtonSound('index.html')" class="flex items-center gap-3 font-bold hover:cursor-pointer"><i class="fa-regular fa-house"></i>Home</a>
-        <button id="clear-cart" class="font-bold rounded-xl shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:text-white bg-[#ff3b20] hover:bg-[#ee6055] mt-7.5 px-3 py-2" style="font-size: medium;" onclick="commonButtonSound()">Clear Cart</button>
+        <button id="clear-cart" class="font-bold rounded-xl shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:text-white bg-[#ff3b20] hover:bg-[#ee6055] mt-7.5 px-3 py-2" style="font-size: medium;" onclick="removeFromCartSound()">Clear Cart</button>
     </div>
 
     <div>
@@ -30,7 +30,7 @@
                 <p id="p-price" class="font-bold text-xl">100</p>
                 
             </div>
-            <button id="remove-item" class="absolute bottom-12 right-3 hover:text-red-600 text-3xl"><i class="fa-solid fa-minus"></i></button>
+            <button id="remove-item" class="absolute bottom-12 right-3 hover:text-red-600 text-3xl" onclick="removeFromCartSound()"><i class="fa-solid fa-minus"></i></button>
         </div>
     </div>
                 
