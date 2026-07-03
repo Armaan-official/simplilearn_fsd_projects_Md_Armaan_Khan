@@ -9,6 +9,10 @@
 </head>
 <body class="relative flex justify-center items-center flex-col bg-amber-200">
 
+    <!--------------------------- Popup for the events ----------------------------------->
+    <div id="popup" class="fixed bg-green-400 text-xl top-18 left-170 w-fit h-fit py-3 px-4 rounded-xl opacity-0 transition-opacity duration-500 z-10 shadow-[0px_0px_6px_rgba(0,0,0,1)]">This is the popup!</div>
+
+
     <div class="absolute top-10 left-0 ml-15 text-xl">
         <a onclick="clickButtonSound('index.html')" class="flex items-center gap-3 font-bold hover:cursor-pointer"><i class="fa-regular fa-house"></i>Home</a>
         <button id="clear-history" class="font-bold rounded-xl shadow-[0px_0px_10px_rgba(0,0,0,1)] bg-[#ff3b20] hover:bg-[#ee6055] hover:text-white mt-7.5 px-3 py-2" style="font-size: medium;">Clear History</button>
@@ -24,7 +28,7 @@
             <img class="row-span-6 w-full h-full object-cover"
                 src=""
                 alt="">
-            <div class="flex justify-center items-center gap-2">
+            <div class="flex justify-center items-center gap-2 text-[#112A43]">
                 <p id="p-name" class="row-span-1 text-center">This is a pic</p>
                 <p id="p-price" class="font-bold text-xl">100</p>
             </div>
@@ -49,9 +53,7 @@
             card.querySelector('img').src = product.imageUrl;
             card.querySelector('#p-name').textContent = product.itemName;
             card.querySelector('#p-price').innerHTML = `<i class="fa-solid fa-indian-rupee-sign"></i> ${product.itemPrice}`;
-            container.appendChild(card);
-
-            
+            container.appendChild(card);  
         });
 
         
@@ -59,9 +61,14 @@
 
         document.querySelector('#clear-history').addEventListener('click', () => {
             // clear history sound
-            const clearHistorySound = new Audio('./sound_effects/delete1.mp3');
-            clearHistorySound.currentTime = 0;
-            clearHistorySound.play();
+            if (orderHistory.length !== 0) {
+                const clearHistorySound = new Audio('./sound_effects/delete1.mp3');
+                clearHistorySound.currentTime = 0;
+                clearHistorySound.play();
+                showPopup('Your order history is clear!')
+            }
+            
+            orderHistory.length = 0;
             localStorage.removeItem('orderHistory');
             document.querySelector('#card-container').innerHTML = '<p class="p-4 text-gray-500">No order history yet.</p>';
         })
@@ -79,10 +86,19 @@
         }, 500);
         }
 
-        // function commonButtonSound(){
-        // clickSound.currentTime = 0;
-        // clickSound.play();
-        // }
+
+        // ===================================== popup =========================== // 
+        function showPopup(message, duration = 3000) {
+            const popup = document.querySelector('#popup');
+            popup.textContent = message;
+            popup.classList.remove('opacity-0');
+            popup.classList.add('opacity-100');
+
+            setTimeout(() => {
+                popup.classList.remove('opacity-100');
+                popup.classList.add('opacity-0');
+            }, duration);
+        }
 
 
     </script>

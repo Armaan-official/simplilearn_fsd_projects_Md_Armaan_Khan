@@ -117,11 +117,9 @@ async function loadCart() {
     payment.addEventListener('click', (product) => {
         
         if(cart.length === 0) {
-            console.log('zero')
-            alert('Please add a product to pay.');
+            showPopup('Please add a product to pay!');
         }
         else{
-            console.log('not zero')
             payment.textContent = 'Loading....';
             setTimeout(() => {
                 
@@ -138,7 +136,7 @@ async function loadCart() {
                 payment.textContent = 'Pay Now';
                 paymentSound.currentTime = 0;
                 paymentSound.play();
-                alert('Payment successful!');
+                showPopup('Payment successful!');
 
                 localStorage.removeItem('cart');
                 cart.length = 0;
@@ -186,10 +184,26 @@ function commonButtonSound(){
   clickSound.play();
 }
 
-function removeFromCartSound(){
+function removeFromCartSound(message){
     const removeSound = new Audio('./sound_effects/delete1.mp3');
     if(cart.length !== 0) {
         removeSound.currentTime = 0;
         removeSound.play();
+        showPopup(message, 3000);
     }
+}
+
+
+
+// ===================================== popup =========================== // 
+function showPopup(message, duration = 3000) {
+    const popup = document.querySelector('#popup');
+    popup.textContent = message;
+    popup.classList.remove('opacity-0');
+    popup.classList.add('opacity-100');
+
+    setTimeout(() => {
+        popup.classList.remove('opacity-100');
+        popup.classList.add('opacity-0');
+    }, duration);
 }

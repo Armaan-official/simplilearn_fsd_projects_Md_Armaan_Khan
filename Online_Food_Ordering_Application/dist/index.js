@@ -195,6 +195,8 @@ function renderProducts(products) {
     // add to card sound
     addToCartSound.currentTime = 0;
     addToCartSound.play();
+
+    showPopup('Added to cart!', 2000);
     
     // get existing cart or start empty
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -254,32 +256,40 @@ function renderProducts(products) {
         // alert(`${product.itemName} removed from Favorites!`);
         removeToFavoriteSound.currentTime = 0;
         removeToFavoriteSound.play();
+        showPopup('Removed from favorites!', 3000);
     } else {
         favoriteFoods.push(product);
         addToFavoriteSound.currentTime = 0;
         addToFavoriteSound.play();
+        showPopup('Added to favorites!', 3000);
         // alert(`${product.itemName} added to Favorites!`);
     }
 
     localStorage.setItem('favoriteFoods', JSON.stringify(favoriteFoods)); 
   });
 
-  card.querySelector('#p-name').textContent = product.itemName;
+  card.querySelectorAll('.p-name').forEach(item => item.textContent = product.itemName);
   card.querySelector('#p-price').innerHTML = `<i class="fa-solid fa-indian-rupee-sign"></i>${product.itemPrice}`;
+  card.querySelector('.restaurant').textContent = product.restaurantName
+  card.querySelector('.p-description').textContent = product.itemDescription;
 
 
   // flipping the card
-    card.addEventListener('click', () => {
-      console.log('hi')
-    const inner = card.querySelector('.card-inner');
-    const isFlipped = inner.style.transform === 'rotateY(180deg)';
-    inner.style.transform = isFlipped ? 'rotateY(0deg)' : 'rotateY(180deg)';
-  });
+  card.addEventListener('click', () => {
+      
+    // flipping sound
+    const flippingSound = new Audio('./sound_effects/flip2.mp3');
+    flippingSound.currentTime = 0;
+    flippingSound.play();
+    
+    setTimeout(() => {
+      const inner = card.querySelector('.card-inner');
+      const isFlipped = inner.style.transform === 'rotateY(180deg)';
+      inner.style.transform = isFlipped ? 'rotateY(0deg)' : 'rotateY(180deg)';
+    }, 200);
+    
+    });
 
-  // stop buttons from triggering flip
-  // addTocart.forEach(btn => {
-  //   btn.addEventListener('click', (e) => e.stopPropagation());
-  // });
 
   container.appendChild(card);
   });
@@ -327,8 +337,7 @@ document.querySelector('#add-address').addEventListener('click', () =>{
 });
 
 
-// Sound effects
-
+// ============================= Sound effects =============================== //
 // click button
 const clickSound = new Audio('./sound_effects/click2.mp3');
 
@@ -360,12 +369,19 @@ document.querySelectorAll('.category').forEach(product => {
   })
 })
 
+// ===================================== popup =========================== // 
+function showPopup(message, duration = 3000) {
+    const popup = document.querySelector('#popup');
+    popup.textContent = message;
+    popup.classList.remove('opacity-0');
+    popup.classList.add('opacity-100');
 
+    setTimeout(() => {
+        popup.classList.remove('opacity-100');
+        popup.classList.add('opacity-0');
+    }, duration);
+}
 
-
-// payment
-
-// card cliped
 
 
 
