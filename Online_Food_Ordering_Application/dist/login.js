@@ -2,17 +2,17 @@
 document.querySelector('#login-form').addEventListener('submit', (e) => {
     e.preventDefault();
 
-    let username = document.querySelector('#username').value;
-    let password = document.querySelector('#password').value;
+    let usernameVal = document.querySelector('#username').value;
+    let passwordVal = document.querySelector('#password').value;
 
-    if(username === 'student@123' && String(password) === 'pass_456'){
-    alert('Login successful!');
+    if(usernameVal === 'student@123' && String(passwordVal) === 'pass_456'){
+    showPopup('Login successful!');
     setTimeout(() => {
         window.location.href = 'index.html';
-    }, 500);
+    }, 3500);
     
     } else {
-    alert('Wrong Username or Password!');
+    showPopup('Wrong Username or Password!');
     }
 })
 
@@ -22,6 +22,8 @@ eye.innerHTML = '<i class="fa-solid fa-eye"></i>';
 
 eye.addEventListener('click', () => {
     let password = document.querySelector('#password');
+
+    if(!password.value) return;
     
     let isHidden = password.type === 'password';
     password.type = isHidden ? 'text' : 'password';
@@ -39,3 +41,15 @@ function commonButtonSound(){
 }
 
  
+// ===================================== popup =========================== // 
+function showPopup(message, duration = 3000) {
+    const popup = document.querySelector('#popup');
+    popup.textContent = message;
+    popup.classList.remove('opacity-0');
+    popup.classList.add('opacity-100');
+
+    setTimeout(() => {
+        popup.classList.remove('opacity-100');
+        popup.classList.add('opacity-0');
+    }, duration);
+}

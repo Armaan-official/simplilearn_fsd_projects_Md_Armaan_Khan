@@ -312,7 +312,6 @@ searchInput.addEventListener('input', () => {
 
 
 
-
 const displayAddress = localStorage.getItem('displayAddress') || '';
 if(displayAddress) {
       document.querySelector('#address-bar input').value = displayAddress;
