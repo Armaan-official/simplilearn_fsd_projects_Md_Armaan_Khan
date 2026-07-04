@@ -129,40 +129,57 @@ async function getProducts() {
   }
 }
 
+function displayFoodCategory(product){
+  
+}
 
 document.querySelector('#category-2').addEventListener('click', () => {
   const pizza = allProducts.filter(product => product.category === 'pizza');
   renderProducts(pizza);
-  console.log(pizza)
+  document.querySelector('#display-category').textContent = 'Pizza';
 });
 document.querySelector('#category-3').addEventListener('click', () => {
   const burger = allProducts.filter(product => product.category === 'burger');
+  displayFoodCategory(burger);
+  document.querySelector('#display-category').textContent = 'Burger';
   renderProducts(burger);
 });
 document.querySelector('#category-4').addEventListener('click', () => {
   const paneer = allProducts.filter(product => product.category === 'paneer');
+  displayFoodCategory(paneer);
+  document.querySelector('#display-category').textContent = 'Paneer';
   renderProducts(paneer);
 });
 document.querySelector('#category-5').addEventListener('click', () => {
   const nonVeg = allProducts.filter(product => product.category === 'non-veg');
+  displayFoodCategory(nonVeg);
+  document.querySelector('#display-category').textContent = 'Non-vegetarian';
   renderProducts(nonVeg);
 });
 document.querySelector('#category-6').addEventListener('click', () => {
   const seafood = allProducts.filter(product => product.category === 'seafood');
+  displayFoodCategory(seafood);
+  document.querySelector('#display-category').textContent = 'Seafood';
   renderProducts(seafood);
 });
 document.querySelector('#category-7').addEventListener('click', () => {
   const dessert = allProducts.filter(product => product.category === 'dessert');
+  displayFoodCategory(dessert);
+  document.querySelector('#display-category').textContent = 'Dessert';
   renderProducts(dessert);
 });
 document.querySelector('#category-8').addEventListener('click', () => {
   const drinks = allProducts.filter(product => product.category === 'drinks');
+  displayFoodCategory(drinks);
+  document.querySelector('#display-category').textContent = 'Drinks';
   renderProducts(drinks);
 });
 
 
 document.querySelector('#category-1').addEventListener('click', () => {
+  displayFoodCategory();
   renderProducts(allProducts);
+  document.querySelector('#display-category').textContent = 'All Menu';
   // console.log(allProducts)
 });
 

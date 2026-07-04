@@ -19,8 +19,8 @@
         style="background: url('./images/groovepaper.png'); background-color: #0d3b66;">
         <h1 id="app-heading" class="pt-9 pl-9 text-4xl font-bold text-amber-300 text-shadow-black text-shadow-[5px_8px_15px_rgba(0,0,0,1)]">QuickBite</h1>
         <div class="flex flex-col justify-between p-6 h-4/7 gap-y-3 text-lg font-bold">
-            <div class="flex items-center gap-3 hover:text-gray-500 hover:cursor-pointer w-fit hover:bg-white py-1 px-3 rounded-3xl" onclick="commonButtonSound()"><i class="fa-regular fa-house"></i>Home</div>
-            <a class="flex items-center gap-3 hover:text-gray-500 w-fit hover:bg-white py-1 px-3 rounded-3xl hover:cursor-pointer" onclick="clickButtonSound('order-history.html')"><i class="fa-solid fa-bowl-food"></i>Your orders</a>
+            <div class="flex items-center gap-3 text-gray-500 hover:cursor-pointer w-fit bg-white py-1 px-3 rounded-3xl" onclick="commonButtonSound()"><i class="fa-regular fa-house"></i>Home</div>
+            <a class="flex items-center gap-3 hover:text-gray-500 w-fit hover:bg-white py-1 px-3 rounded-3xl hover:cursor-pointer" onclick="clickButtonSound('order-history.html')"><i class="fa-solid fa-clock-rotate-left"></i>Order History</a>
             <a class="flex items-center gap-3 hover:cursor-pointer hover:text-gray-500 w-fit hover:bg-white py-1 px-3 rounded-3xl" onclick="clickButtonSound('favorite.html')"><i class="fa-regular fa-heart"></i>Favorites</a>
             <div class="flex items-center gap-3 hover:cursor-pointer hover:text-gray-500 w-fit hover:bg-white py-1 px-3 rounded-3xl" onclick="commonButtonSound()"><i class="fa-solid fa-indian-rupee-sign"></i>Balance</div>
             <div class="flex items-center gap-3 hover:cursor-pointer hover:text-gray-500 w-fit hover:bg-white py-1 px-3 rounded-3xl" onclick="commonButtonSound()"><i class="fa-solid fa-wallet"></i>Choose Payment</div>
@@ -235,7 +235,9 @@
             <div id="border" class="relative top-0 z-30 w-[99%] mt-2 rounded-4xl h-2 bg-white"></div>
 
             <div class="mt-20 mb-5 flex items-center justify-center text-3xl">
-                <p id="display-category" class="w-fit bg-[#cae9ff] px-10 py-4 font-bold rounded-xl text-shadow-[0px_0px_2px_rgba(0,0,0,1)] shadow-white shadow-[0px_0px_2px_rgba(0,0,0,1)]">All Menu</p>
+                <p id="display-category" class="w-fit bg-[#0e6ba8] text-white 
+                px-10 py-4 font-bold rounded-xl text-shadow-[0px_0px_10px_rgba(0,0,0,1)]
+                 shadow-white shadow-[0px_0px_3px_rgba(0,0,0,1)]">All Menu</p>
             </div>
 
             <!------------------------- Food cards ----------------------------------------------------->
@@ -255,8 +257,8 @@
                                 <p class="p-name row-span-1 text-center">This is a pic</p>
                                 <p id="p-price" class="font-bold text-xl">100</p>
                             </div>
-                            <button id="add-to-cart" class="absolute top-45 right-20 hover:text-red-600"><i class="fa-solid fa-plus text-3xl"></i></button>
-                            <button id="add-to-favorite" class="absolute top-45 left-25 hover:text-red-600"><i class="fa-regular fa-heart text-3xl"></i></button>
+                            <button id="add-to-cart" class="absolute top-45 right-20 hover:text-red-600"><i class="fa-solid fa-plus text-2xl"></i></button>
+                            <button id="add-to-favorite" class="absolute top-45 left-25 hover:text-red-600"><i class="fa-regular fa-heart text-2xl"></i></button>
                         </div>
 
                     <!----------------------------------- Back face ----------------------------------->
@@ -274,30 +276,82 @@
 
             </div>
             
-            <div id="page-end-content" class="grid grid-cols-4 bg-white mt-10 w-[99%] p-10 gap-15">
-                <div>
-                    <p>QuickBite</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore facere excepturi ratione quaerat hic minima maxime sit velit veniam modi vitae delectus quos possimus qui cumque, eaque odit assumenda. Nisi esse ratione quia corporis ad fugiat, nostrum laudantium debitis sint voluptatibus cupiditate excepturi nobis quibusdam labore dolorum ab amet a.</p>
+            <div id="page-end-content" class="grid grid-cols-4 bg-[#0F172B] mt-10 w-[99%] p-10 gap-8 rounded-2xl text-white">
+                
+                <div class="p-2 bg-[#1D293D] rounded-2xl">
+                    <div class=" p-3 ">
+                        <p class="font-bold mb-1">QuickBite</p>
+                        <p class="h-1 w-2/3 bg-white mb-6 rounded-2xl"></p>
+                        <p>QuickBite is a fast and intuitive food delivery app 
+                            offering a wide variety of cuisines from top quality 
+                            restaurants, making it easy for anyone to find and 
+                            order their favorite meals instantly.</p>
+                    </div>
                 </div>
-                <div>
-                    <p>Useful Links</p>
-                    <p>Restaurant</p>
-                    <p>Our Chefs</p>
-                    <p>Blogs</p>
-                    <p>FAQS</p>
-                    <p>Privacy Policy</p>
+
+                <div class="p-2 bg-[#1D293D] rounded-2xl">
+                    <div class="p-3">
+                        <p class="font-bold mb-1">Useful Links</p>
+                        <p class="h-1 w-2/3 bg-white mb-6 rounded-2xl"></p>
+                        <p class="mb-2 flex items-center hover:text-amber-300"><i class="fa-solid fa-utensils mr-3"></i>Restaurants</p>
+                        <p class="mb-2 flex items-center hover:text-amber-300"><i class="fa-solid fa-user mr-3"></i>Our Chefs</p>
+                        <p class="mb-2 flex items-center hover:text-amber-300"><i class="fa-brands fa-blogger mr-3"></i>Blogs</p>
+                        <p class="mb-2 flex items-center hover:text-amber-300"><i class="fa-solid fa-circle-question mr-3"></i>FAQS</p>
+                        <p class="mb-2 flex items-center hover:text-amber-300"><i class="fa-solid fa-file-shield mr-3"></i>Privacy Policy</p>
+                    </div>
                 </div>
-                <div>
-                    <p>Contact Us</p>
-                    <p>mobile number</p>
-                    <p>Email(www.yourdomain.com)</p>
-                    <p>Location</p>
+                
+                <div class="bg-[#1D293D] p-2 rounded-2xl">
+                    <div class="p-3">
+                        <p class="font-bold mb-1">Contact Us</p>
+                        <p class="h-1 w-2/3 bg-white mb-6 rounded-2xl"></p>
+                        <p class="mb-2 flex items-center hover:text-amber-300"><i class="fa-solid fa-phone mr-3"></i>+91 923 456 789</p>
+                        <p class="mb-2 flex items-center hover:text-amber-300"><i class="fa-solid fa-envelope mr-3"></i>quickbite@123.com</p>
+                        <p class="mb-2 flex items-center hover:text-amber-300"><i class="fa-solid fa-location-dot mr-3"></i>12 Street, Local Park, WB, India</p>
+                    </div>
                 </div>
-                <div>
-                    <p>Download App</p>
-                    <p>Google</p>
-                    <p>Apple</p>
+
+                <div class="bg-[#1D293D] p-2 rounded-2xl">
+                    <div class="p-3">
+                        <p class="font-bold mb-1">Download App</p>
+                        <p class="h-1 w-2/3 bg-white mb-6 rounded-2xl"></p>
+
+                        <div class="mb-3">
+                            <div class=" flex justify-center items-center 
+                                border-2 border-white rounded-lg w-48 h-18
+                                 hover:border-amber-300 hover:text-amber-300">
+                                <i class="fa-brands fa-google-play mr-3 text-3xl"></i>
+                                <div style="font-family: 'Roboto' sans-serif;">
+                                    <p class="text-xs">Get IT ON</p>
+                                    <p class="text-lg">Google Play</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" flex justify-center items-center 
+                                border-2 border-white rounded-lg w-48 h-18
+                                 hover:border-amber-300 hover:text-amber-300">
+                            <div class="mb-2 flex items-center">
+                                <i class="fa-brands fa-apple mr-3 text-3xl"></i>
+                                <div style="font-family: 'Roboto' sans-serif;">
+                                    <p class="text-xs">Download on the</p>
+                                    <p class="text-lg">Apple Store</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                    <div class="col-span-4 gap-x-6 text-white flex justify-center items-center py-1">
+                        <i class="fa-brands fa-facebook hover:text-amber-300"></i>
+                        <i class="fa-brands fa-x-twitter hover:text-amber-300"></i>
+                        <i class="fa-brands fa-instagram hover:text-amber-300"></i>
+                        <i class="fa-brands fa-google-plus-g hover:text-amber-300"></i>
+                        <i class="fa-brands fa-pinterest hover:text-amber-300"></i>
+                        <i class="fa-brands fa-wikipedia-w hover:text-amber-300"></i>
+                        <i class="fa-brands fa-youtube hover:text-amber-300"></i>
+                    </div>
+
             </div>
 
         </div>
