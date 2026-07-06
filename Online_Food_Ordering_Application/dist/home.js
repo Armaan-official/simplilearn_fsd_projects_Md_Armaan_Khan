@@ -145,15 +145,15 @@ document.querySelector('#category-3').addEventListener('click', () => {
   renderProducts(burger);
 });
 document.querySelector('#category-4').addEventListener('click', () => {
-  const paneer = allProducts.filter(product => product.category === 'paneer');
-  displayFoodCategory(paneer);
-  document.querySelector('#display-category').textContent = 'Paneer';
-  renderProducts(paneer);
+  const veg = allProducts.filter(product => product.category === 'veg');
+  displayFoodCategory(veg);
+  document.querySelector('#display-category').textContent = 'Vegetarian';
+  renderProducts(veg);
 });
 document.querySelector('#category-5').addEventListener('click', () => {
   const nonVeg = allProducts.filter(product => product.category === 'non-veg');
   displayFoodCategory(nonVeg);
-  document.querySelector('#display-category').textContent = 'Non-vegetarian';
+  document.querySelector('#display-category').textContent = 'Non-Vegetarian';
   renderProducts(nonVeg);
 });
 document.querySelector('#category-6').addEventListener('click', () => {
@@ -175,12 +175,18 @@ document.querySelector('#category-8').addEventListener('click', () => {
   renderProducts(drinks);
 });
 
-
 document.querySelector('#category-1').addEventListener('click', () => {
+  const meal = allProducts.filter(product => product.category === 'meal');
+  displayFoodCategory(meal);
+  document.querySelector('#display-category').textContent = 'Meal';
+  renderProducts(meal);
+});
+
+
+document.querySelector('#food-menu').addEventListener('click', () => {
   displayFoodCategory();
   renderProducts(allProducts);
   document.querySelector('#display-category').textContent = 'All Menu';
-  // console.log(allProducts)
 });
 
 

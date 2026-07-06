@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="output.css">
     <title>Login Page</title>
 </head>
-<body class="bg-[#f9dbbd] flex justify-center items-center h-screen w-[98.8vw]">
+<body class="flex justify-center items-center h-screen w-[98.9vw]" style="background: url('./images/groovepaper.png'); background-color: #525252;">
 
     <!--------------------------- Popup for the events ----------------------------------->
-    <div id="popup" class="fixed bg-green-400 text-xl top-18 left-170 w-fit h-fit py-3 px-4 rounded-xl opacity-0 transition-opacity duration-500 z-10 shadow-[0px_0px_6px_rgba(0,0,0,1)]">This is the popup!</div>
+    <div id="popup" class="fixed bg-green-400 text-xl top-18 left-170 w-fit h-fit py-3 px-4 rounded-xl opacity-0 transition-opacity duration-500 z-10 shadow-[0px_0px_6px_rgba(0,0,0,0.8)]">This is the popup!</div>
    
     <!----------------------------------- Login container ------------------------------------>
     <div id="container" class="relative h-[95vh] flex-col w-1/2 ml-6">
 
         <!------------------------- Heading of the login page---------------------------------->
         <div class="absolute top-10 left-20">
-             <div class="max-md:w-58 max-sm:w-30 flex justify-center items-center flex-col max-sm:text-[22px] max-md:text-[28px] text-[clamp(1rem,4vw,40px)] font-bold text-shadow-[0px_0px_6px_rgba(0,0,0,0.6)]">
-            <h1 class=" ">Welcome To The <span class="text-amber-400 underline underline-offset-4 hover:text-amber-300">QuickBite</span> App</h1>
-            <h1 class="text-amber-800 hover:text-amber-600">Login Page</h1>
+             <div class="max-md:w-58 max-sm:w-30 flex justify-center items-center flex-col text-[clamp(1rem,4vw,40px)] font-bold text-shadow-[0px_0px_6px_rgba(0,0,0,0.6)]">
+            <h1 class="text-white text-shadow-[2px_2px_20px_rgba(0,0,0,1)]">Welcome To The <span class="text-amber-400 underline underline-offset-4">QuickBite</span> App</h1>
+            <p class="text-white mt-10 ml-9 text-3xl">Login Page</p>
             </div>
         </div>
        
@@ -27,10 +27,7 @@
 
     <!----------------------------------- Login inputs ------------------------------------>
         <form id="login-form" action="" 
-        method="get" class="
-        rounded-tl-4xl rounded-bl-4xl w-full max-w-190 h-full 
-        flex justify-center items-center 
-        flex-col gap-y-10 shadow-[0px_0px_10px_rgba(0,0,0,0.6)] bg-[radial-gradient(circle,rgba(238,174,202,1)_0%,rgba(148,187,233,1)_100%)]">
+        method="get" class="rounded-tl-4xl rounded-bl-4xl w-full max-w-190 h-full flex justify-center items-center flex-col gap-y-10 shadow-[0px_0px_8px_rgba(0,0,0,1)]" style="background: url('./images/groovepaper.png'); background-color: #112A43;">
 
             <div id="name">
                 <label for="username" class="max-sm:hidden"><i class="fa-solid 
@@ -42,14 +39,14 @@
                 required class="ml-3 p-3 w-70 max-sm:w-50 max-md:w-60
                 rounded-xl outline-0 
                 placeholder:font-bold 
-                hover:bg-white 
+                bg-white 
                 shadow-[0px_0px_10px_rgba(0,0,0,0.8)] 
                 hover:placeholder-black">
             </div>
 
             <div id="pass" class="group">
                 <label for="password" class="max-sm:hidden"><i class="fa-solid 
-                    fa-key text-2xl"></i></i></label>
+                    fa-key text-2xl"></i></label>
                 <input type="password" 
                 id="password" 
                 name="password" 
@@ -57,7 +54,7 @@
                 required class="relative ml-3 p-3 w-70 max-sm:w-50 max-md:w-60
                 rounded-xl outline-0 
                 placeholder:font-bold 
-                group-hover:bg-white 
+                bg-white 
                 shadow-[0px_0px_10px_rgba(0,0,0,0.8)] 
                 group-hover:placeholder-black">
                 <div id="eye" class="absolute left-124 bottom-83 max-xl:hidden max-sm:hidden"></div>
@@ -76,7 +73,7 @@
         </form>
     </div>
 
-    <div id="bg-img" class="w-1/2 mr-2 h-[95vh] shadow-[0px_0px_10px_rgba(0,0,0,0.8)] rounded-br-4xl rounded-tr-4xl overflow-hidden">
+    <div id="bg-img" class="w-1/2 mr-2 h-[95vh] shadow-[0px_0px_10px_rgba(0,0,0,1)] rounded-br-4xl rounded-tr-4xl overflow-hidden">
         <img class="w-full h-full object-cover" 
         src="https://img.magnific.com/premium-photo/organic-food-background-illustration_626596-390.jpg?w=1060" alt="">
     </div>

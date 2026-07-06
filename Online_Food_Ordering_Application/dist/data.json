@@ -1,766 +1,1077 @@
-[
+[ {
+    "itemID": 22,
+    "itemName": "Abruzzese Pizza",
+    "itemDescription": "Rustic Italian style with spicy sausage, peppers, and smoked provola cheese.",
+    "itemPrice": 335,
+    "restaurantName": "Modern Days",
+    "category": "pizza",
+    "imageUrl": "https://lalqila.fr/wp-content/uploads/2025/10/Pizza-abruzzese-specialite-des-Abruzzes-1024x585.jpg"
+  },
   {
-    "itemID": 76,
+    "itemID": 69,
     "itemName": "Afghan Kebabs",
     "itemDescription": "Grilled kebabs made with marinated lamb, served with naan.",
     "itemPrice": 450,
     "restaurantName": "Peacock Rooftop Restaurant",
-    "restaurantID": 28,
     "category": "non-veg",
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/afghan%20kebabs.jpg"
+    "imageUrl": "https://nodashofgluten.com/wp-content/uploads/2025/02/Afghani-Chicken-Kebab-Recipe-4-683x1024.png"
   },
   {
-    "itemID": 100,
+    "itemID": 52,
+    "itemName": "Aloo Gobi",
+    "itemDescription": "Classic North Indian dry curry of potatoes and cauliflower with aromatic spices.",
+    "itemPrice": 260,
+    "restaurantName": "Peacock Rooftop Restaurant",
+    "restaurantID": 28,
+    "category": "veg",
+    "imageUrl": "https://www.emilyrecipes.net/wp-content/uploads/2025/12/eqf2rvye2aov8rslxy8s.webp"
+  },
+  {
+    "itemID": 40,
+    "itemName": "Aloo Tikki Burger",
+    "itemDescription": "Crispy spiced potato patty with fresh veggies and tangy mint chutney.",
+    "itemPrice": 230,
+    "restaurantName": "The Fun Bun",
+    "restaurantID": 28,
+    "category": "burger",
+    "imageUrl": "https://cookwithease.in/wp-content/uploads/2024/11/aloo-tikki-burger.jpg"
+  },
+  {
+    "itemID": 53,
+    "itemName": "Baby Potato Curry",
+    "itemDescription": "Tender baby potatoes slow-cooked in a rich and tangy spiced gravy.",
+    "itemPrice": 200,
+    "restaurantName": "Indian Accent",
+    "restaurantID": 28,
+    "category": "veg",
+    "imageUrl": "https://www.kannammacooks.com/wp-content/uploads/baby-potato-curry-recipe.jpg"
+  },
+  {
+    "itemID": 54,
     "itemName": "Bagara Baingan",
     "itemDescription": "Fried brinjal cooked in a rich, flavorful curry.",
     "itemPrice": 250,
     "restaurantName": "Mumtaz Restaurant",
-    "restaurantID": 6,
-    "category": "",
+    "category": "veg",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/bagara%20baigan.webp"
   },
   {
-    "itemID": 78,
+    "itemID": 94,
     "itemName": "Baklava",
     "itemDescription": "Sweet pastry made with layers of filo dough, honey, and nuts.",
     "itemPrice": 200,
     "restaurantName": "Peacock Rooftop Restaurant",
-    "restaurantID": 28,
     "category": "dessert",
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/baklava.jpg"
+    "imageUrl": "https://img.magnific.com/premium-photo/baklava-with-pistachio-nut-plate-layered-pastry-dessert-made-filo-pastry-sweetened-with-syrup-honey_493325-5614.jpg"
   },
   {
-    "itemID": 67,
+    "itemID": 1,
     "itemName": "Bengali Thali",
     "itemDescription": "A complete Bengali meal served with rice, dal, vegetables, and fish curry.",
     "itemPrice": 500,
     "restaurantName": "6 Ballygunge Place",
-    "restaurantID": 25,
     "category": "meal",
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/bengali%20thali.jpg"
+    "imageUrl": "https://static.vecteezy.com/system/resources/previews/072/201/710/non_2x/bengali-thali-a-vibrant-and-aromatic-indian-feast-free-photo.jpg"
   },
   {
-    "itemID": 40,
+    "itemID": 2,
     "itemName": "Berry Pulav",
     "itemDescription": "A unique Parsi dish made with rice and fresh berries.",
     "itemPrice": 400,
     "restaurantName": "Britannia & Co.",
-    "restaurantID": 16,
     "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/berry%20pulav.jpeg"
   },
   {
-    "itemID": 82,
+    "itemID": 55,
+    "itemName": "Bhindi Aloo",
+    "itemDescription": "Stir-fried okra and potatoes seasoned with cumin, coriander, and dried mango.",
+    "itemPrice": 270,
+    "restaurantName": "6 Ballygunge Place",
+    "restaurantID": 28,
+    "category": "veg",
+    "imageUrl": "https://cdn-food.tribune.com.pk/gallery/uRPod0ZgHtnENSWC50fxcesepq5Sycxk1HJRkit2.jpeg"
+  },
+  {
+    "itemID": 84,
     "itemName": "Bombil Fry",
     "itemDescription": "Bombay-style fried Bombay duck served with chutney.",
     "itemPrice": 400,
     "restaurantName": "Rajwadu",
-    "restaurantID": 30,
     "category": "seafood",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/bombli%20fry.jpg"
   },
   {
-    "itemID": 27,
+    "itemID": 70,
     "itemName": "Bukhara Murg",
     "itemDescription": "Tender chicken cooked with a special Bukhara marinade.",
     "itemPrice": 450,
     "restaurantName": "Bukhara",
-    "restaurantID": 11,
     "category": "non-veg",
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/bukhara%20murg.jpg"
+    "imageUrl": "https://images.news18.com/ibnkhabar/uploads/2021/07/chicken-bukhara.jpg"
   },
   {
-    "itemID": 28,
+    "itemID": 71,
     "itemName": "Butter Chicken",
     "itemDescription": "Creamy chicken cooked in a tomato-based sauce.",
     "itemPrice": 500,
     "restaurantName": "Indian Accent",
-    "restaurantID": 12,
     "category": "non-veg",
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/butter%20chicken.jpg"
+    "imageUrl": "https://whiskdaily.com/wp-content/uploads/2025/08/Easy-Butter-Chicken-Indian-Curry-2.jpg"
   },
   {
-    "itemID": 52,
+    "itemID": 23,
+    "itemName": "Capricciosa Pizza",
+    "itemDescription": "Loaded with ham, mushrooms, artichokes, and olives on a rich tomato base.",
+    "itemPrice": 300,
+    "restaurantName": "Foody Hunt",
+    "category": "pizza",
+    "imageUrl": "https://www.melarossa.it/wp-content/uploads/2021/02/pizza-capricciosa-ingredienti.jpg?x54507"
+  },
+  {
+    "itemID": 56,
+    "itemName": "Chana Masala",
+    "itemDescription": "Hearty chickpeas simmered in a bold and tangy tomato-onion masala gravy.",
+    "itemPrice": 280,
+    "restaurantName": "Dakshin",
+    "restaurantID": 28,
+    "category": "veg",
+    "imageUrl": "https://d2lswn7b0fl4u2.cloudfront.net/photos/pg-chana-masala-1705955784.jpg"
+  },
+  {
+    "itemID": 41,
+    "itemName": "Cheeseburger",
+    "itemDescription": "Juicy aloo patty with melted cheddar, lettuce, tomato, and special sauce.",
+    "itemPrice": 240,
+    "restaurantName": "The Table",
+    "restaurantID": 28,
+    "category": "burger",
+    "imageUrl": "https://tornadoughalli.com/wp-content/uploads/2023/06/THE-BEST-CHEESEBURGER-RECIPE-FINALS-3-1.jpg"
+  },
+  {
+    "itemID": 72,
     "itemName": "Chettinad Chicken",
     "itemDescription": "Spicy chicken curry made with Chettinad spices.",
     "itemPrice": 450,
     "restaurantName": "Dakshin",
-    "restaurantID": 20,
     "category": "non-veg",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/chettinad%20chicken.jpg"
   },
   {
-    "itemID": 88,
+    "itemID": 3,
     "itemName": "Chicken Biryani",
     "itemDescription": "Aromatic basmati rice cooked with tender chicken and spices.",
     "itemPrice": 280,
     "restaurantName": "Bawarchi",
-    "restaurantID": 4,
     "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/chickenn%20biryani.webp"
   },
   {
-    "itemID": 79,
+    "itemID": 111,
+    "itemName": "Chocolate Milkshake",
+    "itemDescription": "Thick and indulgent blend of chocolate ice cream and cold creamy milk.",
+    "itemPrice": 200,
+    "restaurantName": "Oh! Calcutta",
+    "restaurantID": 28,
+    "category": "drinks",
+    "imageUrl": "https://wiserecipes.com/wp-content/uploads/2025/07/Image_fx-2025-07-03T073940.648.jpg"
+  },
+  {
+    "itemID": 4,
     "itemName": "Chole Bhature",
     "itemDescription": "Deep-fried bread served with spicy chickpea curry.",
     "itemPrice": 250,
     "restaurantName": "Agashiye",
-    "restaurantID": 29,
     "category": "meal",
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/chole%20batura.jpg"
+    "imageUrl": "https://punguskitchen.com/wp-content/uploads/2025/05/chole-bhature-recipe-pungus-kitchen.jpg"
   },
   {
-    "itemID": 48,
+    "itemID": 112,
     "itemName": "Coffee",
     "itemDescription": "Freshly brewed coffee served hot.",
     "itemPrice": 60,
-    "restaurantName": "Koshy’s",
-    "restaurantID": 18,
+    "restaurantName": "Koshy's",
     "category": "drinks",
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/coffee.jpg"
+    "imageUrl": "https://cowboyswire.usatoday.com/gcdn/-mm-/092ca3b553da87f73a0f0bb4093033fd51924d4b/c=15-0-5169-2912/local/-/media/2018/05/31/CNYGroup/Binghamton/636633664125828681-GettyImages-478710472.jpg?width=3200&height=1808&fit=crop&format=pjpg&auto=webp"
   },
   {
-    "itemID": 71,
+    "itemID": 42,
+    "itemName": "Crispy Chicken Burger",
+    "itemDescription": "Golden fried chicken fillet with coleslaw and creamy mayo in a soft bun.",
+    "itemPrice": 290,
+    "restaurantName": "Indian Accent",
+    "restaurantID": 28,
+    "category": "burger",
+    "imageUrl": "https://i.pinimg.com/originals/f0/83/12/f08312b5b45b888622e24921df51cb4d.png"
+  },
+  {
+    "itemID": 43,
+    "itemName": "Crispy Veg Burger",
+    "itemDescription": "Crunchy vegetable patty with fresh lettuce, tomato, and zesty sauce.",
+    "itemPrice": 255,
+    "restaurantName": "The Fun Bun",
+    "restaurantID": 28,
+    "category": "burger",
+    "imageUrl": "https://www.noracooks.com/wp-content/uploads/2023/04/veggie-burgers-1-2.jpg"
+  },
+  {
+    "itemID": 57,
+    "itemName": "Dahi Aloo Curry",
+    "itemDescription": "Soft potatoes cooked in a creamy yogurt-based mildly spiced curry sauce.",
+    "itemPrice": 230,
+    "restaurantName": "Peacock Rooftop Restaurant",
+    "restaurantID": 28,
+    "category": "veg",
+    "imageUrl": "https://cookingalldays.com/wp-content/uploads/2025/09/wdgjlgp8yp7aocasxvdv.webp"
+  },
+  {
+    "itemID": 5,
     "itemName": "Dal Baati Churma",
     "itemDescription": "Traditional Rajasthani dish with wheat dumplings, dal, and sweet churma.",
     "itemPrice": 350,
-    "restaurantName": "1135 AD",
-    "restaurantID": 26,
+    "restaurantName": "Indian Accent",
     "category": "meal",
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/dal%20bati%20churma.jpg"
+    "imageUrl": "https://images.travelandleisureasia.com/wp-content/uploads/sites/3/2025/03/04164004/dal-baati-churma.jpeg"
   },
   {
-    "itemID": 25,
+    "itemID": 58,
     "itemName": "Dal Bukhara",
     "itemDescription": "Slow-cooked black lentils in a rich, creamy sauce.",
     "itemPrice": 250,
     "restaurantName": "Bukhara",
-    "restaurantID": 11,
-    "category": "meal",
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/dal%20bhukara.jpg"
+    "category": "veg",
+    "imageUrl": "https://hungryforever.net/wp-content/uploads/2016/11/Feature-Image-dal-bukhara.jpg"
   },
   {
-    "itemID": 29,
+    "itemID": 59,
     "itemName": "Dal Makhani",
     "itemDescription": "Black lentils cooked with butter and cream.",
     "itemPrice": 300,
     "restaurantName": "Indian Accent",
-    "restaurantID": 12,
-    "category": "meal",
+    "category": "veg",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/Dal-Makhani.webp"
   },
   {
-    "itemID": 44,
+    "itemID": 24,
+    "itemName": "Diavola Pizza",
+    "itemDescription": "Spicy salami and chili flakes on a bold tomato base for heat lovers.",
+    "itemPrice": 350,
+    "restaurantName": "Foody Hunt",
+    "category": "pizza",
+    "imageUrl": "https://apertureoncourt.com/wp-content/uploads/2025/03/Pizza-Diavola-Recipe.jpg"
+  },
+  {
+    "itemID": 6,
     "itemName": "Dosa",
     "itemDescription": "Crispy rice crepes served with sambar and chutneys.",
     "itemPrice": 180,
     "restaurantName": "Mavalli Tiffin Room (MTR)",
-    "restaurantID": 17,
     "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/Dosa.jpg"
   },
   {
-    "itemID": 9,
+    "itemID": 95,
     "itemName": "Double Ka Meetha",
     "itemDescription": "Sweet dessert made with fried bread soaked in milk and flavored with saffron.",
     "itemPrice": 180,
     "restaurantName": "Shah Ghouse",
-    "restaurantID": 3,
     "category": "dessert",
     "imageUrl": "https://x9s2d6a3.delivery.rocketcdn.me/wp-content/uploads/2018/04/double-ka-meetha-25_1200x1200.jpg"
   },
   {
-    "itemID": 54,
+    "itemID": 25,
+    "itemName": "Eggplant Parmesan Pizza",
+    "itemDescription": "Roasted eggplant, rich tomato sauce, and melted parmesan on crispy dough.",
+    "itemPrice": 320,
+    "restaurantName": "Modern Days",
+    "category": "pizza",
+    "imageUrl": "https://images.squarespace-cdn.com/content/v1/54add730e4b0b147cc4a5286/1538161743027-UDM9UA2924RDJJH0MAWU/ke17ZwdGBToddI8pDm48kNiEM88mrzHRsd1mQ3bxVct7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0s0XaMNjCqAzRibjnE_wBlkZ2axuMlPfqFLWy-3Tjp4nKScCHg1XF4aLsQJlo6oYbA/IMG_6612.jpg"
+  },
+  {
+    "itemID": 113,
     "itemName": "Filter Coffee",
     "itemDescription": "Traditional South Indian coffee brewed with a drip filter.",
     "itemPrice": 100,
     "restaurantName": "Dakshin",
-    "restaurantID": 20,
     "category": "drinks",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/filter-coffee.jpg"
   },
   {
-    "itemID": 21,
+    "itemID": 96,
     "itemName": "Firni",
     "itemDescription": "Sweet pudding made with milk and rice flour.",
     "itemPrice": 120,
     "restaurantName": "Alhamdulillah Hotel",
-    "restaurantID": 9,
     "category": "dessert",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/firni.jpg"
   },
   {
-    "itemID": 14,
+    "itemID": 85,
     "itemName": "Fish Amritsari",
     "itemDescription": "Deep-fried fish marinated with spices, served with chutney.",
     "itemPrice": 350,
-    "restaurantName": "The Fisherman’s Wharf",
-    "restaurantID": 7,
+    "restaurantName": "The Fisherman's Wharf",
     "category": "seafood",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/Amritsari-fish.webp"
   },
   {
-    "itemID": 47,
+    "itemID": 44,
+    "itemName": "Fish Burger",
+    "itemDescription": "Tender crispy fish fillet with tartar sauce, lettuce, and pickles.",
+    "itemPrice": 275,
+    "restaurantName": "The Table",
+    "restaurantID": 28,
+    "category": "burger",
+    "imageUrl": "https://getfish.com.au/cdn/shop/articles/Step_3_-_Pink_Ling_77a5d33b-e963-4aad-9cb3-8bdfb61bccdf.png?v=1736044539&width=1100"
+  },
+  {
+    "itemID": 86,
     "itemName": "Fish Curry",
     "itemDescription": "Spicy fish curry cooked with traditional South Indian spices.",
     "itemPrice": 350,
-    "restaurantName": "Koshy’s",
-    "restaurantID": 18,
+    "restaurantName": "Koshy's",
     "category": "seafood",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/fish%20curry.jpg"
   },
   {
-    "itemID": 74,
+    "itemID": 87,
     "itemName": "Fish Moilee",
     "itemDescription": "Fish cooked in coconut milk with mild spices.",
     "itemPrice": 400,
     "restaurantName": "Rawat Mishtan Bhandar",
-    "restaurantID": 27,
     "category": "seafood",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/Fish-Molee.jpg"
   },
   {
-    "itemID": 72,
+    "itemID": 97,
     "itemName": "Ghevar",
     "itemDescription": "Sweet Rajasthani dessert made with flour, ghee, and sugar syrup.",
     "itemPrice": 180,
-    "restaurantName": "1135 AD",
-    "restaurantID": 26,
+    "restaurantName": "Indian Accent",
     "category": "dessert",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/ghevar.jpg"
   },
   {
-    "itemID": 58,
-    "itemName": "Green Curry",
-    "itemDescription": "Spicy Thai green curry made with coconut milk and vegetables.",
-    "itemPrice": 400,
-    "restaurantName": "Benjarong",
-    "restaurantID": 22,
-    "category": "meal",
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/green%20curry.jpg"
+    "itemID": 26,
+    "itemName": "Greek Pizza",
+    "itemPrice": 330,
+    "restaurantName": "Foody Hunt",
+    "itemDescription": "Topped with feta, kalamata olives, red onion, and fresh oregano.",
+    "category": "pizza",
+    "imageUrl": "https://cdn.lemonandolives.com/wp-content/uploads/2014/07/homemage-Greek-Pizza.jpg"
   },
   {
-    "itemID": 34,
+    "itemID": 60,
+    "itemName": "Green Curry",
+    "itemDescription": "Spicy Thai green curry made with coconut milk and vegetables.",
+    "itemPrice": 300,
+    "restaurantName": "Benjarong",
+    "category": "veg",
+    "imageUrl": "https://i.pinimg.com/originals/03/3f/cc/033fcc670a1e1833fc1ca94847c59366.jpg"
+  },
+  {
+    "itemID": 114,
+    "itemName": "Green Tea",
+    "itemDescription": "Light and refreshing brew packed with antioxidants for a healthy energy boost.",
+    "itemPrice": 50,
+    "restaurantName": "Peacock Rooftop Restaurant",
+    "restaurantID": 28,
+    "category": "drinks",
+    "imageUrl": "https://thepracticalherbalist.com/wp-content/uploads/2021/02/tea-PT28YA4-1280x640.jpg"
+  },
+  {
+    "itemID": 88,
     "itemName": "Grilled Salmon",
     "itemDescription": "Fresh salmon grilled to perfection, served with lemon butter sauce.",
     "itemPrice": 700,
     "restaurantName": "The Table",
-    "restaurantID": 14,
     "category": "seafood",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/grilled%20salmon.jpg"
   },
   {
-    "itemID": 30,
+    "itemID": 98,
     "itemName": "Gulab Jamun",
     "itemDescription": "Deep-fried dough balls soaked in sugary syrup.",
     "itemPrice": 150,
     "restaurantName": "Indian Accent",
-    "restaurantID": 12,
     "category": "dessert",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/Gulab-Jamun.jpg"
   },
   {
-    "itemID": 91,
+    "itemID": 73,
     "itemName": "Haleem",
     "itemDescription": "Rich and creamy stew made with lentils, wheat, and slow-cooked meat.",
     "itemPrice": 220,
     "restaurantName": "Pista House",
-    "restaurantID": 5,
-    "category": "meal",
+    "category": "non-veg",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/haleem.jpg"
   },
   {
-    "itemID": 10,
+    "itemID": 27,
+    "itemName": "Hawaiian Pizza",
+    "itemDescription": "Sweet pineapple and savory ham on a classic tomato and mozzarella base.",
+    "itemPrice": 325,
+    "restaurantName": "Pristine Palace",
+    "category": "pizza",
+    "imageUrl": "https://thumbs.dreamstime.com/b/vibrant-hawaiian-pizza-topped-ham-pineapple-melted-cheese-perfect-gatherings-parties-casual-dining-experiences-366058178.jpg"
+  },
+  {
+    "itemID": 115,
+    "itemName": "Hot Chocolate",
+    "itemDescription": "Rich and velvety melted chocolate blended into warm creamy steamed milk.",
+    "itemPrice": 150,
+    "restaurantName": "Bawarchi",
+    "restaurantID": 28,
+    "category": "drinks",
+    "imageUrl": "https://natashaskitchen.com/wp-content/uploads/2020/11/Hot-Chocolate-Recipe-3.jpg"
+  },
+  {
+    "itemID": 7,
     "itemName": "Hyderabadi Biryani",
     "itemDescription": "Fragrant rice with tender mutton, cooked with spices and herbs.",
     "itemPrice": 420,
     "restaurantName": "Mumtaz Restaurant",
-    "restaurantID": 6,
     "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/hyderabad%20biryani.jpg"
   },
   {
-    "itemID": 53,
+    "itemID": 8,
     "itemName": "Idli Sambar",
     "itemDescription": "Steamed rice cakes served with spicy lentil soup and chutneys.",
     "itemPrice": 150,
     "restaurantName": "Dakshin",
-    "restaurantID": 20,
     "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/idli%20sambar.jpg"
   },
   {
-    "itemID": 31,
-    "itemName": "Karim’s Biryani",
+    "itemID": 9,
+    "itemName": "Karim's Biryani",
     "itemDescription": "Traditional Mughlai biryani made with fragrant rice and marinated meat.",
     "itemPrice": 350,
-    "restaurantName": "Karim’s",
-    "restaurantID": 13,
+    "restaurantName": "Karim's",
     "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/karim's%20biryani.jpg"
   },
   {
-    "itemID": 64,
+    "itemID": 74,
     "itemName": "Kebabs",
     "itemDescription": "Tender chicken and mutton marinated in spices and grilled to perfection.",
     "itemPrice": 350,
     "restaurantName": "Peter Cat",
-    "restaurantID": 24,
     "category": "non-veg",
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/kebabs.jpg"
+    "imageUrl": "https://www.cookingclassy.com/wp-content/uploads/2017/04/steak-kebabs-17.jpg"
   },
   {
-    "itemID": 73,
+    "itemID": 10,
     "itemName": "Kerala Sadya",
     "itemDescription": "A traditional Kerala feast with rice, sambar, and a variety of curries.",
     "itemPrice": 600,
     "restaurantName": "Rawat Mishtan Bhandar",
-    "restaurantID": 27,
     "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/kerala%20sadya.jpeg"
   },
   {
-    "itemID": 5,
-    "itemName": "Kofta Curry",
-    "itemDescription": "Spicy curry made with tender meatballs cooked in a flavorful gravy.",
-    "itemPrice": 300,
-    "restaurantName": "Jewel of Nizam",
-    "restaurantID": 2,
-    "category": "meal",
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/mutton-korma.jpg"
-  },
-  {
-    "itemID": 17,
+    "itemID": 75,
     "itemName": "Kofta Curry",
     "itemDescription": "Meatballs in a spicy gravy made with yogurt and spices.",
-    "itemPrice": 290,
+    "itemPrice": 390,
     "restaurantName": "Sarvi Restaurant",
-    "restaurantID": 8,
-    "category": "meal",
+    "category": "non-veg",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/koftacurry.jpg"
   },
   {
-    "itemID": 68,
+    "itemID": 76,
     "itemName": "Kosha Mangsho",
     "itemDescription": "Slow-cooked mutton curry with a rich, spicy gravy.",
     "itemPrice": 450,
     "restaurantName": "6 Ballygunge Place",
-    "restaurantID": 25,
-    "category": "meal",
+    "category": "non-veg",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/kosha%20mangsho.jpg"
   },
   {
-    "itemID": 70,
+    "itemID": 77,
     "itemName": "Laal Maas",
     "itemDescription": "Spicy Rajasthani mutton curry made with red chilies.",
     "itemPrice": 500,
-    "restaurantName": "1135 AD",
-    "restaurantID": 26,
-    "category": "meal",
+    "restaurantName": "Indian Accent",
+    "category": "non-veg",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/laal-maas.jpeg"
   },
   {
-    "itemID": 24,
+    "itemID": 116,
     "itemName": "Lassi",
     "itemDescription": "Traditional yogurt-based drink, served sweet or salted.",
     "itemPrice": 120,
     "restaurantName": "Grand Hotel",
-    "restaurantID": 10,
     "category": "drinks",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/lasi.webp"
   },
   {
-    "itemID": 61,
+    "itemID": 117,
+    "itemName": "Lemonade",
+    "itemDescription": "Freshly squeezed lemons with chilled water, sugar, and a hint of mint.",
+    "itemPrice": 80,
+    "restaurantName": "Foody Hunt",
+    "restaurantID": 28,
+    "category": "drinks",
+    "imageUrl": "https://lilluna.com/wp-content/uploads/2021/02/homemade-lemonade-resize-4.jpg"
+  },
+  {
+    "itemID": 45,
+    "itemName": "Mac & Cheese Burger",
+    "itemDescription": "Chicken patty topped with creamy macaroni and cheese for ultimate comfort.",
+    "itemPrice": 250,
+    "restaurantName": "Indian Accent",
+    "restaurantID": 28,
+    "category": "burger",
+    "imageUrl": "https://brobbq.com/wp-content/uploads/2025/05/Mac-And-Cheese-Burger.jpg"
+  },
+  {
+    "itemID": 89,
     "itemName": "Macher Jhol",
     "itemDescription": "Traditional Bengali fish curry made with mustard oil and spices.",
     "itemPrice": 400,
     "restaurantName": "Oh! Calcutta",
-    "restaurantID": 23,
     "category": "seafood",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/macher%20jhol.jpg"
   },
   {
-    "itemID": 39,
+    "itemID": 99,
     "itemName": "Mango Kulfi",
     "itemDescription": "Frozen mango dessert flavored with saffron and cardamom.",
     "itemPrice": 200,
     "restaurantName": "Masala Library",
-    "restaurantID": 15,
     "category": "dessert",
     "imageUrl": "https://www.sharmispassions.com/wp-content/uploads/2014/05/mango-kulfi7.jpg"
   },
   {
-    "itemID": 57,
+    "itemID": 118,
     "itemName": "Mango Lassi",
     "itemDescription": "Sweet yogurt-based drink with fresh mango.",
     "itemPrice": 150,
     "restaurantName": "Murugan Idli Shop",
-    "restaurantID": 21,
     "category": "drinks",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/Mango-Lassi.jpg"
   },
   {
-    "itemID": 60,
+    "itemID": 11,
     "itemName": "Mango Sticky Rice",
     "itemDescription": "Sticky rice topped with fresh mango slices and coconut milk.",
     "itemPrice": 180,
     "restaurantName": "Benjarong",
-    "restaurantID": 22,
     "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/mago%20sticky%20rice.jpg"
   },
   {
-    "itemID": 38,
+    "itemID": 28,
+    "itemName": "Margherita Pizza",
+    "itemDescription": "Classic pizza topped with mozzarella, tomatoes, and fresh basil.",
+    "itemPrice": 350,
+    "restaurantName": "Pristine Palace",
+    "category": "pizza",
+    "imageUrl": "https://myrecipesnest.com/wp-content/uploads/2025/09/23-1-Margherita-Pizza.png"
+  },
+  {
+    "itemID": 90,
     "itemName": "Masala Prawns",
     "itemDescription": "Prawns cooked in a spicy and flavorful masala.",
     "itemPrice": 550,
     "restaurantName": "Masala Library",
-    "restaurantID": 15,
     "category": "seafood",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/Prawn-Masala.jpg"
   },
   {
-    "itemID": 3,
+    "itemID": 61,
+    "itemName": "Mashroom Masala",
+    "itemDescription": "Juicy mushrooms sautéed in a spicy onion-tomato masala with fresh herbs.",
+    "itemPrice": 320,
+    "restaurantName": "Peacock Rooftop Restaurant",
+    "restaurantID": 28,
+    "category": "veg",
+    "imageUrl": "https://ooohdelish.com/wp-content/uploads/2025/04/ridamine_01407_mushroom_curry_recipe__Amateur_photo_from_redd_12bab063-9655-4cb5-ab6f-3c05b5aebb1e_3-780x780.png"
+  },
+  {
+    "itemID": 62,
+    "itemName": "Matar Paneer",
+    "itemDescription": "Fresh green peas and soft paneer cubes in a rich tomato-based gravy.",
+    "itemPrice": 310,
+    "restaurantName": "Grand Hotel",
+    "restaurantID": 28,
+    "category": "veg",
+    "imageUrl": "https://healthyindianrecipes.com/wp-content/uploads/2025/05/matar-paneer-dish-181025-1024x801.jpg"
+  },
+  {
+    "itemID": 29,
+    "itemName": "Mediterranean Pizza",
+    "itemDescription": "Sun-dried tomatoes, olives, feta, and roasted peppers on a herbed base.",
+    "itemPrice": 335,
+    "restaurantName": "Modern Days",
+    "category": "pizza",
+    "imageUrl": "https://sophiasrecipe.com/wp-content/uploads/2025/11/0_2-1762334989388.jpeg"
+  },
+  {
+    "itemID": 119,
+    "itemName": "Milk Tea",
+    "itemDescription": "Strong brewed tea simmered with milk, ginger, cardamom, and aromatic spices.",
+    "itemPrice": 60,
+    "restaurantName": "Peacock Rooftop Restaurant",
+    "restaurantID": 28,
+    "category": "drinks",
+    "imageUrl": "https://recipes.net/wp-content/uploads/2024/01/how-to-drink-masala-tea-1705822769.jpg"
+  },
+  {
+    "itemID": 63,
     "itemName": "Mirchi ka Salan",
     "itemDescription": "Spicy and tangy curry made with green chilies and peanuts.",
     "itemPrice": 200,
     "restaurantName": "Paradise Biryani",
-    "restaurantID": 1,
-    "category": "meal",
+    "category": "veg",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/mirch%20ka%20salan.jpg"
   },
   {
-    "itemID": 66,
+    "itemID": 100,
     "itemName": "Misti Doi",
     "itemDescription": "Traditional Bengali sweet yogurt served chilled.",
     "itemPrice": 150,
     "restaurantName": "Peter Cat",
-    "restaurantID": 24,
     "category": "dessert",
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/mishti%20doi.jpg"
+    "imageUrl": "https://thumbs.dreamstime.com/b/creamy-rich-bowl-hot-mishti-doi-traditional-bengali-sweet-yogurt-dessert-bowl-hot-mishti-doi-sweet-yogurt-366204194.jpg"
   },
   {
-    "itemID": 37,
-    "itemName": "Molecular Biryani",
-    "itemDescription": "Innovative biryani with molecular gastronomy techniques.",
-    "itemPrice": 650,
-    "restaurantName": "Masala Library",
-    "restaurantID": 15,
-    "category": "meal",
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/molecular%20biryani.png"
+    "itemID": 64,
+    "itemName": "Mixed Vegetable",
+    "itemDescription": "Seasonal vegetables cooked together in a fragrant North Indian masala sauce.",
+    "itemPrice": 300,
+    "restaurantName": "Gopi Dining Hall",
+    "restaurantID": 28,
+    "category": "veg",
+    "imageUrl": "https://i.pinimg.com/736x/65/90/54/659054c8051e294ed83e85797abc22f1.jpg?nii=t"
   },
   {
-    "itemID": 86,
+    "itemID": 78,
     "itemName": "Murg Malai Tikka",
     "itemDescription": "Chicken marinated in cream and spices, grilled to perfection.",
     "itemPrice": 350,
     "restaurantName": "Gopi Dining Hall",
-    "restaurantID": 31,
     "category": "non-veg",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/murgh%20malai%20tikka.jpg"
   },
   {
-    "itemID": 89,
+    "itemID": 12,
     "itemName": "Mutton Biryani",
     "itemDescription": "Traditional Hyderabadi biryani made with flavorful mutton.",
     "itemPrice": 350,
     "restaurantName": "Bawarchi",
-    "restaurantID": 4,
     "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/mutton%20biryani.jpg"
   },
   {
-    "itemID": 46,
+    "itemID": 79,
     "itemName": "Mutton Keema",
     "itemDescription": "Minced mutton cooked with spices and served with soft bread.",
-    "itemPrice": 280,
-    "restaurantName": "Koshy’s",
-    "restaurantID": 18,
+    "itemPrice": 380,
+    "restaurantName": "Koshy's",
     "category": "non-veg",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/mutton-keema.jpg"
   },
   {
-    "itemID": 20,
+    "itemID": 80,
     "itemName": "Mutton Korma",
     "itemDescription": "Slow-cooked mutton in a rich, spiced curry.",
     "itemPrice": 430,
     "restaurantName": "Alhamdulillah Hotel",
-    "restaurantID": 9,
     "category": "non-veg",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/mutton-korma.jpg"
   },
   {
-    "itemID": 65,
+    "itemID": 81,
     "itemName": "Mutton Rezala",
     "itemDescription": "Mutton cooked in a rich, aromatic gravy with Bengali spices.",
     "itemPrice": 450,
     "restaurantName": "Peter Cat",
-    "restaurantID": 24,
     "category": "non-veg",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/mutton%20rezela.webp"
   },
   {
-    "itemID": 45,
+    "itemID": 101,
     "itemName": "Mysore Pak",
     "itemDescription": "Famous South Indian sweet made with ghee and gram flour.",
     "itemPrice": 120,
     "restaurantName": "Mavalli Tiffin Room (MTR)",
-    "restaurantID": 17,
     "category": "dessert",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/MysorePak.jpg"
   },
   {
-    "itemID": 90,
+    "itemID": 46,
+    "itemName": "Nachos Burger",
+    "itemDescription": "Loaded with crunchy nachos, jalapeños, salsa, and melted cheese sauce.",
+    "itemPrice": 245,
+    "restaurantName": "The Fun Bun",
+    "restaurantID": 28,
+    "category": "burger",
+    "imageUrl": "https://i.pinimg.com/originals/e6/ac/d6/e6acd65e93acc7a642cd5da7444de2d2.jpg"
+  },
+  {
+    "itemID": 30,
+    "itemName": "Napoli Pizza",
+    "itemDescription": "Classic Neapolitan style with San Marzano tomatoes, anchovies, and capers.",
+    "itemPrice": 310,
+    "restaurantName": "Pristine Palace",
+    "category": "pizza",
+    "imageUrl": "https://bontalico.com/wp-content/uploads/2024/11/pizza-napoletana.jpg"
+  },
+  {
+    "itemID": 120,
+    "itemName": "Orange Juice",
+    "itemDescription": "Freshly squeezed oranges served chilled for a natural vitamin C boost.",
+    "itemPrice": 130,
+    "restaurantName": "The Table",
+    "restaurantID": 28,
+    "category": "drinks",
+    "imageUrl": "https://greenletes.com/wp-content/uploads/2018/05/orange-juice-1024x1024.png"
+  },
+  {
+    "itemID": 47,
+    "itemName": "Palak & Corn Burger",
+    "itemDescription": "Healthy spinach and sweet corn patty with mint mayo and fresh veggies.",
+    "itemPrice": 250,
+    "restaurantName": "The Table",
+    "restaurantID": 28,
+    "category": "burger",
+    "imageUrl": "https://i.pinimg.com/originals/76/24/a8/7624a81c4b35bfd3fd8e04eb4c3ea0e0.png"
+  },
+  {
+    "itemID": 65,
+    "itemName": "Palak Paneer",
+    "itemDescription": "Creamy spinach gravy with soft paneer cubes, ginger, garlic, and warm spices.",
+    "itemPrice": 320,
+    "restaurantName": "6 Ballygunge Place",
+    "restaurantID": 28,
+    "category": "veg",
+    "imageUrl": "https://recipes.timesofindia.com/photo/53093667.cms"
+  },
+  {
+    "itemID": 66,
     "itemName": "Paneer Butter Masala",
     "itemDescription": "Soft paneer cubes in a creamy tomato-based gravy.",
     "itemPrice": 250,
     "restaurantName": "Bawarchi",
-    "restaurantID": 4,
-    "category": "paneer",
+    "category": "veg",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/paneer%20butter%20masala.jpg"
   },
   {
-    "itemID": 50,
+    "itemID": 48,
+    "itemName": "Paneer Tikka Burger",
+    "itemDescription": "Smoky grilled paneer tikka with onions, peppers, and green chutney.",
+    "itemPrice": 255,
+    "restaurantName": "Peacock Rooftop Restaurant",
+    "restaurantID": 28,
+    "category": "burger",
+    "imageUrl": "https://patelcafenrestro.com/wp-content/uploads/2024/07/DM-2024-07-29T143428.249.png"
+  },
+  {
+    "itemID": 13,
     "itemName": "Pasta Primavera",
     "itemDescription": "Pasta with fresh vegetables in a light olive oil sauce.",
     "itemPrice": 350,
     "restaurantName": "Toit Brewery",
-    "restaurantID": 19,
     "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/Pasta-Primavera.jpg"
   },
   {
-    "itemID": 75,
+    "itemID": 102,
     "itemName": "Payasam",
     "itemDescription": "Traditional Kerala dessert made with rice and coconut milk.",
     "itemPrice": 150,
     "restaurantName": "Rawat Mishtan Bhandar",
-    "restaurantID": 27,
     "category": "dessert",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/payaam.jpg"
   },
   {
-    "itemID": 85,
-    "itemName": "Peshawari Naan",
+    "itemID": 31,
+    "itemName": "Pepperoni Pizza",
+    "itemDescription": "Generously loaded with spicy pepperoni slices and bubbling mozzarella cheese.",
+    "itemPrice": 300,
+    "restaurantName": "Modern Days",
+    "category": "pizza",
+    "imageUrl": "https://wallpapers.com/images/hd/pizza-pictures-cgfdsox6myh2hk7f.jpg"
+  },
+  {
+    "itemID": 14,
+    "itemName": "Peshwari Naan",
     "itemDescription": "Soft and fluffy naan stuffed with dry fruits and nuts.",
     "itemPrice": 150,
     "restaurantName": "Gopi Dining Hall",
-    "restaurantID": 31,
     "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/Peshwari-naan.webp"
   },
   {
-    "itemID": 84,
+    "itemID": 32,
+    "itemName": "Pesto Chicken Pizza",
+    "itemDescription": "Tender grilled chicken and mozzarella drizzled with fragrant basil pesto.",
+    "itemPrice": 380,
+    "restaurantName": "Pristine Palace",
+    "category": "pizza",
+    "imageUrl": "https://corarecipes.com/wp-content/uploads/2025/07/image_1_1752008074936_313.png"
+  },
+  {
+    "itemID": 103,
     "itemName": "Pineapple and Coconut Cake",
     "itemDescription": "Moist cake made with pineapple and coconut, topped with cream.",
     "itemPrice": 180,
     "restaurantName": "Rajwadu",
-    "restaurantID": 30,
     "category": "dessert",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/Pineapple-Coconut-cake.jpg"
   },
   {
-    "itemID": 55,
+    "itemID": 15,
     "itemName": "Plain Idli",
     "itemDescription": "Steamed rice cakes served with chutney and sambar.",
     "itemPrice": 120,
     "restaurantName": "Murugan Idli Shop",
-    "restaurantID": 21,
     "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/plain%20idli.webp"
   },
   {
-    "itemID": 13,
+    "itemID": 91,
     "itemName": "Prawn Malai Curry",
     "itemDescription": "Prawns cooked in coconut milk with aromatic spices.",
     "itemPrice": 550,
-    "restaurantName": "The Fisherman’s Wharf",
-    "restaurantID": 7,
+    "restaurantName": "The Fisherman's Wharf",
     "category": "seafood",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/Chingri-Malai-Curry.jpg"
   },
   {
-    "itemID": 18,
+    "itemID": 33,
+    "itemName": "Prosciutto e Rucola Pizza",
+    "itemDescription": "Topped with delicate prosciutto, fresh rocket, and shaved parmesan.",
+    "itemPrice": 320,
+    "restaurantName": "Pristine Palace",
+    "category": "pizza",
+    "imageUrl": "https://www.1001-kochrezepte.de/wp-content/uploads/2009/07/pizza-prosciutto-e-rucola.jpg"
+  },
+  {
+    "itemID": 104,
     "itemName": "Qubani ka Meetha",
     "itemDescription": "A traditional Hyderabadi dessert made with apricots and sugar.",
     "itemPrice": 150,
     "restaurantName": "Sarvi Restaurant",
-    "restaurantID": 8,
     "category": "dessert",
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/qubani%20ka%20meetha.jpg"
+    "imageUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjucCk0YO0WtyhFkb-U-bfeFObs45GDV4mNs48t1iGiC2l2qHW_oETQ1toOeTPcsmer2Gk_j_ZDXbi_C_k0qw9jvJogWjOg2JA8nqMD3ptVLiLzuOjqeytennbBOLAUiV59aR2nNDMupE851mhVHbEZLm39aQU5onnahzW_NRvyiIGUqdrdEbh1qkLfeQ/w640-h618/Khubani-Ka-Meetha-Hyderabadi-Style-Qubani-Ka-Meetha-Recipe-Dried-Apricot-Sweet-Recipe-Apricot-and-Cream-Hyderabadi-Sweet-Recipes-South-Indian-Wedding-Sweet-Recipes.jpg"
+  },
+   {
+    "itemID": 67,
+    "itemName": "Rajma",
+    "itemDescription": "Slow-cooked red kidney beans in a thick and hearty spiced tomato gravy.",
+    "itemPrice": 300,
+    "restaurantName": "Masala Library",
+    "restaurantID": 28,
+    "category": "veg",
+    "imageUrl": "https://healthyindianrecipes.com/wp-content/uploads/2025/03/rajma-masala-recipe-090925-1-1024x1024.jpg"
   },
   {
-    "itemID": 42,
+    "itemID": 105,
     "itemName": "Raspberry Sorbet",
     "itemDescription": "Tangy sorbet made with fresh raspberries.",
     "itemPrice": 150,
     "restaurantName": "Britannia & Co.",
-    "restaurantID": 16,
     "category": "dessert",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/raspberry-sorbet.webp"
   },
   {
-    "itemID": 43,
+    "itemID": 16,
     "itemName": "Rava Idli",
     "itemDescription": "Soft and fluffy semolina idli served with coconut chutney and sambar.",
     "itemPrice": 150,
     "restaurantName": "Mavalli Tiffin Room (MTR)",
-    "restaurantID": 17,
     "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/RavaIdli.jpg"
   },
   {
-    "itemID": 63,
+    "itemID": 34,
+    "itemName": "Roasted Veggie Pizza",
+    "itemDescription": "Oven-roasted zucchini, peppers, and onions on a light herbed tomato base.",
+    "itemPrice": 310,
+    "restaurantName": "Foody Hunt",
+    "category": "pizza",
+    "imageUrl": "https://www.hightasty.com/wp-content/uploads/2025/01/YEKkeTRqRMCcpDSBQFbd1w-e1740156040995.webp"
+  },
+  {
+    "itemID": 35,
+    "itemName": "Romana Pizza",
+    "itemDescription": "Thin and crispy Roman-style pizza with anchovies, capers, and oregano.",
+    "itemPrice": 340,
+    "restaurantName": "Modern Days",
+    "category": "pizza",
+    "imageUrl": "https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2024/06/28/67e959197f094322885f6c791d63d266_Pizza_romana.jpg"
+  },
+  {
+    "itemID": 106,
     "itemName": "Roshogolla",
     "itemDescription": "Soft and spongy Bengali sweet soaked in sugar syrup.",
     "itemPrice": 120,
     "restaurantName": "Oh! Calcutta",
-    "restaurantID": 23,
     "category": "dessert",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/roshogolla.webp"
   },
   {
-    "itemID": 41,
+    "itemID": 82,
     "itemName": "Sali Boti",
     "itemDescription": "Parsi-style meat cooked with gravy and served with crisp fries.",
     "itemPrice": 500,
     "restaurantName": "Britannia & Co.",
-    "restaurantID": 16,
     "category": "non-veg",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/sali%20boti.jpg"
   },
   {
-    "itemID": 80,
-    "itemName": "Samosa",
-    "itemDescription": "Fried pastry filled with spiced potatoes and peas.",
-    "itemPrice": 60,
-    "restaurantName": "Agashiye",
-    "restaurantID": 29,
-    "category": "meal",
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/samosa.webp"
-  },
-  {
-    "itemID": 69,
+    "itemID": 107,
     "itemName": "Sandesh",
     "itemDescription": "Traditional Bengali sweet made with fresh paneer and flavored with cardamom.",
     "itemPrice": 120,
     "restaurantName": "6 Ballygunge Place",
-    "restaurantID": 25,
     "category": "dessert",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/sandesh.jpg"
   },
   {
-    "itemID": 15,
+    "itemID": 49,
+    "itemName": "Schezwan Chicken Burger",
+    "itemDescription": "Spicy Indo-Chinese chicken patty with fiery schezwan sauce and crispy onions.",
+    "itemPrice": 295,
+    "restaurantName": "The Fun Bun",
+    "restaurantID": 28,
+    "category": "burger",
+    "imageUrl": "https://www.thechickenrecipes.co.uk/wp-content/uploads/2024/05/chicken-burger-recipe-1024x585.jpg"
+  },
+  {
+    "itemID": 92,
     "itemName": "Seafood Platter",
     "itemDescription": "A selection of fresh seafood served with dipping sauce.",
     "itemPrice": 600,
-    "restaurantName": "The Fisherman’s Wharf",
-    "restaurantID": 7,
+    "restaurantName": "The Fisherman's Wharf",
     "category": "seafood",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/seafood-platter.jpg"
   },
   {
-    "itemID": 12,
+    "itemID": 108,
     "itemName": "Shahi Tukda",
     "itemDescription": "Dessert made with fried bread, milk, sugar, and nuts.",
     "itemPrice": 180,
     "restaurantName": "Mumtaz Restaurant",
-    "restaurantID": 6,
     "category": "dessert",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/shahi-tukda.jpg"
   },
   {
-    "itemID": 77,
+    "itemID": 83,
     "itemName": "Shawarma",
     "itemDescription": "Chicken or lamb wrapped in pita bread with garlic sauce and vegetables.",
     "itemPrice": 350,
     "restaurantName": "Peacock Rooftop Restaurant",
-    "restaurantID": 28,
     "category": "non-veg",
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/Chicken-Shawarma.jpg"
+    "imageUrl": "https://lifeloveandgoodfood.com/wp-content/uploads/2020/04/Chicken-Shawarma_09_1200x1200.jpg"
   },
   {
-    "itemID": 6,
+    "itemID": 109,
     "itemName": "Sheer Korma",
     "itemDescription": "Sweet dessert made with milk, dry fruits, and vermicelli.",
     "itemPrice": 150,
     "restaurantName": "Jewel of Nizam",
-    "restaurantID": 2,
     "category": "dessert",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/Sheer-Khurma.jpg"
   },
   {
-    "itemID": 62,
+    "itemID": 93,
     "itemName": "Shorshe Ilish",
     "itemDescription": "Hilsa fish cooked in mustard paste, a Bengali delicacy.",
     "itemPrice": 500,
     "restaurantName": "Oh! Calcutta",
-    "restaurantID": 23,
     "category": "seafood",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/shorshe%20ilish.jpg"
   },
   {
-    "itemID": 26,
+    "itemID": 36,
+    "itemName": "Siciliana Pizza",
+    "itemDescription": "Thick Sicilian crust topped with olives, onions, anchovies, and tomato.",
+    "itemPrice": 325,
+    "restaurantName": "Foody Hunt",
+    "category": "pizza",
+    "imageUrl": "https://umamipizza.ro/wp-content/uploads/2022/06/pizza-siciliana-1.jpg"
+  },
+  {
+    "itemID": 50,
+    "itemName": "Spicy Mexican Burger",
+    "itemDescription": "Bold chicken patty with jalapeños, salsa, guacamole, and pepper jack cheese.",
+    "itemPrice": 300,
+    "restaurantName": "Peacock Rooftop Restaurant",
+    "restaurantID": 28,
+    "category": "burger",
+    "imageUrl": "https://www.itisakeeper.com/wp-content/uploads/2021/07/mexican-burger-SQ-1.jpg"
+  },
+  {
+    "itemID": 37,
+    "itemName": "Spinach and Mushroom Pizza",
+    "itemDescription": "Earthy mushrooms and fresh spinach on a creamy white garlic sauce.",
+    "itemPrice": 330,
+    "restaurantName": "Foody Hunt",
+    "category": "pizza",
+    "imageUrl": "https://i.pinimg.com/736x/d4/98/c8/d498c8d238d6cdb72db98c64b3fe1c57.jpg"
+  },
+  {
+    "itemID": 51,
+    "itemName": "Tandoori Chicken Burger",
+    "itemDescription": "Smoky tandoori marinated chicken with mint chutney and sliced onions.",
+    "itemPrice": 310,
+    "restaurantName": "The Table",
+    "restaurantID": 28,
+    "category": "burger",
+    "imageUrl": "https://burgerrecipes.info/wp-content/uploads/2024/12/Tandoori-Chicken-Burger-1170x881.png"
+  },
+  {
+    "itemID": 17,
     "itemName": "Tandoori Roti",
     "itemDescription": "Soft Indian flatbread baked in a tandoor.",
     "itemPrice": 40,
     "restaurantName": "Bukhara",
-    "restaurantID": 11,
     "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/tandoori%20roti.jpg"
   },
   {
-    "itemID": 36,
+    "itemID": 110,
     "itemName": "Tiramisu",
     "itemDescription": "Classic Italian dessert made with layers of coffee-soaked cake and mascarpone.",
     "itemPrice": 350,
     "restaurantName": "The Table",
-    "restaurantID": 14,
     "category": "dessert",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/tiramisu.jpg"
   },
   {
-    "itemID": 49,
-    "itemName": "Toit Brew",
-    "itemDescription": "Signature beer brewed in-house, served fresh on tap.",
-    "itemPrice": 250,
-    "restaurantName": "Toit Brewery",
-    "restaurantID": 19,
-    "category": "drinks",
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/toit.png"
-  },
-  {
-    "itemID": 59,
-    "itemName": "Tom Yum Soup",
-    "itemDescription": "Hot and sour Thai soup with shrimp and mushrooms.",
-    "itemPrice": 250,
-    "restaurantName": "Benjarong",
-    "restaurantID": 22,
-    "category": "soup",
-    "imageUrl": "https://fakerestaurantapi.runasp.net/images/tom%20yum%20soup.jpg"
-  },
-  {
-    "itemID": 35,
+    "itemID": 18,
     "itemName": "Truffle Mac & Cheese",
     "itemDescription": "Macaroni in a creamy cheese sauce with truffle oil.",
     "itemPrice": 500,
     "restaurantName": "The Table",
-    "restaurantID": 14,
     "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/truffled-mac-cheese.webp"
   },
   {
-    "itemID": 56,
+    "itemID": 38,
+    "itemName": "Truffle Mushroom Pizza",
+    "itemDescription": "Wild mushrooms and mozzarella finished with a drizzle of luxurious truffle oil",
+    "itemPrice": 320,
+    "restaurantName": "Modern Days",
+    "category": "pizza",
+    "imageUrl": "https://zesticook.com/wp-content/uploads/2025/10/0_0-1760282588678.webp"
+  },
+  {
+    "itemID": 19,
     "itemName": "Vada",
     "itemDescription": "Crispy fried lentil doughnuts served with chutneys.",
     "itemPrice": 90,
     "restaurantName": "Murugan Idli Shop",
-    "restaurantID": 21,
     "category": "meal",
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/vada.jpg"
   },
   {
-    "itemID": 83,
+    "itemID": 20,
     "itemName": "Vada Pav",
     "itemDescription": "Spicy potato fritter in a bun, served with chutney.",
     "itemPrice": 100,
@@ -770,7 +1081,7 @@
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/vada-pav.jpg"
   },
   {
-    "itemID": 22,
+    "itemID": 21,
     "itemName": "Vegetable Biryani",
     "itemDescription": "Aromatic rice cooked with fresh vegetables and spices.",
     "itemPrice": 300,
@@ -780,262 +1091,22 @@
     "imageUrl": "https://fakerestaurantapi.runasp.net/images/vegetable%20biryani.jpg"
   },
   {
-    "itemID": 1,
-    "itemName": "Margherita",
-    "itemDescription": "Classic pizza topped with mozzarella, tomatoes, and fresh basil.",
-    "itemPrice": 400,
-    "imageUrl": "https://myrecipesnest.com/wp-content/uploads/2025/09/23-1-Margherita-Pizza.png",
-    "ingredients": [
-      "tomato",
-      "mozzarella",
-      "basil"
-    ],
-    "category": "pizza",
-    "soldOut": false
+    "itemID": 68,
+    "itemName": "Vegetable Kofta",
+    "itemDescription": "Soft vegetable and paneer dumplings served in a rich and creamy curry sauce.",
+    "itemPrice": 340,
+    "restaurantName": "Indian Accent",
+    "restaurantID": 28,
+    "category": "veg",
+    "imageUrl": "https://healthyindianrecipes.com/wp-content/uploads/2025/04/veg-kofta-recipe-140925-956x1024.jpg"
   },
   {
-    "itemID": 2,
-    "itemName": "Capricciosa",
-    "itemPrice": 14,
-    "imageUrl": "https://www.melarossa.it/wp-content/uploads/2021/02/pizza-capricciosa-ingredienti.jpg?x54507",
-    "ingredients": [
-      "tomato",
-      "mozzarella",
-      "ham",
-      "mushrooms",
-      "artichoke"
-    ],
+    "itemID": 39,
+    "itemName": "Vegetable Pizza",
+    "itemDescription": "Colorful seasonal vegetables on a light tomato sauce with melted mozzarella.",
+    "itemPrice": 280,
+    "restaurantName": "Modern Days",
     "category": "pizza",
-    "soldOut": true
-  },
-  {
-    "itemID": 3,
-    "itemName": "Romana",
-    "itemPrice": 15,
-    "imageUrl": "https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2024/06/28/67e959197f094322885f6c791d63d266_Pizza_romana.jpg",
-    "ingredients": [
-      "tomato",
-      "mozzarella",
-      "prosciutto"
-    ],
-    "category": "pizza",
-    "soldOut": false
-  },
-  {
-    "itemID": 4,
-    "itemName": "Prosciutto e Rucola",
-    "itemPrice": 16,
-    "imageUrl": "https://www.1001-kochrezepte.de/wp-content/uploads/2009/07/pizza-prosciutto-e-rucola.jpg",
-    "ingredients": [
-      "tomato",
-      "mozzarella",
-      "prosciutto",
-      "arugula"
-    ],
-    "category": "pizza",
-    "soldOut": false
-  },
-  {
-    "itemID": 5,
-    "itemName": "Diavola",
-    "itemPrice": 16,
-    "imageUrl": "https://apertureoncourt.com/wp-content/uploads/2025/03/Pizza-Diavola-Recipe.jpg",
-    "ingredients": [
-      "tomato",
-      "mozzarella",
-      "spicy salami",
-      "chili flakes"
-    ],
-    "category": "pizza",
-    "soldOut": false
-  },
-  {
-    "itemID": 6,
-    "itemName": "Vegetable",
-    "itemPrice": 13,
-    "imageUrl": "https://doozydoo.co/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-13-07.00.15-A-mouth-watering-image-of-a-homemade-vegetarian-pizza-ideal-for-a-blog-post.-The-pizza-is-lavishly-topped-with-a-variety-of-colorful-vegetables-like-.png",
-    "ingredients": [
-      "tomato",
-      "mozzarella",
-      "bell peppers",
-      "onions",
-      "mushrooms"
-    ],
-    "category": "pizza",
-    "soldOut": false
-  },
-  {
-    "itemID": 7,
-    "itemName": "Napoli",
-    "itemPrice": 16,
-    "imageUrl": "https://bontalico.com/wp-content/uploads/2024/11/pizza-napoletana.jpg",
-    "ingredients": [
-      "tomato",
-      "mozzarella",
-      "fresh tomato",
-      "basil"
-    ],
-    "category": "pizza",
-    "soldOut": false
-  },
-  {
-    "itemID": 8,
-    "itemName": "Siciliana",
-    "itemPrice": 16,
-    "imageUrl": "https://umamipizza.ro/wp-content/uploads/2022/06/pizza-siciliana-1.jpg",
-    "ingredients": [
-      "tomato",
-      "mozzarella",
-      "anchovies",
-      "olives",
-      "capers"
-    ],
-    "category": "pizza",
-    "soldOut": true
-  },
-  {
-    "itemID": 9,
-    "itemName": "Pepperoni",
-    "itemPrice": 14,
-    "imageUrl": "https://wallpapers.com/images/hd/pizza-pictures-cgfdsox6myh2hk7f.jpg",
-    "ingredients": [
-      "tomato",
-      "mozzarella",
-      "pepperoni"
-    ],
-    "category": "pizza",
-    "soldOut": false
-  },
-  {
-    "itemID": 10,
-    "itemName": "Hawaiian",
-    "itemPrice": 15,
-    "imageUrl": "https://thumbs.dreamstime.com/b/vibrant-hawaiian-pizza-topped-ham-pineapple-melted-cheese-perfect-gatherings-parties-casual-dining-experiences-366058178.jpg",
-    "ingredients": [
-      "tomato",
-      "mozzarella",
-      "pineapple",
-      "ham"
-    ],
-    "category": "pizza",
-    "soldOut": false
-  },
-  {
-    "itemID": 11,
-    "itemName": "Spinach and Mushroom",
-    "itemPrice": 15,
-    "imageUrl": "https://i.pinimg.com/736x/d4/98/c8/d498c8d238d6cdb72db98c64b3fe1c57.jpg",
-    "ingredients": [
-      "tomato",
-      "mozzarella",
-      "spinach",
-      "mushrooms"
-    ],
-    "category": "pizza",
-    "soldOut": false
-  },
-  {
-    "itemID": 12,
-    "itemName": "Mediterranean",
-    "itemPrice": 16,
-    "imageUrl": "https://sophiasrecipe.com/wp-content/uploads/2025/11/0_2-1762334989388.jpeg",
-    "ingredients": [
-      "tomato",
-      "mozzarella",
-      "sun-dried tomatoes",
-      "olives",
-      "artichoke"
-    ],
-    "category": "pizza",
-    "soldOut": false
-  },
-  {
-    "itemID": 13,
-    "itemName": "Greek",
-    "itemPrice": 16,
-    "imageUrl": "https://cdn.lemonandolives.com/wp-content/uploads/2014/07/homemage-Greek-Pizza.jpg",
-    "ingredients": [
-      "tomato",
-      "mozzarella",
-      "spinach",
-      "feta",
-      "olives",
-      "pepperoncini"
-    ],
-    "category": "pizza",
-    "soldOut": true
-  },
-  {
-    "itemID": 14,
-    "itemName": "Abruzzese",
-    "itemPrice": 16,
-    "imageUrl": "https://lalqila.fr/wp-content/uploads/2025/10/Pizza-abruzzese-specialite-des-Abruzzes-1024x585.jpg",
-    "ingredients": [
-      "tomato",
-      "mozzarella",
-      "prosciutto",
-      "arugula"
-    ],
-    "category": "pizza",
-    "soldOut": false
-  },
-  {
-    "itemID": 15,
-    "itemName": "Pesto Chicken",
-    "itemPrice": 16,
-    "imageUrl": "https://corarecipes.com/wp-content/uploads/2025/07/image_1_1752008074936_313.png",
-    "ingredients": [
-      "pesto",
-      "mozzarella",
-      "chicken",
-      "sun-dried tomatoes",
-      "spinach"
-    ],
-    "category": "pizza",
-    "soldOut": false
-  },
-  {
-    "itemID": 16,
-    "itemName": "Eggplant Parmesan",
-    "itemPrice": 15,
-    "imageUrl": "https://images.squarespace-cdn.com/content/v1/54add730e4b0b147cc4a5286/1538161743027-UDM9UA2924RDJJH0MAWU/ke17ZwdGBToddI8pDm48kNiEM88mrzHRsd1mQ3bxVct7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0s0XaMNjCqAzRibjnE_wBlkZ2axuMlPfqFLWy-3Tjp4nKScCHg1XF4aLsQJlo6oYbA/IMG_6612.jpg",
-    "ingredients": [
-      "marinara",
-      "mozzarella",
-      "eggplant",
-      "parmesan"
-    ],
-    "category": "pizza",
-    "soldOut": false
-  },
-  {
-    "itemID": 17,
-    "itemName": "Roasted Veggie",
-    "itemPrice": 15,
-    "imageUrl": "https://www.hightasty.com/wp-content/uploads/2025/01/YEKkeTRqRMCcpDSBQFbd1w-e1740156040995.webp",
-    "ingredients": [
-      "marinara",
-      "mozzarella",
-      "zucchini",
-      "eggplant",
-      "peppers",
-      "onions"
-    ],
-    "category": "pizza",
-    "soldOut": false
-  },
-  {
-    "itemID": 18,
-    "itemName": "Truffle Mushroom",
-    "itemPrice": 15,
-    "imageUrl": "https://zesticook.com/wp-content/uploads/2025/10/0_0-1760282588678.webp",
-    "ingredients": [
-      "marinara",
-      "mozzarella",
-      "truffle mushrooms",
-      "bell peppers"
-    ],
-    "category": "pizza",
-    "soldOut": false
+    "imageUrl": "https://doozydoo.co/wp-content/uploads/2023/12/DALL%C2%B7E-2023-12-13-07.00.15-A-mouth-watering-image-of-a-homemade-vegetarian-pizza-ideal-for-a-blog-post.-The-pizza-is-lavishly-topped-with-a-variety-of-colorful-vegetables-like-.png"
   }
 ]

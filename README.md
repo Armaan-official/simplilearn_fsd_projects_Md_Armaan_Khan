@@ -35,7 +35,7 @@ A responsive food delivery web application built with vanilla HTML, Tailwind CSS
 | LocalStorage | Client-side data persistence |
 | Font Awesome | Icons throughout the UI |
 | Nominatim API | Reverse geocoding for location |
-| Fake Restaurant API | Food item data source |
+| Local JSON | Food item data source |
 
 ---
 

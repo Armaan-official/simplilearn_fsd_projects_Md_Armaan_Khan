@@ -67,7 +67,7 @@ async function loadCart() {
         container.innerHTML = '';
     }
 
-  cart.forEach((product, index) => {
+  cart.forEach((product, home) => {
     const card = cartTemplate.cloneNode(true);
     card.removeAttribute('id');
     card.querySelector('img').src = product.imageUrl;

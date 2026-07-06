@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <title>Index</title>
+    <title>home</title>
 </head>
 
 <body class="relative" style="background: url('./images/dark-grey-terrazzo.png'); background-color: #faedcd;">
@@ -34,7 +34,7 @@
     </div>
 
     <!------------------------------------------- Upper bar --------------------------------------->
-    <div id="upperbar" class="absolute w-screen p-3 flex items-center justify-between -z-10" style="background: url('./images/groovepaper.png'); background-color: #0d3b66;">
+    <div id="upperbar" class="absolute w-screen p-3 flex items-center justify-between shadow-[3px_4px_4px_rgba(0,0,0,1)]" style="background: url('./images/groovepaper.png'); background-color: #0d3b66;">
         <div id="search-bar" class="flex items-center p-1 w-170 h-9 ml-30 bg-white rounded-3xl hover:bg-gray-100 ring">
             <input id="browse-product" type="text" placeholder="Search" class="w-full h-full rounded-3xl p-3 outline-0 border-0">
             <div id="search-icon" onclick="commonButtonSound()" class="flex items-center justify-center text-black h-full w-12 p-1 hover:cursor-pointer"><i
@@ -67,7 +67,7 @@
              <h1 id="top-heading" class="pl-105 py-4 top-1 w-screen text-5xl font-bold bg-[#0e6ba8] text-amber-200 text-shadow-[1px_1px_8px_rgba(0,0,0,1)]">Top 10 Orders This Week</h1>
          </div>
 
-        <div id="col-left" class="col-span-10 overflow-y-auto h-[calc(100vh-101px)] scrollbar-thin pl-6 pb-6">
+        <div id="col-left" class="col-span-10 overflow-y-auto mb-15 scrollbar-thin pl-6 pb-6">
 
 
             <div id="top-orders"
@@ -342,7 +342,8 @@
                     </div>
                 </div>
 
-                    <div class="col-span-4 gap-x-6 text-white flex justify-center items-center py-1">
+                <div class="flex justify-center items-center flex-col col-span-4 gap-y-6 text-white py-1">
+                    <div class="flex gap-x-10">
                         <i class="fa-brands fa-facebook hover:text-amber-300"></i>
                         <i class="fa-brands fa-x-twitter hover:text-amber-300"></i>
                         <i class="fa-brands fa-instagram hover:text-amber-300"></i>
@@ -351,6 +352,10 @@
                         <i class="fa-brands fa-wikipedia-w hover:text-amber-300"></i>
                         <i class="fa-brands fa-youtube hover:text-amber-300"></i>
                     </div>
+                    <p>© 2026 QuickBite. All Rights Reserved. By using this website you've read the <span class="underline underline-offset-3 hover:text-blue-500">Privacy Policy</span> and accept the <span class="underline underline-offset-3 hover:text-blue-500">Terms and Conditions</span>.</p>
+                </div>
+                    
+
 
             </div>
 
@@ -360,14 +365,14 @@
         <div id="col-right" class="grid col-span-1 bg-[#083d77]">
 
             <div class="flex flex-col gap-3 items-center text-[#0d21a1] text-shadow-black text-shadow-[0px_0px_2px_rgba(0,0,0,1)]">
-                <div id="food-menu" class="mt-3 flex justify-center gap-3 px-4 py-1 rounded-2xl bg-white border-2 border-white hover:text-amber-300">
+                <div id="food-menu" onclick="commonButtonSound()" class="category mt-3 flex justify-center gap-3 px-4 py-1 rounded-2xl bg-white border-2 border-white hover:text-amber-300 hover:cursor-pointer">
                     <i class="fa-solid fa-bell-concierge text-2xl"></i>
                     <h1 class="font-bold">Menu</h1>
                 </div>
             </div>
 
             <!--------------------------- Food menu category --------------------------------------->
-            <div class="flex flex-col gap-2 items-center -mt-24">
+            <div class="flex flex-col gap-4 items-center mb-15">
 
                 <div id="category-1"
                     class="group category hover:cursor-pointer w-30 h-15 bg-amber-200 flex justify-center items-center gap-1 rounded-xl hover:bg-amber-300 hover:text-white"
@@ -384,14 +389,14 @@
                 <div id="category-3"
                     class="group category hover:cursor-pointer w-30 h-15 bg-amber-200 flex justify-center items-center gap-1 rounded-xl hover:bg-amber-300 hover:text-white"
                     onclick="commonButtonSound()">
-                    <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i class="fa-solid fa-burger"></i></i></div>
+                    <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i class="fa-solid fa-burger"></i></div>
                     <p class="text-[0.9vw] font-bold mr-1.5">Burger</p>
                 </div>
                 <div id="category-4"
                     class="group category hover:cursor-pointer w-30 h-15 bg-amber-200 flex justify-center items-center gap-1 rounded-xl hover:bg-amber-300 hover:text-white"
                     onclick="commonButtonSound()">
-                    <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i class="fa-solid fa-cube"></i></i></div>
-                    <p class="text-[0.9vw] font-bold mr-1.5">Paneer</p>
+                    <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i class="fa-solid fa-leaf"></i></div>
+                    <p class="text-[0.9vw] font-bold mr-6">Veg</p>
                 </div>
                 <div id="category-5"
                     class="group category hover:cursor-pointer w-30 h-15 bg-amber-200 flex justify-center items-center gap-1 rounded-xl hover:bg-amber-300 hover:text-white"
@@ -403,7 +408,7 @@
                 <div id="category-6"
                     class="group category hover:cursor-pointer w-30 h-15 bg-amber-200 flex justify-center items-center gap-1 rounded-xl hover:bg-amber-300 hover:text-white"
                     onclick="commonButtonSound()">
-                    <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i class="fa-solid fa-fish-fins"></i></i></div>
+                    <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i class="fa-solid fa-fish-fins"></i></div>
                     <p class="text-[0.88vw] font-bold">Seafood</p>
                 </div>
 
@@ -430,12 +435,8 @@
 
     </div>
 
-    <div id="footer" class="fixed bottom-0 h-10 w-full" style="background: url('./images/groovepaper.png'); background-color: #0d3b66;">
 
-    </div>
-
-
-    <script src="index.js"></script>
+    <script src="home.js"></script>
 </body>
 
 </html>

@@ -8,8 +8,8 @@ document.querySelector('#login-form').addEventListener('submit', (e) => {
     if(usernameVal === 'student@123' && String(passwordVal) === 'pass_456'){
     showPopup('Login successful!');
     setTimeout(() => {
-        window.location.href = 'index.html';
-    }, 3500);
+        window.location.href = 'home.html';
+    }, 2000);
     
     } else {
     showPopup('Wrong Username or Password!');
