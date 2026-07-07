@@ -821,6 +821,15 @@
   .pl-105 {
     padding-left: calc(var(--spacing) * 105);
   }
+  .pl-110 {
+    padding-left: calc(var(--spacing) * 110);
+  }
+  .pl-120 {
+    padding-left: calc(var(--spacing) * 120);
+  }
+  .pl-125 {
+    padding-left: calc(var(--spacing) * 125);
+  }
   .text-center {
     text-align: center;
   }

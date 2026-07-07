@@ -299,29 +299,29 @@ searchInput.addEventListener('input', () => {
 });
 
 // ======================= Capturing address using GPS location ===================== //
-// const displayAddress = localStorage.getItem('displayAddress') || '';
-// if(displayAddress) {
-//       document.querySelector('#address-bar input').value = displayAddress;
-//     }
+const displayAddress = localStorage.getItem('displayAddress') || '';
+if(displayAddress) {
+      document.querySelector('#address-bar input').value = displayAddress;
+    }
 
-// document.querySelector('#add-address').addEventListener('click', () =>{
-//   navigator.geolocation.getCurrentPosition(async (position) => {
-//     const lat = position.coords.latitude;
-//     const lon = position.coords.longitude;
-//     const addressBar = document.querySelector('#address-bar input');
+document.querySelector('#add-address').addEventListener('click', () =>{
+  navigator.geolocation.getCurrentPosition(async (position) => {
+    const lat = position.coords.latitude;
+    const lon = position.coords.longitude;
+    const addressBar = document.querySelector('#address-bar input');
 
-//     try {
-//       const address = await fetch(
-//         `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lon}&format=json`
-//       );
-//       const data = await address.json();
-//       addressBar.value = data.display_name;
-//       localStorage.setItem('displayAddress', data.display_name);
-//     } catch (error) {
-//       console.log('error:', error);
-//     }
-//   }); 
-// });
+    try {
+      const address = await fetch(
+        `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lon}&format=json`
+      );
+      const data = await address.json();
+      addressBar.value = data.display_name;
+      localStorage.setItem('displayAddress', data.display_name);
+    } catch (error) {
+      console.log('error:', error);
+    }
+  }); 
+});
 
 
 // ============================= Sound effects =============================== //
