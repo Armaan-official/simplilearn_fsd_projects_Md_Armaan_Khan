@@ -53,47 +53,13 @@ function slideAnimation() {
 requestAnimationFrame(slideAnimation);
 
 
-// const sliderTrack = document.querySelector("#sliding-bar");
-// let position = 50;
-// const speed = 2.7;
-// let isPaused = false;
-// sliderTrack.style.transition = "transform 0.1s linear";
-
-// const halfWidth = sliderTrack.scrollWidth / 2;
-
-
-// setInterval(() => {
-//   isPaused = !isPaused;
-// }, 2000);
-
-// function slideAnimation() {
-//   if (!isPaused) {
-//     position -= speed;
-
-//     if (Math.abs(position) >= halfWidth) {
-//       sliderTrack.style.transition = 'none';
-//       sliderTrack.style.transform = `translateX(0px)`;
-//       position = 100;
-
-//       sliderTrack.style.transition = "transform 0.3s linear";
-      
-//     }
-
-//     sliderTrack.style.transform = `translateX(${position}px)`;
-//   }
-
-//   requestAnimationFrame(slideAnimation);
-// }
-
-// requestAnimationFrame(slideAnimation);
-
 
 //  ================ Animation for the Top order heading ===================//
 const colLeft = document.querySelector('#col-left');
 const topHeading = document.querySelector('#top-heading');
 
 colLeft.addEventListener('scroll', () => {
-  console.log(colLeft.scrollTop);
+  // console.log(colLeft.scrollTop);
   
   if (colLeft.scrollTop > 20) {
     topHeading.style.opacity = '0';
@@ -190,13 +156,11 @@ document.querySelector('#food-menu').addEventListener('click', () => {
 });
 
 
-
+// ========================================== Render products ================================ //
 function renderProducts(products) {
   const container = document.querySelector('#food-cards');
   container.innerHTML = '';
   
-  
-
   products.forEach((product) => {
     const card = cardTemplate.cloneNode(true); // use saved template
     card.removeAttribute('id');
@@ -226,7 +190,7 @@ function renderProducts(products) {
 
     // add this product to cart
     cart.push(product);
-    console.log(product);
+    // console.log(product);
     
     // save back to localStorage
     localStorage.setItem('cart', JSON.stringify(cart));
@@ -236,7 +200,7 @@ function renderProducts(products) {
     countShow.textContent = cart.length;
 
 
-    console.log('added to cart:', product.itemName);
+    // console.log('added to cart:', product.itemName);
     // alert(`${product.itemName} added to cart!`); 
   
   });
@@ -250,6 +214,7 @@ function renderProducts(products) {
   const removeToFavoriteSound = new Audio('./sound_effects/thud1.mp3');
   removeToFavoriteSound.preload = 'none';
 
+  // Toggling the favorite button icon
   if(isFavorited) {
         heartIcon.classList.replace('fa-regular', 'fa-solid');
         heartIcon.classList.add('text-red-600');
@@ -271,9 +236,9 @@ function renderProducts(products) {
     heartIcon.classList.toggle('fa-solid');
     heartIcon.classList.toggle('text-red-600');
 
-    
+
+    // added to and removed from favorites popups
     const alreadyFavorited = favoriteFoods.find(item => item.itemName === product.itemName);
-    
     if(alreadyFavorited) {
         favoriteFoods = favoriteFoods.filter(item => item.itemName !== product.itemName);
         // alert(`${product.itemName} removed from Favorites!`);
@@ -321,7 +286,7 @@ function renderProducts(products) {
 getProducts();
 
 
-
+//  ======================== Browse product using the searching bar ============================== //
 const searchInput = document.querySelector('#browse-product');
 searchInput.addEventListener('input', () => {
   const query = searchInput.value.toLowerCase();
@@ -333,35 +298,35 @@ searchInput.addEventListener('input', () => {
   renderProducts(filtered);
 });
 
+// ======================= Capturing address using GPS location ===================== //
+// const displayAddress = localStorage.getItem('displayAddress') || '';
+// if(displayAddress) {
+//       document.querySelector('#address-bar input').value = displayAddress;
+//     }
 
+// document.querySelector('#add-address').addEventListener('click', () =>{
+//   navigator.geolocation.getCurrentPosition(async (position) => {
+//     const lat = position.coords.latitude;
+//     const lon = position.coords.longitude;
+//     const addressBar = document.querySelector('#address-bar input');
 
-const displayAddress = localStorage.getItem('displayAddress') || '';
-if(displayAddress) {
-      document.querySelector('#address-bar input').value = displayAddress;
-    }
-
-document.querySelector('#add-address').addEventListener('click', () =>{
-  navigator.geolocation.getCurrentPosition(async (position) => {
-    const lat = position.coords.latitude;
-    const lon = position.coords.longitude;
-    const addressBar = document.querySelector('#address-bar input');
-
-    try {
-      const address = await fetch(
-        `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lon}&format=json`
-      );
-      const data = await address.json();
-      addressBar.value.display_name;
-    } catch (error) {
-      console.log('error:', error);
-    }
-  }); 
-});
+//     try {
+//       const address = await fetch(
+//         `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lon}&format=json`
+//       );
+//       const data = await address.json();
+//       addressBar.value = data.display_name;
+//       localStorage.setItem('displayAddress', data.display_name);
+//     } catch (error) {
+//       console.log('error:', error);
+//     }
+//   }); 
+// });
 
 
 // ============================= Sound effects =============================== //
 // click button
-const clickSound = new Audio('./sound_effects/click2.mp3');
+const clickSound = new Audio('./sound_effects/click1.mp3');
 
 
 function clickButtonSound(pageLink){
@@ -380,7 +345,7 @@ function commonButtonSound(){
 
 
 // hover
-const categoryHoverSound = new Audio('./sound_effects/hover3.mp3');
+const categoryHoverSound = new Audio('./sound_effects/pop5.mp3');
 // categoryHoverSound.preload = 'none';
 categoryHoverSound.currentTime = 0;
 

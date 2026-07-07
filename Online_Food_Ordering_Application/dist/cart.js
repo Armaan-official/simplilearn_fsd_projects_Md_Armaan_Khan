@@ -1,21 +1,4 @@
-// let allProducts = [];
-// let cardTemplate = null; // store template globally
-
-// async function getProducts() {
-//   try {
-//     const response = await fetch('./data.json');
-//     allProducts = await response.json();
-
-//     // save template before first render
-//     cardTemplate = document.querySelector('#card-1').cloneNode(true);
-
-//     renderProducts(allProducts);
-//   } catch (error) {
-//     console.log(error);
-//   }
-// }
-
-
+//  ======================== getting the card from the local storage ======================== //
 async function getProduct() {
     const params = new URLSearchParams(window.location.search);
     const id = params.get('id');
@@ -32,30 +15,7 @@ async function getProduct() {
 
 getProduct();
 
-
-// const cart = JSON.parse(localStorage.getItem('cart')) || [];
-// const container = document.querySelector('#card-container');
-// const cartTemplate = document.querySelector('#card-1').cloneNode(true);
-// container.innerHTML = '';
-
-// cart.forEach((product) => {
-//   const card = cartTemplate.cloneNode(true);
-//   card.querySelector('img').src = product.imageUrl;
-//   card.querySelector('#p-name').textContent = product.itemName;
-//   card.querySelector('#p-price').innerHTML = `<i class="fa-solid fa-indian-rupee-sign"></i>${product.itemPrice}`;
-//   container.appendChild(card);
-
-
-// const removeItem = document.querySelector('#remove-item');
-// removeItem.addEventListener('click', (e) => {
-//     cart.splice(0, 1); // remove from array
-//     localStorage.setItem('cart', JSON.stringify(cart)); // update localStorage
-//     card.remove(); // remove card from DOM
-//     console.log('removed:', product.itemName);
-//   });
-
-// });
-
+//  ======================== Handling the empty and non-empty cart ================================ //
 const container = document.querySelector('#card-container');
 const cartTemplate = document.querySelector('#card-1').cloneNode(true);
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -67,6 +27,7 @@ async function loadCart() {
         container.innerHTML = '';
     }
 
+    // Generating the cards similar to the home page
   cart.forEach((product, home) => {
     const card = cartTemplate.cloneNode(true);
     card.removeAttribute('id');
@@ -76,6 +37,7 @@ async function loadCart() {
     totalProduct();
     addTotal();
 
+    // remove each card
     const removeItem = card.querySelector('#remove-item');
     removeItem.addEventListener('click', () => {
         const updatedCart = cart.filter(item => item !== product);
@@ -102,7 +64,7 @@ async function loadCart() {
 
     function totalProduct() {
         const numOfProduct = cart.length;
-        console.log(cart.length)
+        // console.log(cart.length)
         document.querySelector('#total-Product span').textContent = numOfProduct;
     }
 
@@ -112,6 +74,7 @@ async function loadCart() {
 
 }
 
+//  =================================== Payment method =================================== //
     const paymentSound = new Audio('./sound_effects/payment.mp3');
     const payment = document.querySelector('#payment');
     payment.addEventListener('click', (product) => {
@@ -150,7 +113,7 @@ async function loadCart() {
         
     })
 
-
+//  ========================= clear button to delete all cards together ================================= //
 document.querySelector('#clear-cart').addEventListener('click', () => {
     localStorage.removeItem('cart');
     cart.length = 0;
@@ -163,12 +126,13 @@ document.querySelector('#clear-cart').addEventListener('click', () => {
 if(cart.length === 0) {
     document.querySelector('#card-container').innerHTML = '<p class="p-4 text-gray-500">No products added yet.</p>';
 } else {
-    loadCart(); // your function that renders cart cards
+    loadCart();
 }
 
+// =================================== sound effects ===================================== //
 
 // click button
-const clickSound = new Audio('./sound_effects/click2.mp3');
+const clickSound = new Audio('./sound_effects/click1.mp3');
 // clickSound.preload = 'none';
 
 function clickButtonSound(pageLink){

@@ -7,18 +7,22 @@
     <link rel="stylesheet" href="output.css">
     <title>Login Page</title>
 </head>
-<body class="flex justify-center items-center h-screen w-[98.9vw]" style="background: url('./images/groovepaper.png'); background-color: #525252;">
+<body class="flex justify-center items-center h-screen w-[98.9vw]" style="background: url('./images/groovepaper.png'); 
+background-color: #525252;">
 
     <!--------------------------- Popup for the events ----------------------------------->
-    <div id="popup" class="fixed bg-green-400 text-xl top-18 left-170 w-fit h-fit py-3 px-4 rounded-xl opacity-0 transition-opacity duration-500 z-10 shadow-[0px_0px_6px_rgba(0,0,0,0.8)]">This is the popup!</div>
+    <div id="popup" class="fixed bg-green-400 text-xl top-18 left-170 w-fit h-fit py-3 px-4 rounded-xl opacity-0 
+    transition-opacity duration-500 z-10 shadow-[0px_0px_6px_rgba(0,0,0,0.8)]">This is the popup!</div>
    
     <!----------------------------------- Login container ------------------------------------>
     <div id="container" class="relative h-[95vh] flex-col w-1/2 ml-6">
 
         <!------------------------- Heading of the login page---------------------------------->
-        <div class="absolute top-10 left-20">
-             <div class="max-md:w-58 max-sm:w-30 flex justify-center items-center flex-col text-[clamp(1rem,4vw,40px)] font-bold text-shadow-[0px_0px_6px_rgba(0,0,0,0.6)]">
-            <h1 class="text-white text-shadow-[2px_2px_20px_rgba(0,0,0,1)]">Welcome To The <span class="text-amber-400 underline underline-offset-4">QuickBite</span> App</h1>
+        <div class="absolute top-10 left-30">
+             <div class="flex justify-center items-center flex-col text-[clamp(1rem,4vw,40px)] 
+             font-bold text-shadow-[0px_0px_6px_rgba(0,0,0,0.6)]">
+            <h1 class="text-white text-shadow-[2px_2px_20px_rgba(0,0,0,1)]">Welcome To The <span class="text-amber-400 
+                underline underline-offset-4">QuickBite</span> App</h1>
             <p class="text-white mt-10 ml-9 text-3xl">Login Page</p>
             </div>
         </div>
@@ -27,16 +31,17 @@
 
     <!----------------------------------- Login inputs ------------------------------------>
         <form id="login-form" action="" 
-        method="get" class="rounded-tl-4xl rounded-bl-4xl w-full max-w-190 h-full flex justify-center items-center flex-col gap-y-10 shadow-[0px_0px_8px_rgba(0,0,0,1)]" style="background: url('./images/groovepaper.png'); background-color: #112A43;">
+        method="get" class="rounded-tl-4xl rounded-bl-4xl h-full flex justify-center items-center flex-col 
+        gap-y-10 shadow-[-2px_0px_8px_rgba(0,0,0,1)] overflow-" style="background: url('./images/groovepaper.png'); background-color: #112A43;">
 
             <div id="name">
-                <label for="username" class="max-sm:hidden"><i class="fa-solid 
+                <label for="username"><i class="fa-solid 
                     fa-user text-2xl"></i></label>
                 <input type="text" 
                 id="username" 
                 name="username" 
                 placeholder="Username" 
-                required class="ml-3 p-3 w-70 max-sm:w-50 max-md:w-60
+                required class="ml-3 p-3 w-70
                 rounded-xl outline-0 
                 placeholder:font-bold 
                 bg-white 
@@ -45,27 +50,27 @@
             </div>
 
             <div id="pass" class="group">
-                <label for="password" class="max-sm:hidden"><i class="fa-solid 
+                <label for="password"><i class="fa-solid 
                     fa-key text-2xl"></i></label>
                 <input type="password" 
                 id="password" 
                 name="password" 
                 placeholder="Password" 
-                required class="relative ml-3 p-3 w-70 max-sm:w-50 max-md:w-60
+                required class="relative ml-3 p-3 w-70
                 rounded-xl outline-0 
                 placeholder:font-bold 
                 bg-white 
                 shadow-[0px_0px_10px_rgba(0,0,0,0.8)] 
                 group-hover:placeholder-black">
-                <div id="eye" class="absolute left-124 bottom-83 max-xl:hidden max-sm:hidden"></div>
+                <div id="eye" class="absolute left-135 bottom-93"></div>
             </div>
             
             <div class="flex">
                 <button id="submit-btn" 
                 type="submit" 
-                class="ml-12 rounded-xl p-3 w-52 max-md:w-40 max-sm:w-30
-                bg-green-600 font-bold max-sm:mr-10
-                shadow-[0px_0px_10px_rgba(0,0,0,0.8)] 
+                class="ml-12 rounded-xl p-3 w-52
+                bg-green-600 font-bold
+                shadow-[2px_0px_10px_rgba(0,0,0,0.8)] 
                 hover:bg-green-400 hover:text-white"
                 onclick="commonButtonSound()">Login</button>
             </div>

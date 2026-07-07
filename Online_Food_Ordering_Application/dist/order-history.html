@@ -14,26 +14,37 @@
 
     <!--------------------------- Popup for the events ----------------------------------->
     <div id="popup"
-        class="fixed bg-green-400 text-xl top-18 left-170 w-fit h-fit py-3 px-4 rounded-xl opacity-0 transition-opacity duration-500 z-10 shadow-[0px_0px_6px_rgba(0,0,0,1)]">
+        class="fixed bg-green-400 text-xl top-18 left-170 w-fit h-fit py-3 px-4 rounded-xl opacity-0 
+        transition-opacity duration-500 z-10 shadow-[0px_0px_6px_rgba(0,0,0,1)]">
         This is the popup!</div>
 
     <!---------------------------------------- Navbar -------------------------------------------------------->
-    <div class="flex justify-between items-center h-20 bg-white w-full px-20 text-lg font-bold shadow-[3px_4px_4px_rgba(0,0,0,1)]" style="background: url('./images/groovepaper.png'); background-color: #0d3b66;">
-        <p onclick="clickButtonSound('home.html')" class="hover:text-gray-500 hover:cursor-pointer w-fit hover:bg-white py-1 px-6 rounded-3xl">Home</p>
-        <p onclick="clickButtonSound('cart.html')" class="hover:text-gray-500 hover:cursor-pointer w-fit hover:bg-white py-1 px-6 rounded-3xl">Cart</p>
-        <p onclick="clickButtonSound('order-history.html')" class="text-gray-500 hover:cursor-pointer w-fit bg-white py-1 px-6 rounded-3xl" class="hover:text-gray-500 hover:cursor-pointer w-fit hover:bg-white py-1 px-6 rounded-3xl">Order History</p>
-        <p onclick="clickButtonSound('favorite.html')" class="hover:text-gray-500 hover:cursor-pointer w-fit hover:bg-white py-1 px-6 rounded-3xl">Favorites</p>
-        <p onclick="commonButtonSound()" class="hover:text-gray-500 hover:cursor-pointer w-fit hover:bg-white py-1 px-6 rounded-3xl">Settings</p>
-        <p onclick="commonButtonSound()" class="hover:text-gray-500 hover:cursor-pointer w-fit hover:bg-white py-1 px-6 rounded-3xl">Account</p>
+    <div class="flex justify-between items-center h-20 bg-white w-full px-20 text-lg font-bold 
+    shadow-[3px_4px_4px_rgba(0,0,0,1)]" style="background: url('./images/groovepaper.png'); background-color: #0d3b66;">
+        <p onclick="clickButtonSound('home.html')" class="hover:text-gray-500 hover:cursor-pointer w-fit 
+        hover:bg-white py-1 px-6 rounded-3xl">Home</p>
+        <p onclick="clickButtonSound('cart.html')" class="hover:text-gray-500 hover:cursor-pointer w-fit 
+        hover:bg-white py-1 px-6 rounded-3xl">Cart</p>
+        <p onclick="clickButtonSound('order-history.html')" class="text-gray-500 hover:cursor-pointer w-fit 
+        bg-white py-1 px-6 rounded-3xl" class="hover:text-gray-500 hover:cursor-pointer w-fit hover:bg-white 
+        py-1 px-6 rounded-3xl">Order History</p>
+        <p onclick="clickButtonSound('favorite.html')" class="hover:text-gray-500 hover:cursor-pointer w-fit 
+        hover:bg-white py-1 px-6 rounded-3xl">Favorites</p>
+        <p onclick="commonButtonSound()" class="hover:text-gray-500 hover:cursor-pointer w-fit hover:bg-white 
+        py-1 px-6 rounded-3xl">Settings</p>
+        <p onclick="commonButtonSound()" class="hover:text-gray-500 hover:cursor-pointer w-fit hover:bg-white 
+        py-1 px-6 rounded-3xl">Account</p>
     </div>
 
-
+    <!------------------------------- Clear history button ------------------------------------>
     <div class="absolute top-20 left-0 ml-15 text-xl">
         <button id="clear-history"
-            class="font-bold rounded-xl shadow-[0px_0px_4px_rgba(0,0,0,1)] bg-[#ff3b20] hover:bg-[#ee6055] hover:text-white mt-7.5 px-3 py-2"
+            class="font-bold rounded-xl shadow-[0px_0px_4px_rgba(0,0,0,1)] bg-[#ff3b20] hover:bg-[#ee6055] 
+            hover:text-white mt-7.5 px-3 py-2 hover:cursor-pointer"
             style="font-size: medium;">Clear History</button>
     </div>
 
+    <!------------------------------------------ Main body --------------------------------------------------->
     <div>
         <p id="total-Product"
             class="text-5xl font-bold p-4 mb-5.5 mt-3 text-shadow-black text-shadow-[0px_0px_3px_rgba(0,0,0,1)]">Your order
@@ -43,7 +54,9 @@
     <div id="cart-page" class="w-180 flex items-center justify-center bg-white rounded-3xl mb-10">
         <div id="card-container" class="flex justify-center items-center flex-col">
             <div id="card-1"
-                class="relative grid grid-rows-7 rounded-3xl overflow-hidden mb-3 mt-3 w-80 h-65 bg-amber-200 hover:bg-amber-100  hover:ring hover:shadow-[0px_0px_20px_rgba(0,0,0,1)]  hover:scale-105 transition-transform duration-300 font-bold">
+                class="relative grid grid-rows-7 rounded-3xl overflow-hidden mb-3 mt-3 w-80 h-65 bg-amber-200 
+                hover:bg-amber-100  hover:ring hover:shadow-[0px_0px_20px_rgba(0,0,0,1)]  hover:scale-105 
+                transition-transform duration-300 font-bold">
                 <img class="row-span-6 w-full h-full object-cover" src="" alt="">
                 <div class="flex justify-center items-center gap-2 text-[#112A43]">
                     <p id="p-name" class="row-span-1 text-center">This is a pic</p>
@@ -52,77 +65,81 @@
             </div>
         </div>
     </div>
-            <script>
-
-                const orderHistory = JSON.parse(localStorage.getItem('orderHistory')) || [];
-                const container = document.querySelector('#card-container');
-                const template = document.querySelector('#card-1').cloneNode(true);
-                if (orderHistory.length === 0) {
-                    container.innerHTML = '<p class="p-4 text-gray-500">No order history yet.</p>';
-                } else {
-                    container.innerHTML = '';
-                }
-
-                orderHistory.forEach((order) => {
-                    order.items.forEach((product) => {
-                        const card = template.cloneNode(true);
-                        card.querySelector('img').src = product.imageUrl;
-                        card.querySelector('#p-name').textContent = product.itemName;
-                        card.querySelector('#p-price').innerHTML = `<i class="fa-solid fa-indian-rupee-sign"></i> ${product.itemPrice}`;
-                        container.appendChild(card);
-                    });
 
 
-                });
+    <script>
+        
+        // =============================== create history order after payment ================================= //
+        const orderHistory = JSON.parse(localStorage.getItem('orderHistory')) || [];
+        const container = document.querySelector('#card-container');
+        const template = document.querySelector('#card-1').cloneNode(true);
+        if (orderHistory.length === 0) {
+            container.innerHTML = '<p class="p-4 text-gray-500">No order history yet.</p>';
+        } else {
+            container.innerHTML = '';
+        }
 
-                document.querySelector('#clear-history').addEventListener('click', () => {
-                    // clear history sound
-                    if (orderHistory.length !== 0) {
-                        const clearHistorySound = new Audio('./sound_effects/delete1.mp3');
-                        clearHistorySound.currentTime = 0;
-                        clearHistorySound.play();
-                        showPopup('Your order history is clear!')
-                    }
-
-                    orderHistory.length = 0;
-                    localStorage.removeItem('orderHistory');
-                    document.querySelector('#card-container').innerHTML = '<p class="p-4 text-gray-500">No order history yet.</p>';
-                })
-
-
-                // click button
-                const clickSound = new Audio('./sound_effects/click2.mp3');
-                // clickSound.preload = 'none';
-
-                function commonButtonSound(){
-                    clickSound.currentTime = 0;
-                    clickSound.play();
-                }
-
-                function clickButtonSound(pageLink) {
-                    clickSound.currentTime = 0;
-                    clickSound.play();
-                    setTimeout(() => {
-                        window.location.href = pageLink;
-                    }, 500);
-                }
+        orderHistory.forEach((order) => {
+            order.items.forEach((product) => {
+                const card = template.cloneNode(true);
+                card.querySelector('img').src = product.imageUrl;
+                card.querySelector('#p-name').textContent = product.itemName;
+                card.querySelector('#p-price').innerHTML = `<i class="fa-solid fa-indian-rupee-sign"></i> ${product.itemPrice}`;
+                container.appendChild(card);
+            });
 
 
-                // ===================================== popup =========================== // 
-                function showPopup(message, duration = 3000) {
-                    const popup = document.querySelector('#popup');
-                    popup.textContent = message;
-                    popup.classList.remove('opacity-0');
-                    popup.classList.add('opacity-100');
+        });
 
-                    setTimeout(() => {
-                        popup.classList.remove('opacity-100');
-                        popup.classList.add('opacity-0');
-                    }, duration);
-                }
+        // ==================================== sound effects ==================================== //
+        document.querySelector('#clear-history').addEventListener('click', () => {
+            // clear history sound
+            if (orderHistory.length !== 0) {
+                const clearHistorySound = new Audio('./sound_effects/delete1.mp3');
+                clearHistorySound.currentTime = 0;
+                clearHistorySound.play();
+                showPopup('Your order history is clear!')
+            }
+
+            orderHistory.length = 0;
+            localStorage.removeItem('orderHistory');
+            document.querySelector('#card-container').innerHTML = '<p class="p-4 text-gray-500">No order history yet.</p>';
+        })
 
 
-            </script>
+        // click button
+        const clickSound = new Audio('./sound_effects/click1.mp3');
+        // clickSound.preload = 'none';
+
+        function commonButtonSound(){
+            clickSound.currentTime = 0;
+            clickSound.play();
+        }
+
+        function clickButtonSound(pageLink) {
+            clickSound.currentTime = 0;
+            clickSound.play();
+            setTimeout(() => {
+                window.location.href = pageLink;
+            }, 500);
+        }
+
+
+        // ===================================== popup =========================== // 
+        function showPopup(message, duration = 3000) {
+            const popup = document.querySelector('#popup');
+            popup.textContent = message;
+            popup.classList.remove('opacity-0');
+            popup.classList.add('opacity-100');
+
+            setTimeout(() => {
+                popup.classList.remove('opacity-100');
+                popup.classList.add('opacity-0');
+            }, duration);
+        }
+
+
+    </script>
 </body>
 
 </html>

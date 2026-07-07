@@ -12,60 +12,89 @@
 <body class="relative" style="background: url('./images/dark-grey-terrazzo.png'); background-color: #faedcd;">
 
     <!----------------------------------------- Sidebar ---------------------------------------------->
-    <button id="menu" class="px-6 ml-6 pt-6 z-10 absolute text-lg -mt-2 hover:scale-110 text-amber-200 hover:cursor-pointer" onclick="commonButtonSound()">
+    <button id="menu"
+        class="px-6 ml-6 pt-6 z-10 absolute text-lg -mt-2 hover:scale-110 text-amber-200 hover:cursor-pointer"
+        onclick="commonButtonSound()">
         <i class="fa-solid fa-bars"></i></button>
-    <div id="sidebar"
-        class="fixed h-screen w-1/5 transform -translate-x-full transition-transform duration-500"
+    <div id="sidebar" class="fixed h-screen w-1/5 transform -translate-x-full transition-transform duration-500 z-10"
         style="background: url('./images/groovepaper.png'); background-color: #0d3b66;">
-        <h1 id="app-heading" class="pt-9 pl-9 text-4xl font-bold text-amber-300 text-shadow-black text-shadow-[5px_8px_15px_rgba(0,0,0,1)]">QuickBite</h1>
+        <h1 id="app-heading"
+            class="pt-9 pl-9 text-4xl font-bold text-amber-300 text-shadow-black text-shadow-[5px_8px_15px_rgba(0,0,0,1)]">
+            QuickBite</h1>
         <div class="flex flex-col justify-between p-6 h-4/7 gap-y-3 text-lg font-bold">
-            <div class="flex items-center gap-3 text-gray-500 hover:cursor-pointer w-fit bg-white py-1 px-3 rounded-3xl" onclick="commonButtonSound()"><i class="fa-regular fa-house"></i>Home</div>
-            <a class="flex items-center gap-3 hover:text-gray-500 w-fit hover:bg-white py-1 px-3 rounded-3xl hover:cursor-pointer" onclick="clickButtonSound('order-history.html')"><i class="fa-solid fa-clock-rotate-left"></i>Order History</a>
-            <a class="flex items-center gap-3 hover:cursor-pointer hover:text-gray-500 w-fit hover:bg-white py-1 px-3 rounded-3xl" onclick="clickButtonSound('favorite.html')"><i class="fa-regular fa-heart"></i>Favorites</a>
-            <div class="flex items-center gap-3 hover:cursor-pointer hover:text-gray-500 w-fit hover:bg-white py-1 px-3 rounded-3xl" onclick="commonButtonSound()"><i class="fa-solid fa-indian-rupee-sign"></i>Balance</div>
-            <div class="flex items-center gap-3 hover:cursor-pointer hover:text-gray-500 w-fit hover:bg-white py-1 px-3 rounded-3xl" onclick="commonButtonSound()"><i class="fa-solid fa-wallet"></i>Choose Payment</div>
-            <div class="flex items-center gap-3 hover:cursor-pointer hover:text-gray-500 w-fit hover:bg-white py-1 px-3 rounded-3xl" onclick="commonButtonSound()"><i class="fa-solid fa-gear"></i>Settings</div>
-            <div class="flex items-center gap-3 hover:cursor-pointer hover:text-gray-500 w-fit hover:bg-white py-1 px-3 rounded-3xl" onclick="commonButtonSound()"><i class="fa-solid fa-circle-info"></i>About</div>
+            <div class="flex items-center gap-3 text-gray-500 hover:cursor-pointer w-fit bg-white py-1 px-3 rounded-3xl"
+                onclick="commonButtonSound()"><i class="fa-regular fa-house"></i>Home</div>
+            <a class="flex items-center gap-3 hover:text-gray-500 w-fit hover:bg-white py-1 px-3 rounded-3xl hover:cursor-pointer"
+                onclick="clickButtonSound('order-history.html')"><i class="fa-solid fa-clock-rotate-left"></i>Order
+                History</a>
+            <a class="flex items-center gap-3 hover:cursor-pointer hover:text-gray-500 w-fit hover:bg-white py-1 px-3 rounded-3xl"
+                onclick="clickButtonSound('favorite.html')"><i class="fa-regular fa-heart"></i>Favorites</a>
+            <div class="flex items-center gap-3 hover:cursor-pointer hover:text-gray-500 w-fit hover:bg-white py-1 px-3 rounded-3xl"
+                onclick="commonButtonSound()"><i class="fa-solid fa-indian-rupee-sign"></i>Balance</div>
+            <div class="flex items-center gap-3 hover:cursor-pointer hover:text-gray-500 w-fit hover:bg-white py-1 px-3 rounded-3xl"
+                onclick="commonButtonSound()"><i class="fa-solid fa-wallet"></i>Choose Payment</div>
+            <div class="flex items-center gap-3 hover:cursor-pointer hover:text-gray-500 w-fit hover:bg-white py-1 px-3 rounded-3xl"
+                onclick="commonButtonSound()"><i class="fa-solid fa-gear"></i>Settings</div>
+            <div class="flex items-center gap-3 hover:cursor-pointer hover:text-gray-500 w-fit hover:bg-white py-1 px-3 rounded-3xl"
+                onclick="commonButtonSound()"><i class="fa-solid fa-circle-info"></i>About</div>
         </div>
 
         <div class="p-6 mt-15">
-            <a id="logout" class="flex items-center gap-3 text-lg  font-bold hover:text-gray-500 w-fit py-1 px-3 hover:bg-white rounded-3xl hover:cursor-pointer" onclick="clickButtonSound('login.html')"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
+            <a id="logout"
+                class="flex items-center gap-3 text-lg  font-bold hover:text-gray-500 w-fit py-1 px-3 
+                hover:bg-white rounded-3xl hover:cursor-pointer"
+                onclick="clickButtonSound('login.html')"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
         </div>
     </div>
 
     <!------------------------------------------- Upper bar --------------------------------------->
-    <div id="upperbar" class="absolute w-screen p-3 flex items-center justify-between shadow-[3px_4px_4px_rgba(0,0,0,1)]" style="background: url('./images/groovepaper.png'); background-color: #0d3b66;">
+    <div id="upperbar"
+        class="absolute w-screen p-3 flex items-center justify-between shadow-[3px_4px_4px_rgba(0,0,0,1)]"
+        style="background: url('./images/groovepaper.png'); background-color: #0d3b66;">
         <div id="search-bar" class="flex items-center p-1 w-170 h-9 ml-30 bg-white rounded-3xl hover:bg-gray-100 ring">
-            <input id="browse-product" type="text" placeholder="Search" class="w-full h-full rounded-3xl p-3 outline-0 border-0">
-            <div id="search-icon" onclick="commonButtonSound()" class="flex items-center justify-center text-black h-full w-12 p-1 hover:cursor-pointer"><i
+            <input id="browse-product" type="text" placeholder="Search"
+                class="w-full h-full rounded-3xl p-3 outline-0 border-0">
+            <div id="search-icon" onclick="commonButtonSound()"
+                class="flex items-center justify-center text-black h-full w-12 p-1 hover:cursor-pointer"><i
                     class="fa-solid fa-magnifying-glass"></i></div>
         </div>
         <div>
-            <div id="address-bar" class="flex items-center p-1 w-120 h-9 -ml-6 bg-white rounded-3xl hover:bg-gray-100 ring">
+            <div id="address-bar"
+                class="flex items-center p-1 w-120 h-9 -ml-6 bg-white rounded-3xl hover:bg-gray-100 ring">
                 <input type="text" placeholder="Add you address"
                     class="w-full h-full rounded-3xl p-3 outline-0 border-0">
-                <div id="add-address" onclick="commonButtonSound()" class="flex items-center justify-center text-black h-full w-12 p-1 hover:cursor-pointer"><i
+                <div id="add-address" onclick="commonButtonSound()"
+                    class="flex items-center justify-center text-black h-full w-12 p-1 hover:cursor-pointer"><i
                         class="fa-solid fa-plus"></i></i></div>
             </div>
         </div>
         <div id="right-icons" class="flex gap-10 mr-3 border-1-black text-2xl">
-            <a onclick="clickButtonSound('cart.html')"><i class="fa-solid fa-cart-shopping hover:cursor-pointer text-amber-200 hover:scale-110 "></i></a>
-            <p id="cart-number" class="absolute font-bold right-5 top-0 h-5 pb-1 w-23 text-white" style=" font-size: medium;"></p>
-            <a onclick="clickButtonSound('account.html')"><i class="fa-solid fa-circle-user hover:cursor-pointer text-amber-200 hover:scale-110"></i></a>
+            <a onclick="clickButtonSound('cart.html')"><i
+                    class="fa-solid fa-cart-shopping hover:cursor-pointer text-amber-200 hover:scale-110 "></i></a>
+            <p id="cart-number" class="absolute font-bold right-5 top-0 h-5 pb-1 w-23 text-white"
+                style=" font-size: medium;"></p>
+            <a onclick="commonButtonSound()"><i
+                    class="fa-solid fa-circle-user hover:cursor-pointer text-amber-200 hover:scale-110"></i></a>
         </div>
     </div>
 
     <!--------------------------- Popup for the events ----------------------------------->
-    <div id="popup" class="absolute bg-green-400 text-xl top-18 left-170 w-fit h-fit py-3 px-4 rounded-xl opacity-0 transition-opacity duration-500 shadow-[0px_0px_10px_rgba(0,0,0,1)]">This is the popup</div>
+    <div id="popup"
+        class="absolute bg-green-400 text-xl top-18 left-170 w-fit h-fit py-3 px-4 rounded-xl 
+        opacity-0 transition-opacity duration-500 shadow-[0px_0px_10px_rgba(0,0,0,1)]">
+        This is the popup</div>
 
     <!--------------------------------- Main body ------------------------------------->
     <div id="main-body" class="fixed top-15 h-screen w-screen grid grid-cols-11 -z-10">
 
         <!--------------------------------- Main body left column ------------------------------------->
 
-         <div class="absolute h-10 w-full -z-10 mt-5 flex justify-center items-center">
-             <h1 id="top-heading" class="pl-105 py-4 top-1 w-screen text-5xl font-bold bg-[#0e6ba8] text-amber-200 text-shadow-[1px_1px_8px_rgba(0,0,0,1)]">Top 10 Orders This Week</h1>
-         </div>
+        <div class="absolute h-10 w-full -z-10 mt-5 flex justify-center items-center">
+            <h1 id="top-heading"
+                class="pl-105 py-4 top-1 w-screen text-5xl font-bold bg-[#0e6ba8] text-amber-200 
+                text-shadow-[1px_1px_8px_rgba(0,0,0,1)]">
+                Top 10 Orders This Week</h1>
+        </div>
 
         <div id="col-left" class="col-span-10 overflow-y-auto mb-15 scrollbar-thin pl-6 pb-6">
 
@@ -73,166 +102,188 @@
             <div id="top-orders"
                 class="relative h-60 w-[99%] rounded-xl flex items-center justify-center overflow-hidden mt-25">
 
-                
 
-              
 
-                <!---------------------------------- Left fadding effect ---------------------------->
-            
-                <div class="absolute left-0 top-0 h-full w-5 z-10 bg-[#0e6ba8] opacity-90 shadow-[4px_10px_8px_rgba(0,0,0,1)]"></div>
-        
-                
-                
-                <!---------------------------------- Right fadding effect ---------------------------->
 
-                <div class="absolute right-0 top-0 h-full w-5 z-10 bg-[#0e6ba8] opacity-90 shadow-[5px_8px_8px_8px_rgba(0,0,0,1)]"></div>
+
+                <!----------------------------------------- Top orders ------------------------------------------------->
+
+                <div
+                    class="absolute left-0 top-0 h-full w-5 z-10 bg-[#0e6ba8] opacity-90 shadow-[4px_10px_8px_rgba(0,0,0,1)]">
+                </div>
+
+                <div
+                    class="absolute right-0 top-0 h-full w-5 z-10 bg-[#0e6ba8] opacity-90 shadow-[5px_8px_8px_8px_rgba(0,0,0,1)]">
+                </div>
+
+
 
                 <div id="sliding-bar" class="absolute w-[97%] h-[85%] flex gap-x-6 text-[#112A43] font-bold">
-                    
+
                     <div id="top-card-1"
-                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
+                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] 
+                        hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
                         <div class="h-40"> <img
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
-                                alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
-                        <p class="flex items-center justify-center mt-2">This is a pic 1</p>
+                                src="https://fakerestaurantapi.runasp.net/images/chickenn%20biryani.webp" alt="food"
+                                class="row-span-4 w-full h-full object-cover min-h-0"></div>
+                        <p class="flex items-center justify-center mt-2">Chicken Biryani</p>
                     </div>
                     <div id="top-card-2"
-                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
+                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] 
+                        hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
                         <div class="h-40"> <img
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
+                                src="https://whiskdaily.com/wp-content/uploads/2025/08/Easy-Butter-Chicken-Indian-Curry-2.jpg"
                                 alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
-                        <p class="flex items-center justify-center mt-2">This is a pic 2</p>
+                        <p class="flex items-center justify-center mt-2">Butter Chicken</p>
                     </div>
                     <div id="top-card-3"
-                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
+                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] 
+                        hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
                         <div class="h-40"> <img
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
-                                alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
-                        <p class="flex items-center justify-center mt-2">This is a pic 3</p>
+                                src="https://brobbq.com/wp-content/uploads/2025/05/Mac-And-Cheese-Burger.jpg" alt="food"
+                                class="row-span-4 w-full h-full object-cover min-h-0"></div>
+                        <p class="flex items-center justify-center mt-2">Mac & Cheese Burger</p>
                     </div>
                     <div id="top-card-4"
-                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
+                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] 
+                        hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
                         <div class="h-40"> <img
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
+                                src="https://myrecipesnest.com/wp-content/uploads/2025/09/23-1-Margherita-Pizza.png"
                                 alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
-                        <p class="flex items-center justify-center mt-2">This is a pic 4</p>
+                        <p class="flex items-center justify-center mt-2">Margherita Pizza</p>
                     </div>
                     <div id="top-card-5"
-                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
+                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] 
+                        hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
                         <div class="h-40"> <img
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
+                                src="https://lifeloveandgoodfood.com/wp-content/uploads/2020/04/Chicken-Shawarma_09_1200x1200.jpg"
                                 alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
-                        <p class="flex items-center justify-center mt-2">This is a pic 5</p>
+                        <p class="flex items-center justify-center mt-2">Shawarma</p>
                     </div>
                     <div id="top-card-6"
-                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
+                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)]
+                        hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
                         <div class="h-40"> <img
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
+                                src="https://corarecipes.com/wp-content/uploads/2025/07/image_1_1752008074936_313.png"
                                 alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
-                        <p class="flex items-center justify-center mt-2">This is a pic 6</p>
+                        <p class="flex items-center justify-center mt-2">Pesto Chicken Pizza</p>
                     </div>
                     <div id="top-card-7"
-                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
+                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] 
+                        hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
                         <div class="h-40"> <img
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
+                                src="https://fakerestaurantapi.runasp.net/images/paneer%20butter%20masala.jpg"
                                 alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
-                        <p class="flex items-center justify-center mt-2">This is a pic 7</p>
+                        <p class="flex items-center justify-center mt-2">Paneer Butter Masala</p>
                     </div>
                     <div id="top-card-8"
-                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
+                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] 
+                        hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
                         <div class="h-40"> <img
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
+                                src="https://www.itisakeeper.com/wp-content/uploads/2021/07/mexican-burger-SQ-1.jpg"
                                 alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
-                        <p class="flex items-center justify-center mt-2">This is a pic 8</p>
+                        <p class="flex items-center justify-center mt-2">Spicy Mexican Burger</p>
                     </div>
                     <div id="top-card-9"
-                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
+                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] 
+                        hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
                         <div class="h-40"> <img
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
-                                alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
-                        <p class="flex items-center justify-center mt-2">This is a pic 9</p>
+                                src="https://fakerestaurantapi.runasp.net/images/Chingri-Malai-Curry.jpg" alt="food"
+                                class="row-span-4 w-full h-full object-cover min-h-0"></div>
+                        <p class="flex items-center justify-center mt-2">Prawn Malai Curry</p>
                     </div>
                     <div id="top-card-10"
-                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
-                        <div class="h-40"> <img
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
+                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] 
+                        hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
+                        <div class="h-40"> <img src="https://fakerestaurantapi.runasp.net/images/koftacurry.jpg"
                                 alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
-                        <p class="flex items-center justify-center mt-2">This is a pic 10</p>
+                        <p class="flex items-center justify-center mt-2">Kofta Curry</p>
                     </div>
                     <div id="top-card-11"
-                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
+                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] 
+                        hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
                         <div class="h-40"> <img
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
-                                alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
-                        <p class="flex items-center justify-center mt-2">This is a pic 1</p>
+                                src="https://fakerestaurantapi.runasp.net/images/chickenn%20biryani.webp" alt="food"
+                                class="row-span-4 w-full h-full object-cover min-h-0"></div>
+                        <p class="flex items-center justify-center mt-2">Chicken Biryani</p>
                     </div>
                     <div id="top-card-12"
-                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
+                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] 
+                        hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
                         <div class="h-40"> <img
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
+                                src="https://whiskdaily.com/wp-content/uploads/2025/08/Easy-Butter-Chicken-Indian-Curry-2.jpg"
                                 alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
-                        <p class="flex items-center justify-center mt-2">This is a pic 2</p>
+                        <p class="flex items-center justify-center mt-2">Butter Chicken</p>
                     </div>
                     <div id="top-card-13"
-                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
+                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] 
+                        hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
                         <div class="h-40"> <img
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
-                                alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
-                        <p class="flex items-center justify-center mt-2">This is a pic 3</p>
+                                src="https://brobbq.com/wp-content/uploads/2025/05/Mac-And-Cheese-Burger.jpg" alt="food"
+                                class="row-span-4 w-full h-full object-cover min-h-0"></div>
+                        <p class="flex items-center justify-center mt-2">Mac & Cheese Burger</p>
                     </div>
                     <div id="top-card-14"
-                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
+                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] 
+                        hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
                         <div class="h-40"> <img
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
+                                src="https://myrecipesnest.com/wp-content/uploads/2025/09/23-1-Margherita-Pizza.png"
                                 alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
-                        <p class="flex items-center justify-center mt-2">This is a pic 4</p>
+                        <p class="flex items-center justify-center mt-2">Margherita Pizza</p>
                     </div>
                     <div id="top-card-15"
-                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
+                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] 
+                        hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
                         <div class="h-40"> <img
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
+                                src="https://lifeloveandgoodfood.com/wp-content/uploads/2020/04/Chicken-Shawarma_09_1200x1200.jpg"
                                 alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
-                        <p class="flex items-center justify-center mt-2">This is a pic 5</p>
+                        <p class="flex items-center justify-center mt-2">Shawarma</p>
                     </div>
                     <div id="top-card-16"
-                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
+                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] 
+                        hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
                         <div class="h-40"> <img
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
+                                src="https://corarecipes.com/wp-content/uploads/2025/07/image_1_1752008074936_313.png"
                                 alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
-                        <p class="flex items-center justify-center mt-2">This is a pic 6</p>
+                        <p class="flex items-center justify-center mt-2">Pesto Chicken Pizza</p>
                     </div>
-                     <div id="top-card-17"
-                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
+                    <div id="top-card-17"
+                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] 
+                        hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
                         <div class="h-40"> <img
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
+                                src="https://fakerestaurantapi.runasp.net/images/paneer%20butter%20masala.jpg"
                                 alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
-                        <p class="flex items-center justify-center mt-2">This is a pic 7</p>
+                        <p class="flex items-center justify-center mt-2">Paneer Butter Masala</p>
                     </div>
-                     <div id="top-card-18"
-                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
+                    <div id="top-card-18"
+                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] 
+                        hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
                         <div class="h-40"> <img
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
+                                src="https://www.itisakeeper.com/wp-content/uploads/2021/07/mexican-burger-SQ-1.jpg"
                                 alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
-                        <p class="flex items-center justify-center mt-2">This is a pic 8</p>
+                        <p class="flex items-center justify-center mt-2">Spicy Mexican Burger</p>
                     </div>
-                     <div id="top-card-19"
-                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
+                    <div id="top-card-19"
+                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] 
+                        hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
                         <div class="h-40"> <img
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
-                                alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
-                        <p class="flex items-center justify-center mt-2">This is a pic 9</p>
+                                src="https://fakerestaurantapi.runasp.net/images/Chingri-Malai-Curry.jpg" alt="food"
+                                class="row-span-4 w-full h-full object-cover min-h-0"></div>
+                        <p class="flex items-center justify-center mt-2">Prawn Malai Curry</p>
                     </div>
-                     <div id="top-card-20"
-                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
-                        <div class="h-40"> <img
-                                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.9BO5ezpeO0Qpe57cf4ywvgHaE8%3Fpid%3DApi&f=1&ipt=70904c0708819212061f4efd7729b19e4853371bd38801cf5e74391bdafe108f&ipo=images"
+                    <div id="top-card-20"
+                        class="rounded-3xl overflow-hidden min-w-78 bg-amber-300 hover:shadow-[0px_0px_10px_rgba(0,0,0,1)] 
+                        hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 hover:scale-105 transition-transform duration-300">
+                        <div class="h-40"> <img src="https://fakerestaurantapi.runasp.net/images/koftacurry.jpg"
                                 alt="food" class="row-span-4 w-full h-full object-cover min-h-0"></div>
-                        <p class="flex items-center justify-center mt-2">This is a pic 10</p>
+                        <p class="flex items-center justify-center mt-2">Kofta Curry</p>
                     </div>
                 </div>
             </div>
 
             <div id="border" class="relative top-0 z-30 w-[99%] mt-2 rounded-4xl h-2 bg-white"></div>
+
+            <!--------------------------------- Food Menu heading ----------------------------->
 
             <div class="mt-20 mb-5 flex items-center justify-center text-3xl">
                 <p id="display-category" class="w-fit bg-[#0e6ba8] text-white 
@@ -244,47 +295,53 @@
             <div id="food-cards" class="grid grid-cols-4 gap-x-4 w-full">
 
                 <div id="card-1" class="w-80 h-65 mt-3 perspective:[1000px] cursor-pointer">
-                    <div class="card-inner relative w-full h-full transition-transform duration-500 transform-3d bg-transparent">
+                    <div
+                        class="card-inner relative w-full h-full transition-transform duration-500 transform-3d bg-transparent">
 
-                          <!------------------------------------- Front face ------------------------------------>
-                        <div
-                            class="card-front absolute grid grid-rows-7 rounded-3xl overflow-hidden mt-3 w-80 h-65 bg-amber-300 hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 transition-transform duration-300 font-bold"
+                        <!------------------------------------- Front face ------------------------------------>
+                        <div class="card-front absolute grid grid-rows-7 rounded-3xl overflow-hidden mt-3 w-80 h-65 bg-amber-300 
+                        hover:bg-amber-200 hover:ring-2 hover:ring-orange-400 transition-transform duration-300 font-bold"
                             style="backface-visibility: hidden;">
-                            <img class="row-span-6 w-full h-full object-cover"
-                                src=""
-                                alt="">
+                            <img class="row-span-6 w-full h-full object-cover" src="" alt="">
                             <div class="flex justify-center items-center gap-2 text-[#112A43]">
                                 <p class="p-name row-span-1 text-center">This is a pic</p>
                                 <p id="p-price" class="font-bold text-xl">100</p>
                             </div>
-                            <button id="add-to-cart" class="absolute top-45 right-20 hover:text-red-600"><i class="fa-solid fa-plus text-2xl"></i></button>
-                            <button id="add-to-favorite" class="absolute top-45 left-25 hover:text-red-600"><i class="fa-regular fa-heart text-2xl"></i></button>
+                            <button id="add-to-cart" class="absolute top-45 right-20 hover:text-red-600 hover:cursor-pointer 
+                            bg-white rounded-xl pb-1 pt-2 px-2 hover:border border-black"><i class="fa-solid fa-plus text-xl"></i></button>
+                            <button id="add-to-favorite" class="absolute top-45 left-25 hover:text-red-600 hover:cursor-pointer 
+                            bg-white rounded-xl pb-1 pt-2 px-2 hover:border border-black"><i class="fa-regular fa-heart text-xl"></i></button>
                         </div>
 
-                    <!----------------------------------- Back face ----------------------------------->
-                    <div class="card-back absolute w-full h-full rounded-3xl p-4" style="backface-visibility: hidden; transform: rotateY(180deg); background: var(--card-back);">
-                        <div class="bg-white p-4 rounded-2xl flex justify-center items-center flex-col h-full opacity-90">
-                            <p class="restaurant font-bold -mt-2 mb-6"></p>
-                            <p class="p-name font-bold mt-2"></p>
-                            <p class="p-description text-black text-sm mt-1 z-10 p-4">This is the product description</p>
+                        <!----------------------------------- Back face ----------------------------------->
+                        <div class="card-back absolute w-full h-full rounded-3xl p-4"
+                            style="backface-visibility: hidden; transform: rotateY(180deg); background: var(--card-back);">
+                            <div
+                                class="bg-white p-4 rounded-2xl flex justify-center items-center flex-col h-full opacity-90">
+                                <p class="restaurant font-bold -mt-2 mb-6"></p>
+                                <p class="p-name font-bold mt-2"></p>
+                                <p class="p-description text-black text-sm mt-1 z-10 p-4">This is the product
+                                    description</p>
+                            </div>
                         </div>
-                    </div>
 
 
                     </div>
                 </div>
 
             </div>
-            
-            <div id="page-end-content" class="grid grid-cols-4 bg-[#0F172B] mt-10 w-[99%] p-10 gap-8 rounded-2xl text-white">
-                
+
+            <!------------------------------------- Page end content ---------------------------------------->
+            <div id="page-end-content"
+                class="grid grid-cols-4 bg-[#0F172B] mt-10 w-[99%] p-10 gap-8 rounded-2xl text-white">
+
                 <div class="p-2 bg-[#1D293D] rounded-2xl">
                     <div class=" p-3 ">
                         <p class="font-bold mb-1">QuickBite</p>
                         <p class="h-1 w-2/3 bg-white mb-6 rounded-2xl"></p>
-                        <p>QuickBite is a fast and intuitive food delivery app 
-                            offering a wide variety of cuisines from top quality 
-                            restaurants, making it easy for anyone to find and 
+                        <p>QuickBite is a fast and intuitive food delivery app
+                            offering a wide variety of cuisines from top quality
+                            restaurants, making it easy for anyone to find and
                             order their favorite meals instantly.</p>
                     </div>
                 </div>
@@ -293,21 +350,29 @@
                     <div class="p-3">
                         <p class="font-bold mb-1">Useful Links</p>
                         <p class="h-1 w-2/3 bg-white mb-6 rounded-2xl"></p>
-                        <p class="mb-2 flex items-center hover:text-amber-300"><i class="fa-solid fa-utensils mr-3"></i>Restaurants</p>
-                        <p class="mb-2 flex items-center hover:text-amber-300"><i class="fa-solid fa-user mr-3"></i>Our Chefs</p>
-                        <p class="mb-2 flex items-center hover:text-amber-300"><i class="fa-brands fa-blogger mr-3"></i>Blogs</p>
-                        <p class="mb-2 flex items-center hover:text-amber-300"><i class="fa-solid fa-circle-question mr-3"></i>FAQS</p>
-                        <p class="mb-2 flex items-center hover:text-amber-300"><i class="fa-solid fa-file-shield mr-3"></i>Privacy Policy</p>
+                        <p class="mb-2 flex items-center hover:text-amber-300 hover:cursor-pointer"><i
+                                class="fa-solid fa-utensils mr-3"></i>Restaurants</p>
+                        <p class="mb-2 flex items-center hover:text-amber-300 hover:cursor-pointer"
+                        ><i class="fa-solid fa-user mr-3"></i>Our Chefs</p>
+                        <p class="mb-2 flex items-center hover:text-amber-300 hover:cursor-pointer"><i
+                                class="fa-brands fa-blogger mr-3"></i>Blogs</p>
+                        <p class="mb-2 flex items-center hover:text-amber-300 hover:cursor-pointer"><i
+                                class="fa-solid fa-circle-question mr-3"></i>FAQS</p>
+                        <p class="mb-2 flex items-center hover:text-amber-300 hover:cursor-pointer"><i
+                                class="fa-solid fa-file-shield mr-3"></i>Privacy Policy</p>
                     </div>
                 </div>
-                
+
                 <div class="bg-[#1D293D] p-2 rounded-2xl">
                     <div class="p-3">
                         <p class="font-bold mb-1">Contact Us</p>
                         <p class="h-1 w-2/3 bg-white mb-6 rounded-2xl"></p>
-                        <p class="mb-2 flex items-center hover:text-amber-300"><i class="fa-solid fa-phone mr-3"></i>+91 923 456 789</p>
-                        <p class="mb-2 flex items-center hover:text-amber-300"><i class="fa-solid fa-envelope mr-3"></i>quickbite@123.com</p>
-                        <p class="mb-2 flex items-center hover:text-amber-300"><i class="fa-solid fa-location-dot mr-3"></i>12 Street, Local Park, WB, India</p>
+                        <p class="mb-2 flex items-center hover:text-amber-300 hover:cursor-pointer"
+                        ><i class="fa-solid fa-phone mr-3"></i>+91 923 456 789</p>
+                        <p class="mb-2 flex items-center hover:text-amber-300 hover:cursor-pointer"><i
+                                class="fa-solid fa-envelope mr-3"></i>quickbite@123.com</p>
+                        <p class="mb-2 flex items-center hover:text-amber-300 hover:cursor-pointer"><i
+                                class="fa-solid fa-location-dot mr-3"></i>12 Street, Local Park, WB, India</p>
                     </div>
                 </div>
 
@@ -316,7 +381,7 @@
                         <p class="font-bold mb-1">Download App</p>
                         <p class="h-1 w-2/3 bg-white mb-6 rounded-2xl"></p>
 
-                        <div class="mb-3">
+                        <div class="mb-3 hover:cursor-pointer">
                             <div class=" flex justify-center items-center 
                                 border-2 border-white rounded-lg w-48 h-18
                                  hover:border-amber-300 hover:text-amber-300">
@@ -328,7 +393,7 @@
                             </div>
                         </div>
 
-                        <div class=" flex justify-center items-center 
+                        <div class=" flex justify-center items-center hover:cursor-pointer 
                                 border-2 border-white rounded-lg w-48 h-18
                                  hover:border-amber-300 hover:text-amber-300">
                             <div class="mb-2 flex items-center">
@@ -344,17 +409,20 @@
 
                 <div class="flex justify-center items-center flex-col col-span-4 gap-y-6 text-white py-1">
                     <div class="flex gap-x-10">
-                        <i class="fa-brands fa-facebook hover:text-amber-300"></i>
-                        <i class="fa-brands fa-x-twitter hover:text-amber-300"></i>
-                        <i class="fa-brands fa-instagram hover:text-amber-300"></i>
-                        <i class="fa-brands fa-google-plus-g hover:text-amber-300"></i>
-                        <i class="fa-brands fa-pinterest hover:text-amber-300"></i>
-                        <i class="fa-brands fa-wikipedia-w hover:text-amber-300"></i>
-                        <i class="fa-brands fa-youtube hover:text-amber-300"></i>
+                        <i class="fa-brands fa-facebook hover:text-amber-300 hover:cursor-pointer"></i>
+                        <i class="fa-brands fa-x-twitter hover:text-amber-300 hover:cursor-pointer"></i>
+                        <i class="fa-brands fa-instagram hover:text-amber-300 hover:cursor-pointer"></i>
+                        <i class="fa-brands fa-google-plus-g hover:text-amber-300 hover:cursor-pointer"></i>
+                        <i class="fa-brands fa-pinterest hover:text-amber-300 hover:cursor-pointer"></i>
+                        <i class="fa-brands fa-wikipedia-w hover:text-amber-300 hover:cursor-pointer"></i>
+                        <i class="fa-brands fa-youtube hover:text-amber-300 hover:cursor-pointer"></i>
                     </div>
-                    <p>© 2026 QuickBite. All Rights Reserved. By using this website you've read the <span class="underline underline-offset-3 hover:text-blue-500">Privacy Policy</span> and accept the <span class="underline underline-offset-3 hover:text-blue-500">Terms and Conditions</span>.</p>
+                    <p>© 2026 QuickBite. All Rights Reserved. By using this website you've read the <span
+                            class="underline underline-offset-3 hover:text-blue-500 hover:cursor-pointer">Privacy Policy</span> and accept
+                        the <span class="underline underline-offset-3 hover:text-blue-500 hover:cursor-pointer">Terms and Conditions</span>.
+                    </p>
                 </div>
-                    
+
 
 
             </div>
@@ -364,66 +432,86 @@
         <!--------------------------------- Main body right column ------------------------------------->
         <div id="col-right" class="grid col-span-1 bg-[#083d77]">
 
-            <div class="flex flex-col gap-3 items-center text-[#0d21a1] text-shadow-black text-shadow-[0px_0px_2px_rgba(0,0,0,1)]">
-                <div id="food-menu" onclick="commonButtonSound()" class="category mt-3 flex justify-center gap-3 px-4 py-1 rounded-2xl bg-white border-2 border-white hover:text-amber-300 hover:cursor-pointer">
+            <div
+                class="flex flex-col gap-3 items-center text-[#0d21a1] text-shadow-black 
+                text-shadow-[0px_0px_2px_rgba(0,0,0,1)]">
+                <div id="food-menu" onclick="commonButtonSound()"
+                    class="category mt-3 flex justify-center gap-3 px-4 py-1 rounded-2xl bg-white border-2 
+                    border-white hover:text-amber-300 hover:cursor-pointer">
                     <i class="fa-solid fa-bell-concierge text-2xl"></i>
                     <h1 class="font-bold">Menu</h1>
                 </div>
             </div>
 
             <!--------------------------- Food menu category --------------------------------------->
-            <div class="flex flex-col gap-4 items-center mb-15">
+            <div class="flex flex-col gap-6 items-center mb-15">
 
                 <div id="category-1"
-                    class="group category hover:cursor-pointer w-30 h-15 bg-amber-200 flex justify-center items-center gap-1 rounded-xl hover:bg-amber-300 hover:text-white"
+                    class="group category hover:cursor-pointer w-32 h-15 bg-amber-200 flex justify-center 
+                    items-center gap-1 rounded-xl hover:bg-amber-300 hover:text-white"
                     onclick="commonButtonSound()">
-                    <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i class="fa-solid fa-bowl-rice"></i></div>
-                    <p class="text-[0.9vw] font-bold mr-4">Meal</p>
+                    <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i
+                            class="fa-solid fa-bowl-rice"></i></div>
+                    <p class="text-[0.9vw] font-bold mr-5">Meal</p>
                 </div>
                 <div id="category-2"
-                    class="group category hover:cursor-pointer w-30 h-15 bg-amber-200 flex justify-center items-center gap-1 rounded-xl hover:bg-amber-300 hover:text-white"
+                    class="group category hover:cursor-pointer w-32 h-15 bg-amber-200 flex justify-center 
+                    items-center gap-1 rounded-xl hover:bg-amber-300 hover:text-white"
                     onclick="commonButtonSound()">
-                    <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i class="fa-solid fa-pizza-slice"></i></div>
-                    <p class="text-[0.9vw] font-bold mr-4">Pizza</p>
+                    <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i
+                            class="fa-solid fa-pizza-slice"></i></div>
+                    <p class="text-[0.9vw] font-bold mr-5">Pizza</p>
                 </div>
                 <div id="category-3"
-                    class="group category hover:cursor-pointer w-30 h-15 bg-amber-200 flex justify-center items-center gap-1 rounded-xl hover:bg-amber-300 hover:text-white"
+                    class="group category hover:cursor-pointer w-32 h-15 bg-amber-200 flex justify-center 
+                    items-center gap-1 rounded-xl hover:bg-amber-300 hover:text-white"
                     onclick="commonButtonSound()">
-                    <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i class="fa-solid fa-burger"></i></div>
-                    <p class="text-[0.9vw] font-bold mr-1.5">Burger</p>
+                    <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i
+                            class="fa-solid fa-burger"></i></div>
+                    <p class="text-[0.9vw] font-bold mr-2">Burger</p>
                 </div>
                 <div id="category-4"
-                    class="group category hover:cursor-pointer w-30 h-15 bg-amber-200 flex justify-center items-center gap-1 rounded-xl hover:bg-amber-300 hover:text-white"
+                    class="group category hover:cursor-pointer w-32 h-15 bg-amber-200 flex justify-center 
+                    items-center gap-1 rounded-xl hover:bg-amber-300 hover:text-white"
                     onclick="commonButtonSound()">
-                    <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i class="fa-solid fa-leaf"></i></div>
-                    <p class="text-[0.9vw] font-bold mr-6">Veg</p>
+                    <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i
+                            class="fa-solid fa-leaf"></i></div>
+                    <p class="text-[0.9vw] font-bold mr-7">Veg</p>
                 </div>
                 <div id="category-5"
-                    class="group category hover:cursor-pointer w-30 h-15 bg-amber-200 flex justify-center items-center gap-1 rounded-xl hover:bg-amber-300 hover:text-white"
+                    class="group category hover:cursor-pointer w-32 h-15 bg-amber-200 flex justify-center 
+                    items-center gap-1 rounded-xl hover:bg-amber-300 hover:text-white"
                     onclick="commonButtonSound()">
-                    <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i class="fa-solid fa-drumstick-bite"></i></div>
+                    <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i
+                            class="fa-solid fa-drumstick-bite"></i></div>
                     <p class="text-[0.9vw] font-bold">Non-veg</p>
                 </div>
 
                 <div id="category-6"
-                    class="group category hover:cursor-pointer w-30 h-15 bg-amber-200 flex justify-center items-center gap-1 rounded-xl hover:bg-amber-300 hover:text-white"
+                    class="group category hover:cursor-pointer w-32 h-15 bg-amber-200 flex justify-center 
+                    items-center gap-1 rounded-xl hover:bg-amber-300 hover:text-white"
                     onclick="commonButtonSound()">
-                    <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i class="fa-solid fa-fish-fins"></i></div>
+                    <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i
+                            class="fa-solid fa-fish-fins"></i></div>
                     <p class="text-[0.88vw] font-bold">Seafood</p>
                 </div>
 
                 <div id="category-7"
-                    class="group category hover:cursor-pointer w-30 h-15 bg-amber-200 flex justify-center items-center gap-1 rounded-xl hover:bg-amber-300 hover:text-white"
+                    class="group category hover:cursor-pointer w-32 h-15 bg-amber-200 flex justify-center 
+                    items-center gap-1 rounded-xl hover:bg-amber-300 hover:text-white"
                     onclick="commonButtonSound()">
-                    <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i class="fa-solid fa-ice-cream"></i></div>
-                    <p class="text-[0.9vw] font-bold">Dessert</p>
+                    <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i
+                            class="fa-solid fa-ice-cream"></i></div>
+                    <p class="text-[0.9vw] font-bold mr-1">Dessert</p>
                 </div>
 
                 <div id="category-8"
-                    class="group category hover:cursor-pointer w-30 h-15 bg-amber-200 flex justify-center items-center gap-1 rounded-xl hover:bg-amber-300 hover:text-white"
+                    class="group category hover:cursor-pointer w-32 h-15 bg-amber-200 flex justify-center 
+                    items-center gap-1 rounded-xl hover:bg-amber-300 hover:text-white"
                     onclick="commonButtonSound()">
-                    <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i class="fa-solid fa-wine-glass-empty"></i></div>
-                    <p class="text-[0.88vw] font-bold mr-1.5">Drinks</p>
+                    <div class="bg-white px-4 py-3 rounded-lg group-hover:text-amber-300"><i
+                            class="fa-solid fa-wine-glass-empty"></i></div>
+                    <p class="text-[0.88vw] font-bold mr-3">Drinks</p>
                 </div>
 
 

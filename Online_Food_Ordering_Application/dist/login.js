@@ -1,4 +1,4 @@
-
+//  ============================ Password validation ========================== //
 document.querySelector('#login-form').addEventListener('submit', (e) => {
     e.preventDefault();
 
@@ -19,9 +19,9 @@ document.querySelector('#login-form').addEventListener('submit', (e) => {
 //  ===================== Toggle to show and hide password =================//
 let eye = document.querySelector('#eye');
 eye.innerHTML = '<i class="fa-solid fa-eye"></i>';
+let password = document.querySelector('#password');
 
 eye.addEventListener('click', () => {
-    let password = document.querySelector('#password');
 
     if(!password.value) return;
     
@@ -30,8 +30,18 @@ eye.addEventListener('click', () => {
     eye.innerHTML = isHidden ? '<i class="fa-solid fa-eye-slash"></i>' : '<i class="fa-solid fa-eye"></i>';
 })
 
+password.addEventListener('input', () => {
+    if(!password.value) {
+        password.type = 'password';
+        eye.innerHTML = '<i class="fa-solid fa-eye"></i>';
+    }
+})
+
+
+// ==================================== sound effects ============================= //
+
 // click button
-const clickSound = new Audio('./sound_effects/click2.mp3');
+const clickSound = new Audio('./sound_effects/click1.mp3');
 // clickSound.preload = 'none';
 
 
