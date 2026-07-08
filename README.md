@@ -7,6 +7,12 @@ A responsive food delivery web application built with vanilla HTML, Tailwind CSS
 ## 📸 Screenshots
 
 - ![Login Page](./Screenshots-food-app/12.png)
+- ![Home Page (Top section)](./Screenshots-food-app/16.png)
+- ![Home Page (Botton section)](./Screenshots-food-app/17.png)
+- ![Home Page (Navbar)](./Screenshots-food-app/18.png)
+- ![Cart Page](./Screenshots-food-app/26.png)
+- ![Favorites Page](./Screenshots-food-app/30.png)
+- ![Order-history Page](./Screenshots-food-app/33.png)
 
 ---
 
@@ -19,7 +25,7 @@ A responsive food delivery web application built with vanilla HTML, Tailwind CSS
 - ❤️ **Favorites** — Mark items as favorites with a heart toggle that persists across reloads
 - 📦 **Order History** — Completed orders are saved and viewable on a dedicated history page
 - 📍 **Reverse Geocoding** — Detects user location and converts coordinates to a readable address using the Nominatim API
-- 🎠 **Auto-Sliding Carousel** — Smooth card flipping animation for displaying the remaining food item details
+- 🎠 **Auto-Sliding Carousel** — Smooth card carousel animation for displaying the top 10 products
 - 🔊 **Sound Effects** — UI sounds on button interactions for a richer experience
 - 💾 **LocalStorage Persistence** — Cart, favorites, order history, and address all persist across page reloads
 
@@ -48,7 +54,7 @@ dist/
 ├── cart.html           # Shopping cart page
 ├── cart.js             # Cart page logic
 ├── data.json           # Local food items data
-├── favorites.html      # Favorites page
+├── favorite.html      # Favorites page
 ├── home.html           # Main product listing page
 ├── home.js             # Home page logic
 ├── login.html          # Login page
