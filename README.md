@@ -6,7 +6,7 @@ A responsive food delivery web application built with vanilla HTML, Tailwind CSS
 
 ## 📸 Screenshots
 
-> _Add screenshots of your app here_
+- ![Login Page](./Screenshots-food-app/12.png)
 
 ---
 
@@ -49,8 +49,8 @@ dist/
 ├── cart.js             # Cart page logic
 ├── data.json           # Local food items data
 ├── favorites.html      # Favorites page
-├── index.html          # Main product listing page
-├── index.js            # Index page logic
+├── home.html           # Main product listing page
+├── home.js             # Home page logic
 ├── login.html          # Login page
 ├── login.js            # Login page logic
 ├── order-history.html  # Order history page
